@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MasterChefVR/Scenes/Chase Testing.unity
+    path: Assets/MasterChefVR/Scenes/Testing/Chase Testing.unity
     guid: 97454832f83a86f43a7fcc038db5e133
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7d51d9b6748e5c645bee5c72b063900f, type: 2}
