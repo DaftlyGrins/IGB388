@@ -667,7 +667,7 @@ MonoBehaviour:
   handModel: {fileID: 8102949168248671880}
   hideWhenGrabbing: 1
   AllowHandGrabbing: 1
-  AllowDistanceGrabbing: 0
+  AllowDistanceGrabbing: 1
   maxGrabDistance: 5
   grabThreshold: 0.95
   hoveredGrabbable: {fileID: 0}
@@ -1594,7 +1594,7 @@ MonoBehaviour:
   handModel: {fileID: 2615747307533218345}
   hideWhenGrabbing: 1
   AllowHandGrabbing: 1
-  AllowDistanceGrabbing: 0
+  AllowDistanceGrabbing: 1
   maxGrabDistance: 5
   grabThreshold: 0.95
   hoveredGrabbable: {fileID: 0}
