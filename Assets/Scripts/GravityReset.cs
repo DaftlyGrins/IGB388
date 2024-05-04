@@ -10,22 +10,29 @@ public class GravityReset : MonoBehaviour
     private float countdown;
     private float tillCountdownExpires;
     private bool isGravityEnabled;
+    public GameObject Lever;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         isGravityEnabled = false;
+        cForce = GetComponent<ConstantForce>();
+        forceDirection = new Vector3(0, 0.05f, 0);
+        cForce.force = new Vector3(0, 0, 0);
+        rb.useGravity = true;
     }
     
-    void update()
+    void Update()
     {
+        Debug.Log(isGravityEnabled);
         if(isGravityEnabled == true)
         {
             countdown = countdown - (Time.deltaTime - tillCountdownExpires);
             if(countdown <= 0)
             {
                 GravityOff();
+                Lever.GetComponent<DiegeticRotator>().CurrentValue = 1.0f;
             }
         }
     }
@@ -35,18 +42,16 @@ public class GravityReset : MonoBehaviour
     {
         if(isGravityEnabled == false)
         {
-            countdown = 20;
+            countdown = 5;
             tillCountdownExpires = Time.deltaTime;
         }
-        Debug.Log("It's da nutshack");
         rb.useGravity = true;
-        cForce.force = forceDirection;
+        cForce.force = new Vector3(0, 0, 0);
         isGravityEnabled = true;
     }
     
     public void GravityOff()
     {
-        Debug.Log("It's da nutshack");
         rb.useGravity = false;
         cForce.force = forceDirection;
         isGravityEnabled = false;
