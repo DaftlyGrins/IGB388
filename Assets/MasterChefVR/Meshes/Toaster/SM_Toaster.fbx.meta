@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ace977389df8de544a03725fcab38a7c
+guid: 003822eabf6181c479403abb566e5be1
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
@@ -7,13 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MTL_TimerBase
-    second: {fileID: 2100000, guid: b479b88043f485a4782453d30ab97a26, type: 2}
+      name: MTL_ToasterBase
+    second: {fileID: 2100000, guid: 4ebc8b00775eb8147988de864ec77443, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MTL_TimerButton
-    second: {fileID: 2100000, guid: b851112d5c1d98940b52971d3f78c1cd, type: 2}
+      name: MTL_ToasterFeet
+    second: {fileID: 2100000, guid: c1d0ed0dd81ca7d43bd7c87123c227cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MTL_ToasterHandle
+    second: {fileID: 2100000, guid: d0c0f90e85e65eb4ebfbcc87f83cb66f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MTL_ToasterSwitch
+    second: {fileID: 2100000, guid: 77e11e8eb698e2f40af11476944d5718, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
