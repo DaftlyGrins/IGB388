@@ -127,7 +127,6 @@ public class DiegeticRotator : MonoBehaviour
         CurrentValue = initialValue;
         onValueChanged.Invoke(CurrentValue);
         ResetGrabbableTransform();
-        Lock();
     }
 
     /// <summary>
