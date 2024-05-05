@@ -29,10 +29,9 @@ public class Clock : MonoBehaviour
         }
     }
 
-    public void StartRotation(float cookingTime)
+    public void StartRotation()
     {
         // Start the rotation
-        rotationDuration = cookingTime;
         startTime = Time.time;
         isRotating = true;
     }

@@ -25,9 +25,6 @@ public class GameManager : MonoBehaviour
     }
 
     // Add any GameManager-related variables and methods here
-    [Header("Clock Information")]
-    public Clock clock;
-    [SerializeField] float cookingTime; // in seconds
 
     void Awake()
     {
@@ -45,10 +42,4 @@ public class GameManager : MonoBehaviour
     }
 
     // Add any GameManager-related initialization or cleanup here
-
-    // Use this function to start the clock rotating
-    void StartClock()
-    {
-        clock.StartRotation(cookingTime);
-    }
 }
