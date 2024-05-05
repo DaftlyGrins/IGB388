@@ -93,7 +93,6 @@ public class DiegeticSlider : MonoBehaviour
     {
         CurrentValue = currentValue;
         onValueChanged.Invoke(currentValue);
-        Lock();
     }
 
     /// <summary>
