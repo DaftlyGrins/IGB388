@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 1181642573065006222}
   - component: {fileID: 2867053799867654955}
   - component: {fileID: 12707556096694241}
+  - component: {fileID: -124815474843420290}
+  - component: {fileID: 7253704206061348738}
+  - component: {fileID: -163625403672045157}
+  - component: {fileID: 5375978360205108321}
   m_Layer: 0
   m_Name: BunTop
   m_TagString: Untagged
@@ -83,3 +87,109 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-124815474843420290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958460025281508916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290cedebf3f0a20459ac9a8c0209030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNearPlate: 0
+  isNearBasket: 0
+  plate: {fileID: 0}
+  basket: {fileID: 0}
+--- !u!54 &7253704206061348738
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958460025281508916}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &-163625403672045157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958460025281508916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20253007, y: 0.055114724, z: 0.20253007}
+  m_Center: {x: 0, y: 0.025953535, z: 0}
+--- !u!114 &5375978360205108321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958460025281508916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0395abccf359a8848a51de2c4e46eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  IsDistanceGrabbable: 1
+  grabbableObjectsIgnoreRaycasts: 1
+  OnGrabStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -124815474843420290}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: GrabbedFromPlateorBasket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnGrabEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -124815474843420290}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: ReleasedNearBasket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -124815474843420290}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: ReleasedNearPlate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
