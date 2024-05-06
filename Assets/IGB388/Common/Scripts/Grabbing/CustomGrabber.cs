@@ -42,6 +42,10 @@ public class CustomGrabber : OVRGrabber
 
     [Header("Hand Visuals")]
     public GameObject handModel;
+    public GameObject plate;
+    public GameObject Food;
+    public bool grabbing = false;
+    public bool hasGrabbed;
     public bool hideWhenGrabbing = true;
 
     [Header("Hand Grabbing")]
@@ -92,7 +96,7 @@ public class CustomGrabber : OVRGrabber
         base.Update();
 
         handModel.SetActive(grabbedObject == null);
-
+        
         // Can grab an object.
         if (grabbedObject == null)
         {
@@ -213,6 +217,7 @@ public class CustomGrabber : OVRGrabber
             if (m_controller == OVRInput.Controller.LTouch)
             {
                 objectInLeftHand = closestGrabbable;
+
             }
             else
             {
@@ -220,6 +225,7 @@ public class CustomGrabber : OVRGrabber
             }
 
             m_grabbedObj = closestGrabbable;
+            grabbing = true;
             m_grabbedObj.GrabBegin(this, closestGrabbableCollider);
             SetPlayerIgnoreCollision(m_grabbedObj.gameObject, true);
 
@@ -269,6 +275,10 @@ public class CustomGrabber : OVRGrabber
         }
     }
 
+    public void hasBeenGrabbed()
+    {
+        grabbing = false;
+    }
 
     protected override void MoveGrabbedObject(Vector3 pos, Quaternion rot, bool forceTeleport = false)
     {

@@ -7,6 +7,7 @@ public class CustomGrabbable : OVRGrabbable
 {
     public static List<OVRGrabbable> Grabbables = new List<OVRGrabbable>();
     public static List<OVRGrabbable> DistanceGrabbables = new List<OVRGrabbable>();
+    public GameObject Hand;
 
     [Header("Distance Grab Settings")]
     public bool IsDistanceGrabbable;
@@ -37,6 +38,7 @@ public class CustomGrabbable : OVRGrabbable
 
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
+        Hand = hand.transform.gameObject;
         base.GrabBegin(hand, grabPoint);
         if (grabbableObjectsIgnoreRaycasts)
         {
@@ -48,6 +50,7 @@ public class CustomGrabbable : OVRGrabbable
 
     public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
     {
+        Hand.GetComponent<CustomGrabber>().hasBeenGrabbed();
         base.GrabEnd(linearVelocity, angularVelocity);
         OnGrabEnd.Invoke();
         if (grabbedBy == CustomGrabber.rightHandGrabber)
