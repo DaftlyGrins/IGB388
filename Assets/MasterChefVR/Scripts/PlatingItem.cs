@@ -19,7 +19,7 @@ public class PlatingItem : MonoBehaviour
     void Start()
     {
         GrabbedObjectLeft = false;
-        GrabbedObjectLeft = true;
+        GrabbedObjectRight = false;
         nearObject = false;
     }
 
@@ -28,15 +28,22 @@ public class PlatingItem : MonoBehaviour
         if (leftHand.GetComponent<CustomGrabber>().grabbing == true && GrabbedObjectLeft == false)
         {
             Debug.Log("MM FOOD?");
-            grabbedItem = leftHand.GetComponent<CustomGrabber>().grabbedObject.transform.gameObject;
-            pickedUpFood();
-            GrabbedObjectLeft = true;
+            if(leftHand.GetComponent<CustomGrabber>().grabbedObject.transform.gameObject.tag == "Food")
+            {
+                grabbedItem = leftHand.GetComponent<CustomGrabber>().grabbedObject.transform.gameObject;
+                pickedUpFood();
+                GrabbedObjectLeft = true;
+            }
         }
         else if (rightHand.GetComponent<CustomGrabber>().grabbing == true && GrabbedObjectRight == false)
         {
-            grabbedItem = rightHand.GetComponent<CustomGrabber>().grabbedObject.transform.gameObject;
-            pickedUpFood();
-            GrabbedObjectRight = true;
+            Debug.Log("More Food?");
+            if (rightHand.GetComponent<CustomGrabber>().grabbedObject.transform.gameObject.tag == "Food")
+            {
+                grabbedItem = rightHand.GetComponent<CustomGrabber>().grabbedObject.transform.gameObject;
+                pickedUpFood();
+                GrabbedObjectLeft = true;
+            }
         }
         else if(leftHand.GetComponent<CustomGrabber>().grabbing == false && GrabbedObjectLeft == true)
         {
@@ -44,6 +51,7 @@ public class PlatingItem : MonoBehaviour
         }
         else if (rightHand.GetComponent<CustomGrabber>().grabbing == false && GrabbedObjectRight == true)
         {
+            Debug.Log("Crumch");
             letGoFood();
         }
     }
@@ -54,7 +62,7 @@ public class PlatingItem : MonoBehaviour
         {
             Child = Instantiate(grabbedItem, targetLocation.transform.position, Quaternion.Euler(0, 0, 0));
             Child.name = "MM FOOD?";
-            Child.transform.SetParent(this.transform.parent);
+            Child.transform.SetParent(this.transform);
             Child.SetActive(false);
         }
     }
@@ -63,15 +71,21 @@ public class PlatingItem : MonoBehaviour
     {
         if(nearObject == true)
         {
-            if(leftHand.GetComponent<CustomGrabber>().grabbedObject == null && GrabbedObjectLeft == true)
+            if(leftHand.GetComponent<CustomGrabber>().grabbedObject == null && rightHand.GetComponent<CustomGrabber>().grabbedObject == null)
             {
+                Debug.Log("LMAO?");
                 grabbedItem.SetActive(false);
                 Child.SetActive(true);
             }
-            else if(rightHand.GetComponent<CustomGrabber>().grabbedObject == null && GrabbedObjectRight == true)
+        }
+        else
+        {
+            if (leftHand.GetComponent<CustomGrabber>().grabbedObject == null && rightHand.GetComponent<CustomGrabber>().grabbedObject == null)
             {
-                grabbedItem.SetActive(false);
-                Child.SetActive(true);
+                Debug.Log("byeeeeee");
+                Destroy(Child);
+                GrabbedObjectLeft = false;
+                GrabbedObjectRight = false;
             }
         }
     }
