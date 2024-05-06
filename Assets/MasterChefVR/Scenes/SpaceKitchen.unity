@@ -134,7 +134,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3868
+=======
+  m_Name: pb_Mesh-3908
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -301,7 +305,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 14
+=======
+      value: 13
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -372,6 +380,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 19299893}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -798,7 +810,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5544
+=======
+  m_Name: pb_Mesh-5580
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1054,6 +1070,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 638634721}
   m_grabPoints:
   - {fileID: 30577855}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -1469,7 +1489,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4038
+=======
+  m_Name: pb_Mesh-4078
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1791,13 +1815,185 @@ Mesh:
     offset: 0
     size: 0
     path: 
+<<<<<<< Updated upstream
+--- !u!43 &75615691
+=======
+--- !u!43 &75112434
+>>>>>>> Stashed changes
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+  m_Name: pb_Mesh-5184
+=======
+  m_Name: pb_Mesh-5192
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: -0.24742174, y: 0.3028229, z: -0.047172666}
+      m_Extent: {x: 0.3, y: 0.45, z: 0.016499998}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1152
+    _typelessdata: d5230cbf98b516be3e45fbbc00000000000000000000803f000080bf0000000000000000000080bfd5230c3f98b516be505c573d98b516be3e45fbbc00000000000000000000803f000080bf0000000000000000000080bf505c57bd98b516bed5230cbf00b9403f3e45fbbc00000000000000000000803f000080bf0000000000000000000080bfd5230c3f00b9403f505c573d00b9403f3e45fbbc00000000000000000000803f000080bf0000000000000000000080bf505c57bd00b9403f505c573d98b516be3e45fbbc0000803f000000000000000000000000000000000000803f000080bf3e45fbbc98b516be505c573d98b516bed06682bd0000803f000000000000000000000000000000000000803f000080bfd06682bd98b516be505c573d00b9403f3e45fbbc0000803f000000000000000000000000000000000000803f000080bf3e45fbbc00b9403f505c573d00b9403fd06682bd0000803f000000000000000000000000000000000000803f000080bfd06682bd00b9403f505c573d98b516bed06682bd0000000000000000000080bf0000803f0000000000000000000080bf505c573d98b516bed5230cbf98b516bed06682bd0000000000000000000080bf0000803f0000000000000000000080bfd5230cbf98b516be505c573d00b9403fd06682bd0000000000000000000080bf0000803f0000000000000000000080bf505c573d00b9403fd5230cbf00b9403fd06682bd0000000000000000000080bf0000803f0000000000000000000080bfd5230cbf00b9403fd5230cbf98b516bed06682bd000080bf00000000000000000000000000000000000080bf000080bfd066823d98b516bed5230cbf98b516be3e45fbbc000080bf00000000000000000000000000000000000080bf000080bf3e45fb3c98b516bed5230cbf00b9403fd06682bd000080bf00000000000000000000000000000000000080bf000080bfd066823d00b9403fd5230cbf00b9403f3e45fbbc000080bf00000000000000000000000000000000000080bf000080bf3e45fb3c00b9403fd5230cbf00b9403f3e45fbbc000000000000803f000000000000803f0000000000000000000080bfd5230cbf3e45fbbc505c573d00b9403f3e45fbbc000000000000803f000000000000803f0000000000000000000080bf505c573d3e45fbbcd5230cbf00b9403fd06682bd000000000000803f000000000000803f0000000000000000000080bfd5230cbfd06682bd505c573d00b9403fd06682bd000000000000803f000000000000803f0000000000000000000080bf505c573dd06682bdd5230cbf98b516bed06682bd00000000000080bf00000000000080bf0000000000000000000080bfd5230c3fd06682bd505c573d98b516bed06682bd00000000000080bf00000000000080bf0000000000000000000080bf505c57bdd06682bdd5230cbf98b516be3e45fbbc00000000000080bf00000000000080bf0000000000000000000080bfd5230c3f3e45fbbc505c573d98b516be3e45fbbc00000000000080bf00000000000080bf0000000000000000000080bf505c57bd3e45fbbc
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.24742174, y: 0.3028229, z: -0.047172666}
+    m_Extent: {x: 0.3, y: 0.45, z: 0.016499998}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!43 &75615691
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5184
+  m_Name: pb_Mesh-5220
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1961,7 +2157,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28686
+=======
+  m_Name: pb_Mesh28684
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2130,7 +2330,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3938
+=======
+  m_Name: pb_Mesh-3978
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5167,6 +5371,14 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+<<<<<<< Updated upstream
+=======
+--- !u!1 &108127794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+  m_PrefabInstance: {fileID: 1879825046}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1001 &113293207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5176,7 +5388,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 35
+=======
+      value: 34
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5247,6 +5463,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 113293212}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -5337,7 +5557,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cb10480ce1a40437796a4a0eb8d0d498, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 16
+=======
+      value: 15
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb10480ce1a40437796a4a0eb8d0d498, type: 3}
       propertyPath: m_LocalScale.x
@@ -5420,6 +5644,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 121329688}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -5502,7 +5730,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29820
+=======
+  m_Name: pb_Mesh29842
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5666,7 +5898,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5572
+=======
+  m_Name: pb_Mesh-5608
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5833,7 +6069,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 12
+=======
+      value: 11
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5917,6 +6157,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 136396431}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -9656,7 +9900,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4584
+=======
+  m_Name: pb_Mesh-4624
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9823,7 +10071,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 8
+=======
+      value: 7
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9907,6 +10159,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 185873682}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -10105,7 +10361,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a6ff5cebfd92340daabb2abca106d67a, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 9
+=======
+      value: 8
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a6ff5cebfd92340daabb2abca106d67a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10189,6 +10449,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 199192305}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -10258,7 +10522,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3924
+=======
+  m_Name: pb_Mesh-3964
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10425,7 +10693,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 67
+=======
+      value: 66
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -10521,6 +10793,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 220408646}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -10598,7 +10874,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 76
+=======
+      value: 75
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10687,6 +10967,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 239133720}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -11277,7 +11561,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 61
+=======
+      value: 60
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -11373,6 +11661,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 272682297}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -11789,7 +12081,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 73
+=======
+      value: 72
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11878,6 +12174,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 278464776}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -12114,7 +12414,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 36
+=======
+      value: 35
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12185,6 +12489,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 287555577}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -16069,7 +16377,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29680
+=======
+  m_Name: pb_Mesh29702
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16888,7 +17200,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 62
+=======
+      value: 61
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -16984,6 +17300,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 340859146}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -17056,7 +17376,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 32
+=======
+      value: 31
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17127,6 +17451,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 348256639}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -17209,7 +17537,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29648
+=======
+  m_Name: pb_Mesh29670
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -17482,7 +17814,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 77
+=======
+      value: 76
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17571,6 +17907,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 377209936}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -17984,7 +18324,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4010
+=======
+  m_Name: pb_Mesh-4050
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18151,7 +18495,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 21
+=======
+      value: 20
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -18234,6 +18582,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 391706799}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -18725,7 +19077,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 31
+=======
+      value: 30
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -18808,6 +19164,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 398362753}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -22745,7 +23105,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 33
+=======
+      value: 32
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22816,6 +23180,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 403782040}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -22901,7 +23269,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 60
+=======
+      value: 59
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -22997,6 +23369,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 411517571}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -23069,7 +23445,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 60cdb6d3b264a4649a5e20e4d1397f6b, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 55
+=======
+      value: 54
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 60cdb6d3b264a4649a5e20e4d1397f6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23153,6 +23533,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 412526396}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -23460,7 +23844,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 72
+=======
+      value: 71
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23549,6 +23937,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 426778493}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -23618,7 +24010,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5372
+=======
+  m_Name: pb_Mesh-5408
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23940,6 +24336,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &440550207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+  m_PrefabInstance: {fileID: 594208460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &441367565
 Mesh:
   m_ObjectHideFlags: 0
@@ -24113,7 +24514,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 75
+=======
+      value: 74
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24173,10 +24578,109 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &446213653
 MonoBehaviour:
+<<<<<<< Updated upstream
+=======
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446213652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4d90edb4de86e47b6ac0b30b112e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lever: {fileID: 0}
+--- !u!114 &446213654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446213652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0395abccf359a8848a51de2c4e46eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints:
+  - {fileID: 446213656}
+  Hand: {fileID: 0}
+  IsDistanceGrabbable: 0
+  grabbableObjectsIgnoreRaycasts: 1
+  OnGrabStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGrabEnd:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!75 &446213655
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446213652}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0.1, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!64 &446213656
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446213652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: d36cb6429389843309993f592cb0aa63, type: 3}
+--- !u!65 &446213657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446213652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.1, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &446213658
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446213652}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!43 &447844895
+Mesh:
+>>>>>>> Stashed changes
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 446213652}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -24265,13 +24769,177 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+  m_Name: pb_Mesh-3922
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: 0.044838667, y: 0.7985432, z: -0.028626919}
+      m_Extent: {x: 0.015000001, y: 1, z: 0.015000001}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1152
+    _typelessdata: 3870f43cb04a4ebe71435fbc00000000000000000000803f000080bf0000000000000000000080bf3870f4bcb04a4ebe6419753db04a4ebe71435fbc00000000000000000000803f000080bf0000000000000000000080bf641975bdb04a4ebe3870f43caa36e63f71435fbc00000000000000000000803f000080bf0000000000000000000080bf3870f4bcaa36e63f6419753daa36e63f71435fbc00000000000000000000803f000080bf0000000000000000000080bf641975bdaa36e63f6419753db04a4ebe71435fbc0000803f000000000000000000000000000000000000803f000080bf71435fbcb04a4ebe6419753db04a4ebe24b232bd0000803f000000000000000000000000000000000000803f000080bf24b232bdb04a4ebe6419753daa36e63f71435fbc0000803f000000000000000000000000000000000000803f000080bf71435fbcaa36e63f6419753daa36e63f24b232bd0000803f000000000000000000000000000000000000803f000080bf24b232bdaa36e63f6419753db04a4ebe24b232bd0000000000000000000080bf0000803f0000000000000000000080bf6419753db04a4ebe3870f43cb04a4ebe24b232bd0000000000000000000080bf0000803f0000000000000000000080bf3870f43cb04a4ebe6419753daa36e63f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf6419753daa36e63f3870f43caa36e63f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf3870f43caa36e63f3870f43cb04a4ebe24b232bd000080bf00000000000000000000000000000000000080bf000080bf24b2323db04a4ebe3870f43cb04a4ebe71435fbc000080bf00000000000000000000000000000000000080bf000080bf71435f3cb04a4ebe3870f43caa36e63f24b232bd000080bf00000000000000000000000000000000000080bf000080bf24b2323daa36e63f3870f43caa36e63f71435fbc000080bf00000000000000000000000000000000000080bf000080bf71435f3caa36e63f3870f43caa36e63f71435fbc000000000000803f000000000000803f0000000000000000000080bf3870f43c71435fbc6419753daa36e63f71435fbc000000000000803f000000000000803f0000000000000000000080bf6419753d71435fbc3870f43caa36e63f24b232bd000000000000803f000000000000803f0000000000000000000080bf3870f43c24b232bd6419753daa36e63f24b232bd000000000000803f000000000000803f0000000000000000000080bf6419753d24b232bd3870f43cb04a4ebe24b232bd00000000000080bf00000000000080bf0000000000000000000080bf3870f4bc24b232bd6419753db04a4ebe24b232bd00000000000080bf00000000000080bf0000000000000000000080bf641975bd24b232bd3870f43cb04a4ebe71435fbc00000000000080bf00000000000080bf0000000000000000000080bf3870f4bc71435fbc6419753db04a4ebe71435fbc00000000000080bf00000000000080bf0000000000000000000080bf641975bd71435fbc
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.044838667, y: 0.7985432, z: -0.028626919}
+    m_Extent: {x: 0.015000001, y: 1, z: 0.015000001}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+>>>>>>> Stashed changes
 --- !u!43 &459771033
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29152
+=======
+  m_Name: pb_Mesh29158
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24468,7 +25136,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28504
+=======
+  m_Name: pb_Mesh28502
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24838,7 +25510,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4640
+=======
+  m_Name: pb_Mesh-4680
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25160,6 +25836,75 @@ Mesh:
     offset: 0
     size: 0
     path: 
+<<<<<<< Updated upstream
+=======
+--- !u!1001 &496468466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 943511378}
+    m_Modifications:
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.204
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586537374597, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_Name
+      value: GrabSnapPointLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933404586537374597, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+--- !u!4 &496468467 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8933404586536882085, guid: 590fcd5df997a80498901beb76410aae, type: 3}
+  m_PrefabInstance: {fileID: 496468466}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1001 &507590329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25169,7 +25914,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 39
+=======
+      value: 38
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25240,6 +25989,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 507590334}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -25674,7 +26427,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 23
+=======
+      value: 22
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -25757,6 +26514,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 541985135}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -25889,7 +26650,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5428
+=======
+  m_Name: pb_Mesh-5464
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26397,7 +27162,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5486
+=======
+  m_Name: pb_Mesh-5522
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26812,7 +27581,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28382
+=======
+  m_Name: pb_Mesh28380
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27143,7 +27916,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 68
+=======
+      value: 67
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -27239,6 +28016,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 584355958}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -27369,13 +28150,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
   m_PrefabInstance: {fileID: 594208460}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!64 &594208464
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440550207}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+--- !u!54 &594208465
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440550207}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+>>>>>>> Stashed changes
 --- !u!43 &601196846
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29466
+=======
+  m_Name: pb_Mesh29474
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27818,7 +28636,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 17
+=======
+      value: 16
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -27901,6 +28723,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 617334171}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -28052,7 +28878,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 45
+=======
+      value: 44
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28123,6 +28953,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 622941155}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -28499,7 +29333,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 26
+=======
+      value: 25
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -28582,6 +29420,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 644642895}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -28722,7 +29564,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 28
+=======
+      value: 27
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -28805,6 +29651,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 665105670}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -29104,7 +29954,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 13
+=======
+      value: 12
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -29187,6 +30041,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 681863930}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -29613,7 +30471,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4080
+=======
+  m_Name: pb_Mesh-4120
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29797,7 +30659,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 22
+=======
+      value: 23
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
       propertyPath: m_LocalScale.x
@@ -29880,7 +30746,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5358
+=======
+  m_Name: pb_Mesh-5394
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30044,7 +30914,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5600
+=======
+  m_Name: pb_Mesh-5636
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30552,7 +31426,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh30394
+=======
+  m_Name: pb_Mesh30418
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30716,7 +31594,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4066
+=======
+  m_Name: pb_Mesh-4106
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31044,7 +31926,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh30224
+=======
+  m_Name: pb_Mesh30248
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31211,7 +32097,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 30
+=======
+      value: 29
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -31294,6 +32184,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 771357118}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -31590,6 +32484,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5268
   serializedVersion: 10
   m_SubMeshes:
@@ -31755,6 +32650,9 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh-4556
+=======
+  m_Name: pb_Mesh-5304
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31765,8 +32663,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 24
     localAABB:
-      m_Center: {x: 0.044838667, y: 0.7985432, z: -0.028626919}
-      m_Extent: {x: 0.015000001, y: 1, z: 0.015000001}
+      m_Center: {x: -0.24742174, y: 0.30282298, z: -0.047172666}
+      m_Extent: {x: 0.3, y: 0.016499996, z: 0.016499998}
   m_Shapes:
     vertices: []
     shapes: []
@@ -31845,7 +32743,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 1152
-    _typelessdata: 3870f43cb04a4ebe71435fbc00000000000000000000803f000080bf0000000000000000000080bf3870f4bcb04a4ebe6419753db04a4ebe71435fbc00000000000000000000803f000080bf0000000000000000000080bf641975bdb04a4ebe3870f43caa36e63f71435fbc00000000000000000000803f000080bf0000000000000000000080bf3870f4bcaa36e63f6419753daa36e63f71435fbc00000000000000000000803f000080bf0000000000000000000080bf641975bdaa36e63f6419753db04a4ebe71435fbc0000803f000000000000000000000000000000000000803f000080bf71435fbcb04a4ebe6419753db04a4ebe24b232bd0000803f000000000000000000000000000000000000803f000080bf24b232bdb04a4ebe6419753daa36e63f71435fbc0000803f000000000000000000000000000000000000803f000080bf71435fbcaa36e63f6419753daa36e63f24b232bd0000803f000000000000000000000000000000000000803f000080bf24b232bdaa36e63f6419753db04a4ebe24b232bd0000000000000000000080bf0000803f0000000000000000000080bf6419753db04a4ebe3870f43cb04a4ebe24b232bd0000000000000000000080bf0000803f0000000000000000000080bf3870f43cb04a4ebe6419753daa36e63f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf6419753daa36e63f3870f43caa36e63f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf3870f43caa36e63f3870f43cb04a4ebe24b232bd000080bf00000000000000000000000000000000000080bf000080bf24b2323db04a4ebe3870f43cb04a4ebe71435fbc000080bf00000000000000000000000000000000000080bf000080bf71435f3cb04a4ebe3870f43caa36e63f24b232bd000080bf00000000000000000000000000000000000080bf000080bf24b2323daa36e63f3870f43caa36e63f71435fbc000080bf00000000000000000000000000000000000080bf000080bf71435f3caa36e63f3870f43caa36e63f71435fbc000000000000803f000000000000803f0000000000000000000080bf3870f43c71435fbc6419753daa36e63f71435fbc000000000000803f000000000000803f0000000000000000000080bf6419753d71435fbc3870f43caa36e63f24b232bd000000000000803f000000000000803f0000000000000000000080bf3870f43c24b232bd6419753daa36e63f24b232bd000000000000803f000000000000803f0000000000000000000080bf6419753d24b232bd3870f43cb04a4ebe24b232bd00000000000080bf00000000000080bf0000000000000000000080bf3870f4bc24b232bd6419753db04a4ebe24b232bd00000000000080bf00000000000080bf0000000000000000000080bf641975bd24b232bd3870f43cb04a4ebe71435fbc00000000000080bf00000000000080bf0000000000000000000080bf3870f4bc71435fbc6419753db04a4ebe71435fbc00000000000080bf00000000000080bf0000000000000000000080bf641975bd71435fbc
+    _typelessdata: d5230cbfed98923e3e45fbbc00000000000000000000803f000080bf0000000000000000000080bfd5230c3fed98923e505c573ded98923e3e45fbbc00000000000000000000803f000080bf0000000000000000000080bf505c57bded98923ed5230cbf4d7ea33e3e45fbbc00000000000000000000803f000080bf0000000000000000000080bfd5230c3f4d7ea33e505c573d4d7ea33e3e45fbbc00000000000000000000803f000080bf0000000000000000000080bf505c57bd4d7ea33e505c573ded98923e3e45fbbc0000803f000000000000000000000000000000000000803f000080bf3e45fbbced98923e505c573ded98923ed06682bd0000803f000000000000000000000000000000000000803f000080bfd06682bded98923e505c573d4d7ea33e3e45fbbc0000803f000000000000000000000000000000000000803f000080bf3e45fbbc4d7ea33e505c573d4d7ea33ed06682bd0000803f000000000000000000000000000000000000803f000080bfd06682bd4d7ea33e505c573ded98923ed06682bd0000000000000000000080bf0000803f0000000000000000000080bf505c573ded98923ed5230cbfed98923ed06682bd0000000000000000000080bf0000803f0000000000000000000080bfd5230cbfed98923e505c573d4d7ea33ed06682bd0000000000000000000080bf0000803f0000000000000000000080bf505c573d4d7ea33ed5230cbf4d7ea33ed06682bd0000000000000000000080bf0000803f0000000000000000000080bfd5230cbf4d7ea33ed5230cbfed98923ed06682bd000080bf00000000000000000000000000000000000080bf000080bfd066823ded98923ed5230cbfed98923e3e45fbbc000080bf00000000000000000000000000000000000080bf000080bf3e45fb3ced98923ed5230cbf4d7ea33ed06682bd000080bf00000000000000000000000000000000000080bf000080bfd066823d4d7ea33ed5230cbf4d7ea33e3e45fbbc000080bf00000000000000000000000000000000000080bf000080bf3e45fb3c4d7ea33ed5230cbf4d7ea33e3e45fbbc000000000000803f000000000000803f0000000000000000000080bfd5230cbf3e45fbbc505c573d4d7ea33e3e45fbbc000000000000803f000000000000803f0000000000000000000080bf505c573d3e45fbbcd5230cbf4d7ea33ed06682bd000000000000803f000000000000803f0000000000000000000080bfd5230cbfd06682bd505c573d4d7ea33ed06682bd000000000000803f000000000000803f0000000000000000000080bf505c573dd06682bdd5230cbfed98923ed06682bd00000000000080bf00000000000080bf0000000000000000000080bfd5230c3fd06682bd505c573ded98923ed06682bd00000000000080bf00000000000080bf0000000000000000000080bf505c57bdd06682bdd5230cbfed98923e3e45fbbc00000000000080bf00000000000080bf0000000000000000000080bfd5230c3f3e45fbbc505c573ded98923e3e45fbbc00000000000080bf00000000000080bf0000000000000000000080bf505c57bd3e45fbbc
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -31899,8 +32797,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0.044838667, y: 0.7985432, z: -0.028626919}
-    m_Extent: {x: 0.015000001, y: 1, z: 0.015000001}
+    m_Center: {x: -0.24742174, y: 0.30282298, z: -0.047172666}
+    m_Extent: {x: 0.3, y: 0.016499996, z: 0.016499998}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -32328,7 +33226,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5586
+=======
+  m_Name: pb_Mesh-5622
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32656,7 +33558,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28722
+=======
+  m_Name: pb_Mesh28720
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32823,7 +33729,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 37
+=======
+      value: 36
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32894,6 +33804,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 829343365}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -32975,6 +33889,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cb10480ce1a40437796a4a0eb8d0d498, type: 3}
   m_PrefabInstance: {fileID: 121329682}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!43 &843706117
 Mesh:
   m_ObjectHideFlags: 0
@@ -33139,13 +34054,19 @@ Mesh:
     offset: 0
     size: 0
     path: 
+=======
+>>>>>>> Stashed changes
 --- !u!43 &847567737
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5472
+=======
+  m_Name: pb_Mesh-5508
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33472,6 +34393,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< Updated upstream
     m_TransformParent: {fileID: 1198775050}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
@@ -33489,6 +34411,25 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.0020008
+=======
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.076
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.638
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.542
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -33522,6 +34463,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: FishFillet (14)
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 919132149155446097, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 3316992658331686828, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -33530,6 +34478,13 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 8700725330082129686, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
 --- !u!1 &854264103 stripped
@@ -33573,6 +34528,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 618386962}
   m_grabPoints:
   - {fileID: 854264108}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -33642,7 +34601,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28884
+=======
+  m_Name: pb_Mesh28882
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34317,7 +35280,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 24
+=======
+      value: 23
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -34400,6 +35367,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 877253004}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -34532,7 +35503,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5558
+=======
+  m_Name: pb_Mesh-5594
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35070,7 +36045,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5400
+=======
+  m_Name: pb_Mesh-5436
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35320,7 +36299,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 50
+=======
+      value: 49
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35391,6 +36374,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 918643125}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -35476,7 +36463,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 25
+=======
+      value: 24
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -35559,6 +36550,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 919111926}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -35690,13 +36685,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
   m_PrefabInstance: {fileID: 113293207}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!43 &931394574
+=======
+--- !u!43 &929183356
+>>>>>>> Stashed changes
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-2034
+=======
+  m_Name: pb_Mesh-4596
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35854,6 +36857,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
+<<<<<<< Updated upstream
 --- !u!4 &934788978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
@@ -36108,6 +37112,548 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!43 &950749732
+=======
+--- !u!43 &931394574
+>>>>>>> Stashed changes
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+  m_Name: pb_Mesh-2132
+=======
+  m_Name: pb_Mesh-2034
+>>>>>>> Stashed changes
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: 0.044838667, y: 0.7985432, z: -0.028626919}
+<<<<<<< Updated upstream
+      m_Extent: {x: 0.015000001, y: 0.014999986, z: 0.015000001}
+=======
+      m_Extent: {x: 0.015000001, y: 1, z: 0.015000001}
+>>>>>>> Stashed changes
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00100011001200110013001200140015001600150017001600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1152
+<<<<<<< Updated upstream
+    _typelessdata: 3870f43c4a96483f71435fbc00000000000000000000803f000080bf0000000000000000000080bf3870f4bc4a96483f6419753d4a96483f71435fbc00000000000000000000803f000080bf0000000000000000000080bf641975bd4a96483f3870f43c5e44503f71435fbc00000000000000000000803f000080bf0000000000000000000080bf3870f4bc5e44503f6419753d5e44503f71435fbc00000000000000000000803f000080bf0000000000000000000080bf641975bd5e44503f6419753d4a96483f71435fbc0000803f000000000000000000000000000000000000803f000080bf71435fbc4a96483f6419753d4a96483f24b232bd0000803f000000000000000000000000000000000000803f000080bf24b232bd4a96483f6419753d5e44503f71435fbc0000803f000000000000000000000000000000000000803f000080bf71435fbc5e44503f6419753d5e44503f24b232bd0000803f000000000000000000000000000000000000803f000080bf24b232bd5e44503f6419753d4a96483f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf6419753d4a96483f3870f43c4a96483f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf3870f43c4a96483f6419753d5e44503f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf6419753d5e44503f3870f43c5e44503f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf3870f43c5e44503f3870f43c4a96483f24b232bd000080bf00000000000000000000000000000000000080bf000080bf24b2323d4a96483f3870f43c4a96483f71435fbc000080bf00000000000000000000000000000000000080bf000080bf71435f3c4a96483f3870f43c5e44503f24b232bd000080bf00000000000000000000000000000000000080bf000080bf24b2323d5e44503f3870f43c5e44503f71435fbc000080bf00000000000000000000000000000000000080bf000080bf71435f3c5e44503f3870f43c5e44503f71435fbc000000000000803f000000000000803f0000000000000000000080bf3870f43c71435fbc6419753d5e44503f71435fbc000000000000803f000000000000803f0000000000000000000080bf6419753d71435fbc3870f43c5e44503f24b232bd000000000000803f000000000000803f0000000000000000000080bf3870f43c24b232bd6419753d5e44503f24b232bd000000000000803f000000000000803f0000000000000000000080bf6419753d24b232bd3870f43c4a96483f24b232bd00000000000080bf00000000000080bf0000000000000000000080bf3870f4bc24b232bd6419753d4a96483f24b232bd00000000000080bf00000000000080bf0000000000000000000080bf641975bd24b232bd3870f43c4a96483f71435fbc00000000000080bf00000000000080bf0000000000000000000080bf3870f4bc71435fbc6419753d4a96483f71435fbc00000000000080bf00000000000080bf0000000000000000000080bf641975bd71435fbc
+=======
+    _typelessdata: 3870f43cb04a4ebe71435fbc00000000000000000000803f000080bf0000000000000000000080bf3870f4bcb04a4ebe6419753db04a4ebe71435fbc00000000000000000000803f000080bf0000000000000000000080bf641975bdb04a4ebe3870f43caa36e63f71435fbc00000000000000000000803f000080bf0000000000000000000080bf3870f4bcaa36e63f6419753daa36e63f71435fbc00000000000000000000803f000080bf0000000000000000000080bf641975bdaa36e63f6419753db04a4ebe71435fbc0000803f000000000000000000000000000000000000803f000080bf71435fbcb04a4ebe6419753db04a4ebe24b232bd0000803f000000000000000000000000000000000000803f000080bf24b232bdb04a4ebe6419753daa36e63f71435fbc0000803f000000000000000000000000000000000000803f000080bf71435fbcaa36e63f6419753daa36e63f24b232bd0000803f000000000000000000000000000000000000803f000080bf24b232bdaa36e63f6419753db04a4ebe24b232bd0000000000000000000080bf0000803f0000000000000000000080bf6419753db04a4ebe3870f43cb04a4ebe24b232bd0000000000000000000080bf0000803f0000000000000000000080bf3870f43cb04a4ebe6419753daa36e63f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf6419753daa36e63f3870f43caa36e63f24b232bd0000000000000000000080bf0000803f0000000000000000000080bf3870f43caa36e63f3870f43cb04a4ebe24b232bd000080bf00000000000000000000000000000000000080bf000080bf24b2323db04a4ebe3870f43cb04a4ebe71435fbc000080bf00000000000000000000000000000000000080bf000080bf71435f3cb04a4ebe3870f43caa36e63f24b232bd000080bf00000000000000000000000000000000000080bf000080bf24b2323daa36e63f3870f43caa36e63f71435fbc000080bf00000000000000000000000000000000000080bf000080bf71435f3caa36e63f3870f43caa36e63f71435fbc000000000000803f000000000000803f0000000000000000000080bf3870f43c71435fbc6419753daa36e63f71435fbc000000000000803f000000000000803f0000000000000000000080bf6419753d71435fbc3870f43caa36e63f24b232bd000000000000803f000000000000803f0000000000000000000080bf3870f43c24b232bd6419753daa36e63f24b232bd000000000000803f000000000000803f0000000000000000000080bf6419753d24b232bd3870f43cb04a4ebe24b232bd00000000000080bf00000000000080bf0000000000000000000080bf3870f4bc24b232bd6419753db04a4ebe24b232bd00000000000080bf00000000000080bf0000000000000000000080bf641975bd24b232bd3870f43cb04a4ebe71435fbc00000000000080bf00000000000080bf0000000000000000000080bf3870f4bc71435fbc6419753db04a4ebe71435fbc00000000000080bf00000000000080bf0000000000000000000080bf641975bd71435fbc
+>>>>>>> Stashed changes
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0.044838667, y: 0.7985432, z: -0.028626919}
+<<<<<<< Updated upstream
+    m_Extent: {x: 0.015000001, y: 0.014999986, z: 0.015000001}
+=======
+    m_Extent: {x: 0.015000001, y: 1, z: 0.015000001}
+>>>>>>> Stashed changes
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+<<<<<<< Updated upstream
+=======
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+--- !u!4 &934788978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+  m_PrefabInstance: {fileID: 1234453472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &943511377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1835757657}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_Name
+      value: plate01
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.677
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.907
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6237524
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+--- !u!4 &943511378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+  m_PrefabInstance: {fileID: 943511377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &943511379 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+  m_PrefabInstance: {fileID: 943511377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &943511380
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25995606
+  m_Center: {x: 0.000000029802322, y: 0.013706399, z: 0.000000044703484}
+--- !u!114 &943511381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5291e4218eb2845b48dfe463277500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHand: {fileID: 1397094574}
+  rightHand: {fileID: 1504775457}
+  targetLocation: {fileID: 1452132467}
+  YellerBelly: {fileID: 2100000, guid: 46df2d8e75dbe4946a140ecc778a0afe, type: 2}
+--- !u!114 &943511382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0395abccf359a8848a51de2c4e46eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 496468467}
+  m_grabPoints:
+  - {fileID: 943511380}
+  Hand: {fileID: 0}
+  IsDistanceGrabbable: 0
+  grabbableObjectsIgnoreRaycasts: 1
+  OnGrabStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGrabEnd:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!227 &943511383
+BillboardRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511379}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Billboard: {fileID: 0}
+--- !u!54 &943511386
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511379}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &943511387
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943511379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+--- !u!1001 &948651536
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1198775050}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.557
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.90410006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.4989996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+      propertyPath: m_Name
+      value: AppleGreen (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+--- !u!1 &948651537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+  m_PrefabInstance: {fileID: 948651536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &948651538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948651537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0395abccf359a8848a51de2c4e46eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints:
+  - {fileID: 948651541}
+  Hand: {fileID: 0}
+  IsDistanceGrabbable: 0
+  grabbableObjectsIgnoreRaycasts: 1
+  OnGrabStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnGrabEnd:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &948651539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948651537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4d90edb4de86e47b6ac0b30b112e96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lever: {fileID: 0}
+--- !u!75 &948651540
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948651537}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0.05, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!64 &948651541
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948651537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 289301614986012343, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
+--- !u!65 &948651542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948651537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &948651543
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948651537}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!43 &950749732
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36264,6 +37810,7 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
+>>>>>>> Stashed changes
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: 1
   m_StreamData:
@@ -36277,7 +37824,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh30344
+=======
+  m_Name: pb_Mesh30368
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36731,7 +38282,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3896
+=======
+  m_Name: pb_Mesh-3936
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36895,7 +38450,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5414
+=======
+  m_Name: pb_Mesh-5450
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37067,7 +38626,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 29
+=======
+      value: 28
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -37150,6 +38713,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1018527809}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -37290,7 +38857,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 19
+=======
+      value: 18
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -37373,6 +38944,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1026721701}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -37455,7 +39030,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh30210
+=======
+  m_Name: pb_Mesh30234
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37624,7 +39203,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29242
+=======
+  m_Name: pb_Mesh29248
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38285,7 +39868,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3980
+=======
+  m_Name: pb_Mesh-4020
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38443,6 +40030,125 @@ Mesh:
     offset: 0
     size: 0
     path: 
+<<<<<<< Updated upstream
+=======
+--- !u!1001 &1085950672
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 120854, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 195790, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_Name
+      value: TeleportPoint (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 195790, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.216063
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0019999743
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.4162645
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.30395
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.95268804
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -144.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 13671688, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13671688, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1596145730556768, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1596145730556768, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714669993115786, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714669993115786, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108714669993115786, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 1e-45
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 13671688, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+--- !u!1 &1085950673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 195790, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
+  m_PrefabInstance: {fileID: 1085950672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1085950674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085950673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.01, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!1 &1103510956
 GameObject:
   m_ObjectHideFlags: 0
@@ -38492,7 +40198,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5386
+=======
+  m_Name: pb_Mesh-5422
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38656,7 +40366,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5226
+=======
+  m_Name: pb_Mesh-5262
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39331,7 +41045,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 27
+=======
+      value: 26
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -39414,6 +41132,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1153041712}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -39546,7 +41268,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 66
+=======
+      value: 65
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -39642,6 +41368,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1168537217}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -39803,6 +41533,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 799769325}
   m_grabPoints:
   - {fileID: 1172511756}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -39898,7 +41632,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 71
+=======
+      value: 70
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39987,6 +41725,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1179114107}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -40059,7 +41801,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 60cdb6d3b264a4649a5e20e4d1397f6b, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 56
+=======
+      value: 55
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 60cdb6d3b264a4649a5e20e4d1397f6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40143,6 +41889,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1182457142}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -40408,7 +42158,10 @@ Transform:
   - {fileID: 1201409846}
   - {fileID: 1551139713}
   - {fileID: 1172511752}
+<<<<<<< Updated upstream
   - {fileID: 854264104}
+=======
+>>>>>>> Stashed changes
   - {fileID: 1821517411}
   - {fileID: 1896670531}
   - {fileID: 661299341}
@@ -40482,7 +42235,11 @@ Transform:
   - {fileID: 239133715}
   - {fileID: 377209931}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 18
+=======
+  m_RootOrder: 19
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1199061676
 PrefabInstance:
@@ -40493,7 +42250,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 44
+=======
+      value: 43
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40564,6 +42325,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1199061681}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -40997,6 +42762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -5.231
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
@@ -41006,6 +42772,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_LocalPosition.z
       value: -4.5790005
+=======
+      value: -5.565
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.186
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.265
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -41082,6 +42859,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 412749707}
   m_grabPoints:
   - {fileID: 1201409850}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -41646,7 +43427,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29626
+=======
+  m_Name: pb_Mesh29646
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41813,7 +43598,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 38
+=======
+      value: 37
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41884,6 +43673,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1211249916}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -41969,7 +43762,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 43
+=======
+      value: 42
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42040,6 +43837,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1213308269}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -43307,7 +45108,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5314
+=======
+  m_Name: pb_Mesh-5350
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43638,7 +45443,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 51
+=======
+      value: 50
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43709,6 +45518,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1234453477}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -43785,12 +45598,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< Updated upstream
 --- !u!43 &1243585646
+=======
+--- !u!43 &1246112112
+>>>>>>> Stashed changes
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5156
   serializedVersion: 10
   m_SubMeshes:
@@ -43955,6 +45773,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> Stashed changes
   m_Name: pb_Mesh-2118
   serializedVersion: 10
   m_SubMeshes:
@@ -44119,7 +45939,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28540
+=======
+  m_Name: pb_Mesh28538
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44277,6 +46101,44 @@ Mesh:
     offset: 0
     size: 0
     path: 
+<<<<<<< Updated upstream
+=======
+--- !u!1 &1265134722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+  m_PrefabInstance: {fileID: 326566061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1265134725
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265134722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+--- !u!54 &1265134726
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265134722}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+>>>>>>> Stashed changes
 --- !u!4 &1270079545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
@@ -44288,7 +46150,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28366
+=======
+  m_Name: pb_Mesh28364
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44470,7 +46336,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5198
+=======
+  m_Name: pb_Mesh-5234
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44659,7 +46529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 20
+=======
+      value: 21
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 476292, guid: ded1d2e0d283d62428212702b4ed5f3f, type: 3}
       propertyPath: m_LocalScale.x
@@ -44765,7 +46639,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5614
+=======
+  m_Name: pb_Mesh-5650
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44929,7 +46807,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-2894
+=======
+  m_Name: pb_Mesh-2914
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45093,7 +46975,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29402
+=======
+  m_Name: pb_Mesh29410
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45593,7 +47479,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 19
+=======
+  m_RootOrder: 20
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1374370882
 Mesh:
@@ -45601,7 +47491,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29580
+=======
+  m_Name: pb_Mesh29600
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45770,7 +47664,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5514
+=======
+  m_Name: pb_Mesh-5550
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45928,6 +47826,14 @@ Mesh:
     offset: 0
     size: 0
     path: 
+<<<<<<< Updated upstream
+=======
+--- !u!1 &1397094574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5483009787015072957, guid: 4d75f678a75154d4b91d5de1e39214ed, type: 3}
+  m_PrefabInstance: {fileID: 2041957728}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1001 &1407949218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45937,7 +47843,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 47
+=======
+      value: 46
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46008,6 +47918,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1407949223}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -46211,7 +48125,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5442
+=======
+  m_Name: pb_Mesh-5478
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -46380,7 +48298,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5500
+=======
+  m_Name: pb_Mesh-5536
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -47219,7 +49141,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 74
+=======
+      value: 73
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d36cb6429389843309993f592cb0aa63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -47308,6 +49234,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1485361107}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -47889,6 +49819,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
   m_PrefabInstance: {fileID: 1806960771}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!1 &1504775457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2615747308058072310, guid: 4d75f678a75154d4b91d5de1e39214ed, type: 3}
+  m_PrefabInstance: {fileID: 2041957728}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &1507285236
 GameObject:
   m_ObjectHideFlags: 0
@@ -48159,7 +50097,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 40
+=======
+      value: 39
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48230,6 +50172,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1514097232}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -48869,7 +50815,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4052
+=======
+  m_Name: pb_Mesh-4092
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49033,7 +50983,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5458
+=======
+  m_Name: pb_Mesh-5494
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49200,7 +51154,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 41
+=======
+      value: 40
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49271,6 +51229,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1544861252}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -49609,6 +51571,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 1554434019}
   m_grabPoints:
   - {fileID: 1551139717}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -49668,7 +51634,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 60cdb6d3b264a4649a5e20e4d1397f6b, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 15
+=======
+      value: 14
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 60cdb6d3b264a4649a5e20e4d1397f6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49739,6 +51709,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1551914603}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -50231,7 +52205,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5328
+=======
+  m_Name: pb_Mesh-5364
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50395,7 +52373,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3996
+=======
+  m_Name: pb_Mesh-4036
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50559,7 +52541,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4654
+=======
+  m_Name: pb_Mesh-4694
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50731,7 +52717,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 34
+=======
+      value: 33
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50802,6 +52792,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1594666553}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -51746,7 +53740,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5530
+=======
+  m_Name: pb_Mesh-5566
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -51976,7 +53974,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5254
+=======
+  m_Name: pb_Mesh-5290
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52140,7 +54142,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29806
+=======
+  m_Name: pb_Mesh29828
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52312,7 +54318,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 63
+=======
+      value: 62
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -52408,6 +54418,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1655871166}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -52480,7 +54494,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 70
+=======
+      value: 69
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -52576,6 +54594,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1657094429}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -52650,7 +54672,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3910
+=======
+  m_Name: pb_Mesh-3950
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52814,7 +54840,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29452
+=======
+  m_Name: pb_Mesh29460
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52981,7 +55011,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 52
+=======
+      value: 51
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53052,6 +55086,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1679228751}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -53137,7 +55175,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cb10480ce1a40437796a4a0eb8d0d498, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 57
+=======
+      value: 56
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb10480ce1a40437796a4a0eb8d0d498, type: 3}
       propertyPath: m_LocalScale.x
@@ -53233,6 +55275,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1682761593}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -53376,7 +55422,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 22
+=======
+      value: 21
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -53459,6 +55509,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1696959254}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -53541,7 +55595,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4612
+=======
+  m_Name: pb_Mesh-4652
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53705,7 +55763,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28472
+=======
+  m_Name: pb_Mesh28470
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54049,18 +56111,18 @@ PrefabInstance:
     - target: {fileID: 8289638464915097449, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 843706117}
+      objectReference: {fileID: 447844895}
     - target: {fileID: 8289638464915097450, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 843706117}
+      objectReference: {fileID: 447844895}
     - target: {fileID: 8289638464915097454, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 843706117}
+      objectReference: {fileID: 447844895}
     - target: {fileID: 8289638464915097454, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
       propertyPath: m_VersionIndex
-      value: 4838
+      value: 4841
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
@@ -54075,7 +56137,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5342
+=======
+  m_Name: pb_Mesh-5378
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54582,7 +56648,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5298
+=======
+  m_Name: pb_Mesh-5334
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54817,7 +56887,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4626
+=======
+  m_Name: pb_Mesh-4666
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -55006,7 +57080,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28956
+=======
+  m_Name: pb_Mesh28958
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -55501,7 +57579,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 49
+=======
+      value: 48
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55572,6 +57654,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1806960776}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -55690,7 +57776,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 6
+=======
+      value: 5
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55779,6 +57869,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 1739568916}
   m_grabPoints:
   - {fileID: 1821517415}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -55835,7 +57929,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4542
+=======
+  m_Name: pb_Mesh-4582
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -55999,7 +58097,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4570
+=======
+  m_Name: pb_Mesh-4610
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -56190,7 +58292,11 @@ Transform:
   - {fileID: 1879825047}
   - {fileID: 326566062}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 21
+=======
+  m_RootOrder: 22
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1838422867
 Mesh:
@@ -56365,7 +58471,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 20
+=======
+      value: 19
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -56448,6 +58558,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1843910210}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -56533,7 +58647,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 46
+=======
+      value: 45
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56604,6 +58722,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1847246483}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -56689,7 +58811,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 11
+=======
+      value: 10
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 903b7910f2cde4c96b452f0008927d45, type: 3}
       propertyPath: m_LocalScale.x
@@ -56785,6 +58911,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1848243643}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -56996,6 +59126,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 1625564719}
   m_grabPoints:
   - {fileID: 1849589496}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -57055,7 +59189,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 59
+=======
+      value: 58
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -57151,6 +59289,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1853229198}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -57223,7 +59365,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 69
+=======
+      value: 68
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -57319,6 +59465,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1855676613}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -57388,7 +59538,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5282
+=======
+  m_Name: pb_Mesh-5318
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -57716,7 +59870,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29530
+=======
+  m_Name: pb_Mesh29544
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -57936,6 +60094,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
   m_PrefabInstance: {fileID: 1879825046}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!54 &1879825050
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108127794}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &1879825051
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108127794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 6f0a4d48fa5ef4b43a409c7ba4089943, type: 3}
+>>>>>>> Stashed changes
 --- !u!1001 &1888392040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57945,7 +60136,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 65
+=======
+      value: 64
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -58041,6 +60236,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1888392045}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -58113,7 +60312,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 7
+=======
+      value: 6
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 027a8a1503b22442ea5ec6eb63ff901f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58202,6 +60405,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 1692765343}
   m_grabPoints:
   - {fileID: 1896670535}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -58258,7 +60465,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29372
+=======
+  m_Name: pb_Mesh29380
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58586,7 +60797,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5170
+=======
+  m_Name: pb_Mesh-5206
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58753,7 +60968,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cb10480ce1a40437796a4a0eb8d0d498, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 58
+=======
+      value: 57
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb10480ce1a40437796a4a0eb8d0d498, type: 3}
       propertyPath: m_LocalScale.x
@@ -58849,6 +61068,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1928572280}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -58921,7 +61144,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 42
+=======
+      value: 41
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1c046e1d4fe2b417cb7850e6e5426e75, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58992,6 +61219,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1929688103}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -59765,7 +61996,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 18
+=======
+      value: 17
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -59848,6 +62083,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1946615321}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -59933,7 +62172,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 53
+=======
+      value: 52
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a88dc76af9764841b2a2e75a65a1ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60004,6 +62247,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1947543473}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -60086,7 +62333,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5212
+=======
+  m_Name: pb_Mesh-5248
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60250,7 +62501,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-5240
+=======
+  m_Name: pb_Mesh-5276
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60739,7 +62994,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 64
+=======
+      value: 63
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c696fe80cb0a044d2b5f0b4822969f11, type: 3}
       propertyPath: m_LocalScale.x
@@ -60835,6 +63094,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 1985991189}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -60904,7 +63167,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3952
+=======
+  m_Name: pb_Mesh-3992
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -61283,6 +63550,7 @@ PrefabInstance:
     - target: {fileID: 8289638464915097449, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
       propertyPath: m_Mesh
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 792380834}
     - target: {fileID: 8289638464915097450, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
       propertyPath: m_Mesh
@@ -61295,6 +63563,20 @@ PrefabInstance:
     - target: {fileID: 8289638464915097454, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
       propertyPath: m_VersionIndex
       value: 4841
+=======
+      objectReference: {fileID: 929183356}
+    - target: {fileID: 8289638464915097450, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 929183356}
+    - target: {fileID: 8289638464915097454, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 929183356}
+    - target: {fileID: 8289638464915097454, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
+      propertyPath: m_VersionIndex
+      value: 4844
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6a4e91a5478694a9a2f5c11da8ce35, type: 3}
@@ -61597,7 +63879,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 60cdb6d3b264a4649a5e20e4d1397f6b, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 54
+=======
+      value: 53
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 60cdb6d3b264a4649a5e20e4d1397f6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61681,6 +63967,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 2011240808}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -61755,7 +64045,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29058
+=======
+  m_Name: pb_Mesh29060
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -61919,7 +64213,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29758
+=======
+  m_Name: pb_Mesh29780
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -62427,7 +64725,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh29022
+=======
+  m_Name: pb_Mesh29024
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -62849,7 +65151,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-3966
+=======
+  m_Name: pb_Mesh-4006
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -63013,7 +65319,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4598
+=======
+  m_Name: pb_Mesh-4638
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -63180,7 +65490,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 10
+=======
+      value: 9
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0e59d9434e9ba46c6aae63d8af0d4f3c, type: 3}
       propertyPath: m_LocalScale.x
@@ -63276,6 +65590,10 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 2055161308}
+<<<<<<< Updated upstream
+=======
+  Hand: {fileID: 0}
+>>>>>>> Stashed changes
   IsDistanceGrabbable: 0
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -63355,7 +65673,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh-4024
+=======
+  m_Name: pb_Mesh-4064
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -65492,7 +67814,11 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_Name: pb_Mesh28178
+=======
+  m_Name: pb_Mesh28180
+>>>>>>> Stashed changes
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -77284,19 +79610,34 @@ PrefabInstance:
     - target: {fileID: 5096005026752773929, guid: 2882b46c332269c49b0bd334e50c5374, type: 3}
       propertyPath: m_Mesh
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 1243585646}
     - target: {fileID: 5096005026752773929, guid: 2882b46c332269c49b0bd334e50c5374, type: 3}
       propertyPath: m_VersionIndex
       value: 4252
+=======
+      objectReference: {fileID: 75112434}
+    - target: {fileID: 5096005026752773929, guid: 2882b46c332269c49b0bd334e50c5374, type: 3}
+      propertyPath: m_VersionIndex
+      value: 4255
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5096005026752773940, guid: 2882b46c332269c49b0bd334e50c5374, type: 3}
       propertyPath: m_Mesh
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 1243585646}
     - target: {fileID: 5096005026752773941, guid: 2882b46c332269c49b0bd334e50c5374, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1243585646}
+=======
+      objectReference: {fileID: 75112434}
+    - target: {fileID: 5096005026752773941, guid: 2882b46c332269c49b0bd334e50c5374, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 75112434}
+>>>>>>> Stashed changes
     - target: {fileID: 5096005026978350850, guid: 2882b46c332269c49b0bd334e50c5374, type: 3}
       propertyPath: m_Mesh
       value: 
