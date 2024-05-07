@@ -43,9 +43,6 @@ GameObject:
   - component: {fileID: 8264905874771495097}
   - component: {fileID: 3912336206182920535}
   - component: {fileID: 8723156909647647748}
-  - component: {fileID: 1291859975599903791}
-  - component: {fileID: 8000367300593120821}
-  - component: {fileID: 9016710453764311713}
   m_Layer: 0
   m_Name: Fat
   m_TagString: Untagged
@@ -118,65 +115,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1291859975599903791
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4572385707669231512}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1129496181783795862, guid: 6d5668747d66f2f44a72a09d769d796f, type: 3}
---- !u!114 &8000367300593120821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4572385707669231512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0395abccf359a8848a51de2c4e46eb39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints:
-  - {fileID: 1291859975599903791}
-  IsDistanceGrabbable: 1
-  grabbableObjectsIgnoreRaycasts: 1
-  OnGrabStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnGrabEnd:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &9016710453764311713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4572385707669231512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dc0a2d4d4a735c47aff95934555760e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsGrabbedColor: {r: 0, g: 0, b: 0, a: 0}
-  InteractableNotCloseByColor: {r: 0, g: 0, b: 0, a: 0}
-  InteractableCloseByColor: {r: 1, g: 1, b: 1, a: 1}
-  InteractableReadyToPickup: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  OutlineMode: 1
-  OutlineWidth: 3
-  HighlightRange: 3
 --- !u!1 &8220423852614625224
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,8 +126,12 @@ GameObject:
   - component: {fileID: 1125760094767874274}
   - component: {fileID: 8206746432897959430}
   - component: {fileID: 216452393374479484}
-  - component: {fileID: 5453646705256817842}
   - component: {fileID: 6897172845427266615}
+  - component: {fileID: 7866233756475426191}
+  - component: {fileID: 5710516191486541047}
+  - component: {fileID: 2851888045101371672}
+  - component: {fileID: 9080383792562481433}
+  - component: {fileID: 2299456324999906316}
   m_Layer: 0
   m_Name: Meat
   m_TagString: Untagged
@@ -263,20 +205,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5453646705256817842
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8220423852614625224}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5023624866596571984, guid: 6d5668747d66f2f44a72a09d769d796f, type: 3}
 --- !u!114 &6897172845427266615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,3 +224,129 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7eac870bd18f7194cad9c163e4326bae, type: 2}
   cookingInterval: 10
   cookingStrength: 1
+--- !u!65 &7866233756475426191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220423852614625224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14817554, y: 0.01229502, z: 0.21530947}
+  m_Center: {x: -0.0005376749, y: -0.0061474913, z: 0.006353516}
+--- !u!114 &5710516191486541047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220423852614625224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0395abccf359a8848a51de2c4e46eb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 0
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  IsDistanceGrabbable: 1
+  grabbableObjectsIgnoreRaycasts: 1
+  OnGrabStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2299456324999906316}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: GrabbedFromPlateorBasket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnGrabEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2299456324999906316}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: ReleasedNearBasket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2299456324999906316}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: ReleasedNearPlate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2851888045101371672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220423852614625224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc0a2d4d4a735c47aff95934555760e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGrabbedColor: {r: 0, g: 0, b: 0, a: 0}
+  InteractableNotCloseByColor: {r: 0, g: 0, b: 0, a: 0}
+  InteractableCloseByColor: {r: 1, g: 1, b: 1, a: 1}
+  InteractableReadyToPickup: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  OutlineMode: 1
+  OutlineWidth: 3
+  HighlightRange: 3
+--- !u!54 &9080383792562481433
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220423852614625224}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2299456324999906316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220423852614625224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290cedebf3f0a20459ac9a8c0209030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNearPlate: 0
+  isNearBasket: 0
+  plate: {fileID: 0}
+  basket: {fileID: 0}
+  inBasket: 0

@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: -2614489320618592372}
   - component: {fileID: 242030576178543974}
   - component: {fileID: -7453151165413845894}
-  - component: {fileID: -6981516076496573106}
+  - component: {fileID: -8940560398347986486}
+  - component: {fileID: 8728572973393340432}
   m_Layer: 0
   m_Name: BunBottom
   m_TagString: Untagged
@@ -103,6 +104,7 @@ MonoBehaviour:
   isNearBasket: 0
   plate: {fileID: 0}
   basket: {fileID: 0}
+  inBasket: 0
 --- !u!54 &242030576178543974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,7 +134,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.20290011, y: 0.03371239, z: 0.20290011}
   m_Center: {x: 0, y: -0.016535519, z: 0}
---- !u!114 &-6981516076496573106
+--- !u!114 &-8940560398347986486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,4 +170,47 @@ MonoBehaviour:
         m_CallState: 2
   OnGrabEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -2614489320618592372}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: ReleasedNearBasket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -2614489320618592372}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: ReleasedNearPlate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8728572973393340432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266676294347505730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc0a2d4d4a735c47aff95934555760e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGrabbedColor: {r: 0, g: 0, b: 0, a: 0}
+  InteractableNotCloseByColor: {r: 0, g: 0, b: 0, a: 0}
+  InteractableCloseByColor: {r: 1, g: 1, b: 1, a: 1}
+  InteractableReadyToPickup: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  OutlineMode: 1
+  OutlineWidth: 3
+  HighlightRange: 3

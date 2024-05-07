@@ -8,6 +8,7 @@ public class PlatableItem : MonoBehaviour
     public bool isNearBasket = false;
     public Collider plate;
     public Collider basket;
+    public bool inBasket = false;
 
     void OnTriggerEnter(Collider other)
     {
@@ -36,9 +37,10 @@ public class PlatableItem : MonoBehaviour
 
     public void GrabbedFromPlateorBasket()
     {
-        if (isNearBasket || isNearPlate)
+        if (inBasket || isNearPlate)
         {
             this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            this.gameObject.GetComponent<Rigidbody>().detectCollisions = true;
             this.transform.parent = null;
         }
     }
@@ -55,6 +57,7 @@ public class PlatableItem : MonoBehaviour
     {
         if (isNearBasket)
         {
+            inBasket = true;
             basket.gameObject.transform.parent.GetComponent<Basket>().AddItemToBasket(this.gameObject);
         }
     }

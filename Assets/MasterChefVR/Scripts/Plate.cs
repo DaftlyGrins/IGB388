@@ -15,6 +15,7 @@ public class Plate : MonoBehaviour
             {
                 ingredients[i] = item;
                 item.GetComponent<Rigidbody>().isKinematic = true;
+                item.GetComponent<Rigidbody>().detectCollisions = false;
                 item.transform.SetParent(this.gameObject.transform, true);
                 item.transform.localRotation = Quaternion.identity;
                 item.transform.localPosition = new Vector3(0.0f, newItemLocation.localPosition.y + item.GetComponent<BoxCollider>().center.y * item.transform.localScale.y, 0.0f);

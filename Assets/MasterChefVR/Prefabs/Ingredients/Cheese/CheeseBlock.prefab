@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 8685065855855479461}
   - component: {fileID: 6873471770917289583}
   - component: {fileID: 2779972905933229997}
-  - component: {fileID: 5585991053355720234}
   - component: {fileID: 568398605390913131}
   - component: {fileID: 5713367783122884686}
   - component: {fileID: 8814047012414233067}
+  - component: {fileID: 8648458550541878343}
+  - component: {fileID: -3857492820418823227}
   m_Layer: 0
   m_Name: CheeseBlock
   m_TagString: Untagged
@@ -104,20 +105,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!64 &5585991053355720234
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4927930132902748090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6742929543745967880, guid: 921f80e2f6fc71a4d93362b9bd494ab3, type: 3}
 --- !u!114 &568398605390913131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,16 +121,51 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints:
-  - {fileID: 5585991053355720234}
+  m_grabPoints: []
   IsDistanceGrabbable: 1
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -3857492820418823227}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: GrabbedFromPlateorBasket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnGrabEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -3857492820418823227}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: ReleasedNearBasket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -3857492820418823227}
+        m_TargetAssemblyTypeName: PlatableItem, Assembly-CSharp
+        m_MethodName: ReleasedNearPlate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5713367783122884686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +202,32 @@ MonoBehaviour:
   - {fileID: 6862964560848938819, guid: a74a873482fa1fb478d38eeaaf1ea3f6, type: 3}
   - {fileID: 4184681291048370664, guid: 872f269a73f903644a1b4dd37688d9e3, type: 3}
   cutModel: {fileID: 0}
+--- !u!65 &8648458550541878343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927930132902748090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20276943, y: 0.07895052, z: 0.11720291}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-3857492820418823227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927930132902748090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290cedebf3f0a20459ac9a8c0209030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNearPlate: 0
+  isNearBasket: 0
+  plate: {fileID: 0}
+  basket: {fileID: 0}
