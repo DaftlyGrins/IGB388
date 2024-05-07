@@ -8,8 +8,6 @@ public class PanCooking : MonoBehaviour
   private List<GameObject> currentlyInPan;
 
   void OnTriggerEnter(Collider other) {
-    Debug.Log("OnEnter");
-
     if (other == null || other.gameObject == null) return;
 
     if (other.gameObject.CompareTag("CookingArea"))
@@ -23,14 +21,12 @@ public class PanCooking : MonoBehaviour
 
     if (other.gameObject.CompareTag("Food"))
     {
-      Debug.Log("food is in pan");
-      GameObject food = other.gameObject;
-      currentlyInPan.Add(food);
+      // TODO: Resolve null reference here
+      // currentlyInPan.Add(other.gameObject);
 
       if (canCook)
       {
-        Debug.Log("Cooking inside pan script");
-        food.GetComponent<CookFood>().Cook(true);
+        other.gameObject.GetComponent<CookFood>().Cook(true);
       }
     }
   }
@@ -38,8 +34,6 @@ public class PanCooking : MonoBehaviour
   void OnTriggerExit(Collider other) {
     if (other == null || other.gameObject == null) return;
 
-    
-    Debug.Log("Exit");
     if (other.gameObject.CompareTag("CookingArea")) {
       canCook = false;
 
