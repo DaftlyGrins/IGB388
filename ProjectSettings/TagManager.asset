@@ -7,6 +7,11 @@ TagManager:
   - SamplesInfoPanel
   - RoomLight
   - TimerBase
+  - Plate
+  - Basket
+  - CookingCollider
+  - CookingArea
+  - Food
   layers:
   - Default
   - TransparentFX
