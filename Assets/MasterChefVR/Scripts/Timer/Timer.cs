@@ -36,8 +36,29 @@ public class Timer : MonoBehaviour
 
     public void StartTimer()
     {
+        if (countingDown)
+        {
+            ResetTimer();
+            return;
+        }
         countingDown = true;
         InvokeRepeating("CountDown", 0.0f, 1.0f);
+    }
+
+    public void ResetTimer()
+    {
+        timerSeconds = 0;
+        timerMinutes = 0;
+        countingDown = false;
+        buzzer.Play(0);
+        if (grabbable.grabbedBy == CustomGrabber.leftHandGrabber)
+        {
+            SimpleHapticVibrationManager.VibrateController(0.3f, 1.0f, OVRInput.Controller.LTouch);
+        }
+        else if (grabbable.grabbedBy == CustomGrabber.rightHandGrabber)
+        {
+            SimpleHapticVibrationManager.VibrateController(0.3f, 1.0f, OVRInput.Controller.RTouch);
+        }
     }
 
     void CountDown()
@@ -75,6 +96,7 @@ public class Timer : MonoBehaviour
 
         if (timerMinutes == 0 && timerSeconds == 0)
         {
+            buzzer.Play(0);
             if (grabbable.grabbedBy == CustomGrabber.leftHandGrabber)
             {
                 SimpleHapticVibrationManager.VibrateController(3.0f, 1.0f, OVRInput.Controller.LTouch);
