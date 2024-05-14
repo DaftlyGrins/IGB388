@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 5703904534626878720}
   - component: {fileID: 8685065855855479461}
   - component: {fileID: 6873471770917289583}
+  - component: {fileID: 8648458550541878343}
   - component: {fileID: 2779972905933229997}
   - component: {fileID: 568398605390913131}
   - component: {fileID: 5713367783122884686}
   - component: {fileID: 8814047012414233067}
-  - component: {fileID: 8648458550541878343}
   - component: {fileID: -3857492820418823227}
   m_Layer: 0
   m_Name: CheeseBlock
@@ -89,6 +89,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8648458550541878343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927930132902748090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20276943, y: 0.07895052, z: 0.11720291}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2779972905933229997
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -201,20 +214,8 @@ MonoBehaviour:
   - {fileID: 6568575689474054658, guid: 9fb552f5ee141054c92687cfc28bd48c, type: 3}
   - {fileID: 6862964560848938819, guid: a74a873482fa1fb478d38eeaaf1ea3f6, type: 3}
   - {fileID: 4184681291048370664, guid: 872f269a73f903644a1b4dd37688d9e3, type: 3}
-  cutModel: {fileID: 0}
---- !u!65 &8648458550541878343
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4927930132902748090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.20276943, y: 0.07895052, z: 0.11720291}
-  m_Center: {x: 0, y: 0, z: 0}
+  cutMesh:
+  - {fileID: -4761711576592315275, guid: 981ff7f56613bb8489970c32b7ced272, type: 3}
 --- !u!114 &-3857492820418823227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,3 +232,4 @@ MonoBehaviour:
   isNearBasket: 0
   plate: {fileID: 0}
   basket: {fileID: 0}
+  inBasket: 0

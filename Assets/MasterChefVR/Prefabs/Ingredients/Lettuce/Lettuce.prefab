@@ -126,11 +126,11 @@ GameObject:
   - component: {fileID: 6343962800630496670}
   - component: {fileID: 8361467734699200276}
   - component: {fileID: 2200529158463202981}
+  - component: {fileID: 369775332574498564}
   - component: {fileID: 5468235881320206141}
   - component: {fileID: 450942215939164147}
   - component: {fileID: 3977426455761752909}
   - component: {fileID: 2957685380100435077}
-  - component: {fileID: 369775332574498564}
   - component: {fileID: 2493005102023764677}
   m_Layer: 0
   m_Name: LettuceBase
@@ -205,6 +205,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &369775332574498564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5140797093906773990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14020966, y: 0.05330193, z: 0.14020966}
+  m_Center: {x: 0, y: -9.313226e-10, z: 0}
 --- !u!54 &5468235881320206141
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -317,20 +330,7 @@ MonoBehaviour:
   - {fileID: 4676048671141946751, guid: 903a813cbd0efe849b6e5b72c2a468df, type: 3}
   - {fileID: 4723324596864462060, guid: ed00e47a2c85e03419099b6d1c0ea374, type: 3}
   - {fileID: 8353135446853572330, guid: 959e53da105b60643a5e166f540927db, type: 3}
-  cutModel: {fileID: 0}
---- !u!65 &369775332574498564
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5140797093906773990}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.14020966, y: 0.05330193, z: 0.14020966}
-  m_Center: {x: 0, y: -9.313226e-10, z: 0}
+  cutMesh: {fileID: 0}
 --- !u!114 &2493005102023764677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,3 +347,4 @@ MonoBehaviour:
   isNearBasket: 0
   plate: {fileID: 0}
   basket: {fileID: 0}
+  inBasket: 0

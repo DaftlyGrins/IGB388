@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 118959668799971675}
   - component: {fileID: 2756861002472183185}
   - component: {fileID: 5906212699838436734}
+  - component: {fileID: -8131269042833261934}
   - component: {fileID: 9139675918941185002}
   - component: {fileID: 881128265454321067}
-  - component: {fileID: -8131269042833261934}
   - component: {fileID: 5155345822949490046}
   m_Layer: 0
   m_Name: TomatoSlice3
@@ -104,6 +104,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &-8131269042833261934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4414277543055914052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12271391, y: 0.02739079, z: 0.14278077}
+  m_Center: {x: 0, y: -0.00044992054, z: -0.000097453594}
 --- !u!114 &9139675918941185002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,19 +198,6 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
---- !u!65 &-8131269042833261934
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4414277543055914052}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.12271391, y: 0.02739079, z: 0.14278077}
-  m_Center: {x: 0, y: -0.00044992054, z: -0.000097453594}
 --- !u!114 &5155345822949490046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +214,4 @@ MonoBehaviour:
   isNearBasket: 0
   plate: {fileID: 0}
   basket: {fileID: 0}
+  inBasket: 0
