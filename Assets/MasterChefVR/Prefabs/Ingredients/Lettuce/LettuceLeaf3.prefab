@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8694089962781281360}
   - component: {fileID: 5694880168918713333}
   - component: {fileID: 7560611520175011647}
+  - component: {fileID: 3105369448988551482}
   - component: {fileID: 8370030145262936575}
   - component: {fileID: 4576241373771525532}
   - component: {fileID: 7625389342287999477}
-  - component: {fileID: 3105369448988551482}
   - component: {fileID: 6979380855877328400}
   m_Layer: 0
   m_Name: LettuceLeaf3
@@ -88,6 +88,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3105369448988551482
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8353135446853572330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12925209, y: 0.036207985, z: 0.12747875}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8370030145262936575
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -185,19 +198,6 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
---- !u!65 &3105369448988551482
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8353135446853572330}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.12925209, y: 0.036207985, z: 0.12747875}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6979380855877328400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +214,4 @@ MonoBehaviour:
   isNearBasket: 0
   plate: {fileID: 0}
   basket: {fileID: 0}
+  inBasket: 0

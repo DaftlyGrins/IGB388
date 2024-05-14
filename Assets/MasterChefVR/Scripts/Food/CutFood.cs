@@ -3,7 +3,7 @@ using UnityEngine;
 public class CutFood : MonoBehaviour
 {
   public GameObject[] slices;
-  public GameObject cutModel;
+  public Mesh[] cutMesh;
   private int maxSlices;
   private int currentSliceCount = 0;
 
@@ -16,10 +16,9 @@ public class CutFood : MonoBehaviour
   {
     Instantiate(slices[currentSliceCount], transform.position, transform.rotation);
     
-    if (currentSliceCount == 0)
+    if (currentSliceCount < cutMesh.Length)
     {
-      // TODO: Set the cut model to be the held item, rather than the whole model
-      // Instantiate(cutModel, transform.position, transform.rotation);
+      GetComponent<MeshFilter>().mesh = cutMesh[currentSliceCount];
     }
 
     currentSliceCount++;

@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5792636708078895288}
   - component: {fileID: 7479440975377551133}
   - component: {fileID: 4623148124854139863}
+  - component: {fileID: 2263134820685926606}
   - component: {fileID: 5806692017129202005}
   - component: {fileID: 6327846952265170989}
   - component: {fileID: 818275766352297447}
-  - component: {fileID: 2263134820685926606}
   - component: {fileID: -1959082665355037601}
   m_Layer: 0
   m_Name: CheeseSlice1
@@ -88,6 +88,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2263134820685926606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6568575689474054658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11414989, y: 0.0060000666, z: 0.16945678}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &5806692017129202005
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -185,19 +198,6 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
---- !u!65 &2263134820685926606
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6568575689474054658}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.11414989, y: 0.0060000666, z: 0.16945678}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-1959082665355037601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +214,4 @@ MonoBehaviour:
   isNearBasket: 0
   plate: {fileID: 0}
   basket: {fileID: 0}
+  inBasket: 0
