@@ -20,7 +20,7 @@ public class EndLevel : MonoBehaviour
             {
                 noGameOver.GetComponent<IncreasingTemp>().enabled = false;
                 meal = other.transform.gameObject;
-                meal.GetComponent<Plate>().gradingPlate();
+                //meal.GetComponent<Plate>().gradingPlate();
                 Debug.Log("yippee");
             }
             else
