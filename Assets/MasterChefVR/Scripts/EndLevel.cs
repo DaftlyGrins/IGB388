@@ -14,12 +14,12 @@ public class EndLevel : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "plate")
+        if(other.tag == "Plate")
         {
-            if(other.transform.childCount == 6)
+            meal = other.transform.gameObject;
+            if (meal.GetComponent<Plate>().ingredients.Length == 6)
             {
-                noGameOver.GetComponent<IncreasingTemp>().enabled = false;
-                meal = other.transform.gameObject;
+                //noGameOver.GetComponent<IncreasingTemp>().enabled = false;
                 meal.GetComponent<Plate>().gradingPlate();
                 Debug.Log("yippee");
             }
