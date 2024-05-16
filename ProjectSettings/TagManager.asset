@@ -12,6 +12,12 @@ TagManager:
   - CookingCollider
   - CookingArea
   - Food
+  - TopBun
+  - BottomBun
+  - CheeseSlice
+  - TomatoSlice
+  - LettuceLeaf
+  - Steak
   layers:
   - Default
   - TransparentFX
