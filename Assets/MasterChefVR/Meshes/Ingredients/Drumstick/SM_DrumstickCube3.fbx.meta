@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 12eefbf252a045345aea9d69c589d318
+guid: 5b88589a9ea686d4b977269cfb9c30c6
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MTL_Pot
-    second: {fileID: 2100000, guid: a0d460c7e692b2b49867d12299e33b19, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MTL_potLiquid
-    second: {fileID: 2100000, guid: ef920f8ed289d1949b9c2d23488fa9aa, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +35,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.3
+    globalScale: 0.7
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +88,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.012999999
+    globalScale: 0.0069999998
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
