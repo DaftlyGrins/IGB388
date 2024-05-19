@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1400302738707035077}
   - component: {fileID: 7412856053435139193}
   - component: {fileID: 5890081644231830901}
-  - component: {fileID: 9129294822390971942}
   - component: {fileID: -3481566411392414483}
   - component: {fileID: -8175476030341614916}
+  - component: {fileID: 7834137009812902095}
   m_Layer: 0
   m_Name: CarrotSlice3
   m_TagString: Untagged
@@ -112,7 +112,19 @@ MonoBehaviour:
       m_Calls: []
   OnGrabEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7834137009812902095}
+        m_TargetAssemblyTypeName: PotableItem, Assembly-CSharp
+        m_MethodName: GrabEndFunction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5890081644231830901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,23 +144,6 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
---- !u!114 &9129294822390971942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607462151590515216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290cedebf3f0a20459ac9a8c0209030c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isNearPlate: 0
-  isNearBasket: 0
-  plate: {fileID: 0}
-  basket: {fileID: 0}
-  inBasket: 0
 --- !u!54 &-3481566411392414483
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -178,3 +173,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0625883, y: 0.21034275, z: 0.76820445}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7834137009812902095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607462151590515216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258c2ba71e78b5049ad29f1da91766be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inPotName: Carrot

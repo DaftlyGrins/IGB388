@@ -18,6 +18,8 @@ TagManager:
   - TomatoSlice
   - LettuceLeaf
   - Steak
+  - Well
+  - Pot
   layers:
   - Default
   - TransparentFX

@@ -42,7 +42,7 @@ public class Respawner : MonoBehaviour
     void TryRespawn(){
         float distance = Vector3.Distance(this.gameObject.transform.position, startingPosition);
         if (distance > distanceBuffer){
-            GameObject clone = Instantiate(this.gameObject, startingPosition, startingRotation);
+            GameObject clone = Instantiate(prefab, startingPosition, startingRotation);
             clone.transform.localScale = startingScale;
             wantToSpawn = false;
         }

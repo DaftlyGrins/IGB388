@@ -3,6 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
+    public GameObject wellGiantLevel = null;
 
     public static GameManager Instance
     {
