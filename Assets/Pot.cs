@@ -21,6 +21,11 @@ public class Pot : MonoBehaviour
     public GameObject carrots;
     public GameObject drumsticks;
 
+    // Pot into fire action
+    private GameObject potLocation;
+    private bool inProximetyOfFire = false;
+    private bool onFire = false;
+
     void Start(){
         rb = GetComponent<Rigidbody>();
         carrots.SetActive(false);
@@ -38,16 +43,16 @@ public class Pot : MonoBehaviour
                 potLiquidMR.enabled = true;
             }
         }
-
-        
-
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.transform.tag == "Well")
-        {
+        if (other.transform.tag == "Well"){
             inProximetyOfWell = true;
             well = other.gameObject;
+        }
+        else if (other.transform.tag == "PotLocation"){
+            inProximetyOfFire = true;
+            potLocation = other.gameObject;
         }
     }
 
@@ -56,11 +61,17 @@ public class Pot : MonoBehaviour
         {
             inProximetyOfWell = false;
         }
+        else if (other.transform.tag == "PotLocation"){
+            inProximetyOfFire = false;
+        }
     }
 
     public void GrabFunction(){
         if (onWell){
             onWell = false;
+        }
+        else if(onFire){
+            onFire = false;
         }
     }
 
@@ -71,6 +82,12 @@ public class Pot : MonoBehaviour
             this.gameObject.transform.localRotation = Quaternion.identity;
             rb.isKinematic = true;
             onWell = true;
+        }
+        else if(inProximetyOfFire){
+            this.gameObject.transform.position = potLocation.transform.position;
+            this.gameObject.transform.localRotation = Quaternion.identity;
+            rb.isKinematic = true;
+            onFire = true;
         }
     }
 
