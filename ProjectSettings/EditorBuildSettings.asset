@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/MasterChefVR/Scenes/GameOver.unity
     guid: 31d5aa85608f0ee4a9eac3c9a9ac3078
   - enabled: 1
-    path: Assets/MasterChefVR/Scenes/SpaceKitchen.unity
+    path: Assets/MasterChefVR/Scenes/SpaceKitchenMain.unity
     guid: ff2ee6a8123570b488dd9310f732a3fc
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7d51d9b6748e5c645bee5c72b063900f, type: 2}
