@@ -10,7 +10,7 @@ using UnityEngine.Events;
 public class DiegeticRotator2 : MonoBehaviour
 {
     //[Header("Current slider value. Don't edit here.")]
-    public float currentValue = 0;
+    [HideInInspector]public float currentValue = 0;
 
     [Header("Slider Values")]
 
@@ -162,7 +162,7 @@ public class DiegeticRotator2 : MonoBehaviour
             while (degs < 0) degs += 360;
             while (degs > 360) degs -= 360;
             float newDesiredDegrees = Mathf.Clamp(degs, minimumAngle, maximumAngle);
-            if (Mathf.Abs(newDesiredDegrees - desiredDegrees) < 1.0f)
+            if (Mathf.Abs(newDesiredDegrees - desiredDegrees) < 20.0f)
             {
                 desiredDegrees = newDesiredDegrees;
             }

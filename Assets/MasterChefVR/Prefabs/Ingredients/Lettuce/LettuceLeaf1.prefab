@@ -16,6 +16,9 @@ GameObject:
   - component: {fileID: 6171069647563233005}
   - component: {fileID: 9150092465146370853}
   - component: {fileID: 142082082371558234}
+  - component: {fileID: 1901385481319374630}
+  - component: {fileID: -7867105747473483791}
+  - component: {fileID: 3418764848090607599}
   m_Layer: 0
   m_Name: LettuceLeaf1
   m_TagString: LettuceLeaf
@@ -215,3 +218,48 @@ MonoBehaviour:
   plate: {fileID: 0}
   basket: {fileID: 0}
   inBasket: 0
+--- !u!114 &1901385481319374630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4676048671141946751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 4025731125344385481, guid: 29848359c0bcd0c4ab7337e458d073a4, type: 3}
+  inMainRoom: 0
+--- !u!114 &-7867105747473483791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4676048671141946751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 0}
+  inMainRoom: 0
+--- !u!114 &3418764848090607599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4676048671141946751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 0}
+  inMainRoom: 0

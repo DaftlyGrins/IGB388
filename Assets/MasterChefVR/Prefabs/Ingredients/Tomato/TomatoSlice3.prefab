@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 9139675918941185002}
   - component: {fileID: 881128265454321067}
   - component: {fileID: 5155345822949490046}
+  - component: {fileID: 5597828257348208612}
+  - component: {fileID: -9038173640378056406}
   m_Layer: 0
   m_Name: TomatoSlice3
   m_TagString: TomatoSlice
@@ -215,3 +217,33 @@ MonoBehaviour:
   plate: {fileID: 0}
   basket: {fileID: 0}
   inBasket: 0
+--- !u!114 &5597828257348208612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4414277543055914052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 4025731125344385481, guid: 29848359c0bcd0c4ab7337e458d073a4, type: 3}
+  inMainRoom: 0
+--- !u!114 &-9038173640378056406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4414277543055914052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 0}
+  inMainRoom: 0

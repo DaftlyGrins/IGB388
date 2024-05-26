@@ -37,6 +37,7 @@ public class PlatableItem : MonoBehaviour
 
     public void GrabbedFromPlateorBasket()
     {
+        plate.gameObject.transform.parent.GetComponent<Plate>().RemoveItemFromPlate(this.gameObject);
         if (inBasket || isNearPlate)
         {
             this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
