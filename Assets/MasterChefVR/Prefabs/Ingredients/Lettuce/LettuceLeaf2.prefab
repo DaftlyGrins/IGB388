@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4801008071637244479}
   m_Layer: 0
   m_Name: LettuceLeaf2
-  m_TagString: LettuceLeaf
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// TODO: This needs to not respond to any of the camera and controller colliders
 public class GravityWell : MonoBehaviour
 {
   public List<string> enforceOnlyOnTags;
@@ -18,18 +17,8 @@ public class GravityWell : MonoBehaviour
   private void invertGravity(Collider other, bool gravityState)
   {
     Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
+    if (rb == null || enforceOnlyOnTags.Count <= 0) return;
 
-    if (enforceOnlyOnTags.Count > 0 && enforceOnlyOnTags.Contains(other.gameObject.tag))
-    {
-      if (rb == null) return;
-      rb.useGravity = gravityState;
-
-      return;
-    }
-
-    rb = other.gameObject.GetComponent<Rigidbody>();
-
-    if (rb == null) return;
     rb.useGravity = gravityState;
   }
 }

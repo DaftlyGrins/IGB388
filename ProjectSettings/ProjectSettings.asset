@@ -442,11 +442,17 @@ PlayerSettings:
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality:
   - m_BuildTarget: Android
-    m_EncodingQuality: 1
+    m_EncodingQuality: 2
   - m_BuildTarget: iPhone
     m_EncodingQuality: 1
   - m_BuildTarget: tvOS
     m_EncodingQuality: 1
+  - m_BuildTarget: Standalone
+    m_EncodingQuality: 2
+  - m_BuildTarget: Lumin
+    m_EncodingQuality: 2
+  - m_BuildTarget: Windows Store Apps
+    m_EncodingQuality: 2
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetNormalMapEncoding:
   - m_BuildTarget: Android
@@ -705,22 +711,22 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: READY_PLAYER_ME
-    CloudRendering: READY_PLAYER_ME
-    EmbeddedLinux: READY_PLAYER_ME
+    Android: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    CloudRendering: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    EmbeddedLinux: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
     GameCoreScarlett: READY_PLAYER_ME
-    GameCoreXboxOne: READY_PLAYER_ME
-    Lumin: READY_PLAYER_ME
-    Nintendo Switch: READY_PLAYER_ME
-    PS4: READY_PLAYER_ME
-    PS5: READY_PLAYER_ME
-    Stadia: READY_PLAYER_ME
-    Standalone: READY_PLAYER_ME
-    WebGL: READY_PLAYER_ME
-    Windows Store Apps: READY_PLAYER_ME
-    XboxOne: READY_PLAYER_ME
+    GameCoreXboxOne: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Lumin: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Nintendo Switch: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    PS4: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    PS5: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Stadia: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Standalone: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    WebGL: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Windows Store Apps: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    XboxOne: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
     iPhone: READY_PLAYER_ME
-    tvOS: READY_PLAYER_ME
+    tvOS: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

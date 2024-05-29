@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 355328231789532544}
   m_Layer: 0
   m_Name: Lettuce
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -330,7 +330,8 @@ MonoBehaviour:
   - {fileID: 4676048671141946751, guid: 903a813cbd0efe849b6e5b72c2a468df, type: 3}
   - {fileID: 4723324596864462060, guid: ed00e47a2c85e03419099b6d1c0ea374, type: 3}
   - {fileID: 8353135446853572330, guid: 959e53da105b60643a5e166f540927db, type: 3}
-  cutMesh: {fileID: 0}
+  cutMesh:
+  - {fileID: 0}
 --- !u!114 &2493005102023764677
 MonoBehaviour:
   m_ObjectHideFlags: 0
