@@ -40,7 +40,14 @@ public class GravityReset : MonoBehaviour
     
     void Update()
     {
-        timer.text = "0:" + tillCountdownExpires;
+        if(tillCountdownExpires > 10)
+        {
+            timer.text = "0:" + (int)tillCountdownExpires;
+        }
+        else
+        {
+            timer.text = "0:0" + (int)tillCountdownExpires;
+        }
         if (this.transform.position.y > 2) 
         {
             cForce.force = new Vector3(0, 0, 0);
