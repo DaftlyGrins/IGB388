@@ -5,18 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Plate : MonoBehaviour
 {
-    public GameObject[] ingredients;
+    public List<GameObject> ingredients = new List<GameObject>();
     public Transform newItemLocation;
     public int finalScore;
-    public GameObject[] recipe;
 
     public void AddItemToPlate(GameObject item)
     {
-        for (int i = 0; i < ingredients.Length; i++)
+        //for (int i = 0; i < 6; i++)
         {
-            if (ingredients[i] == null)
+            if (ingredients.Count < 6)
             {
-                ingredients[i] = item;
+                ingredients.Add(item);
                 item.GetComponent<Rigidbody>().isKinematic = true;
                 item.GetComponent<Rigidbody>().detectCollisions = false;
                 item.transform.SetParent(this.gameObject.transform, true);
