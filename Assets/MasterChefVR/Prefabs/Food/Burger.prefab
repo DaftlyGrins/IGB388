@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3671318117425044818}
   - component: {fileID: 3671318117425044819}
   - component: {fileID: 3671318117425044780}
+  - component: {fileID: 856535423970577383}
   m_Layer: 0
   m_Name: Burger
   m_TagString: Untagged
@@ -144,3 +145,17 @@ MonoBehaviour:
   Lever: {fileID: 0}
   timer: {fileID: 0}
   inMainRoom: 0
+--- !u!64 &856535423970577383
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3058287104726099290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4101298594492280764, guid: 17bb0e13d90eb7540a9620e6f74bb614, type: 3}

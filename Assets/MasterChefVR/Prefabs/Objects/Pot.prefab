@@ -264,6 +264,8 @@ GameObject:
   - component: {fileID: 7296098958293096627}
   - component: {fileID: 1608366443899665094}
   - component: {fileID: -835224559413635200}
+  - component: {fileID: 989490963806049417}
+  - component: {fileID: 4266792461239688533}
   m_Layer: 0
   m_Name: Pot
   m_TagString: Pot
@@ -419,6 +421,34 @@ MonoBehaviour:
   potLiquidMR: {fileID: 2010011599220717371}
   carrots: {fileID: 5185330414195366995}
   drumsticks: {fileID: 4862933990327745100}
+--- !u!114 &989490963806049417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638624980632257952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 0}
+  timer: {fileID: 0}
+  inMainRoom: 0
+--- !u!75 &4266792461239688533
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638624980632257952}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &3485470692829501357
 GameObject:
   m_ObjectHideFlags: 0

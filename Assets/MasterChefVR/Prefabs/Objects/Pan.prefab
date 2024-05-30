@@ -127,6 +127,9 @@ GameObject:
   - component: {fileID: 7294053640248689992}
   - component: {fileID: 2613660376023981322}
   - component: {fileID: 8053254497396683026}
+  - component: {fileID: -6442064285823725196}
+  - component: {fileID: 7944250600327731082}
+  - component: {fileID: 8935238068715490495}
   m_Layer: 0
   m_Name: Pan
   m_TagString: Untagged
@@ -276,6 +279,49 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
+--- !u!114 &-6442064285823725196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663202031543593601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4125d22d97406f345b8376c24137691d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceBuffer: 0
+  timeBuffer: 0
+  prefab: {fileID: 0}
+--- !u!114 &7944250600327731082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663202031543593601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 0}
+  timer: {fileID: 0}
+  inMainRoom: 0
+--- !u!75 &8935238068715490495
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663202031543593601}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1001 &4728317413817217694
 PrefabInstance:
   m_ObjectHideFlags: 0

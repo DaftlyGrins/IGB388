@@ -17,7 +17,7 @@ public class EndLevel : MonoBehaviour
         if(other.tag == "Plate")
         {
             meal = other.transform.gameObject;
-            if (meal.GetComponent<Plate>().ingredients.Count == 6)
+            if (meal.GetComponent<Plate>().ingredients.Count >= 6)
             {
                 //noGameOver.GetComponent<IncreasingTemp>().enabled = false;
                 meal.GetComponent<Plate>().gradingPlate();

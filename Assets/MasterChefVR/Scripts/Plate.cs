@@ -22,6 +22,7 @@ public class Plate : MonoBehaviour
                 item.transform.localRotation = Quaternion.identity;
                 item.transform.localPosition = new Vector3(0.0f, newItemLocation.localPosition.y + item.GetComponent<BoxCollider>().center.y * item.transform.localScale.y, 0.0f);
                 newItemLocation.localPosition = new Vector3(0.0f, item.GetComponent<BoxCollider>().size.y * item.transform.localScale.y + newItemLocation.localPosition.y, 0.0f);
+                Debug.Log(ingredients.Count);
                 return;
             }
         }

@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 5016956678308546100}
   - component: {fileID: 3912063232380084559}
   - component: {fileID: 9085958588781323483}
+  - component: {fileID: 1564370919266883583}
+  - component: {fileID: 7044100062841140191}
   m_Layer: 0
   m_Name: TomatoBase
   m_TagString: Untagged
@@ -234,6 +236,34 @@ MonoBehaviour:
   - {fileID: 4414277543055914052, guid: 3c19d0555b22f984f9344e31203fd4fa, type: 3}
   cutMesh:
   - {fileID: 4205004784926567998, guid: efc605dcdd420d84b8a14bcf6997fcd6, type: 3}
+--- !u!114 &1564370919266883583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743268865454218168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 0}
+  timer: {fileID: 0}
+  inMainRoom: 0
+--- !u!75 &7044100062841140191
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743268865454218168}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &5205670616296954970
 GameObject:
   m_ObjectHideFlags: 0
