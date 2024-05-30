@@ -213,6 +213,7 @@
     <Compile Include="Assets\MasterChefVR\Scripts\SlidingBlastDoor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\ColorGrabbable.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\MediaPlayerImage.cs" />
+    <Compile Include="Assets\MasterChefVR\Scripts\ChangeRender.cs" />
     <Compile Include="Assets\MasterChefVR\Scripts\Food\PanCooking.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabbableCrosshair.cs" />
     <Compile Include="Assets\IGB388\Common\Scripts\Grabbing\HandLaser.cs" />
