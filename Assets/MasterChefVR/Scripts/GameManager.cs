@@ -6,7 +6,9 @@ public class GameManager : MonoBehaviour
   private static GameManager _instance;
   public GameObject wellGiantLevel = null;
   public GameObject[] lights;
-  public GameObject[] logos;
+  public GameObject logo;
+  public GameObject dialogueManager;
+  public GameObject mysteryBox;
 
   public static GameManager Instance
   {
@@ -56,28 +58,28 @@ public class GameManager : MonoBehaviour
   {
     yield return new WaitForSeconds(5);
 
-    foreach (GameObject logo in logos)
+    dialogueManager.GetComponent<Dialogue>().PlayIntroduction();
+    logo.GetComponent<SpaceLight>().LightOn();
+    logo.GetComponentInChildren<Light>().enabled = true;
+
+    yield return new WaitForSeconds(16);
+
+    LightOn(0);
+    mysteryBox.GetComponent<CustomGrabbable>().enabled = true;
+    mysteryBox.GetComponent<GrabOutlineController>().enabled = true;
+  }
+
+  private void LightOn(int index)
+  {
+    SpaceLight lightScript = lights[index].GetComponent<SpaceLight>();
+
+    if (lightScript != null)
     {
-      logo.GetComponent<SpaceLight>().LightOn();
-      logo.GetComponentInChildren<Light>().enabled = true;
-    }
-
-    yield return new WaitForSeconds(5);
-
-
-
-    foreach(GameObject light in lights)
-    {
-      SpaceLight lightScript = light.GetComponent<SpaceLight>();
-
-      if (lightScript != null)
-      {
-        lightScript.LightOn();
-      } else {
-        light.GetComponent<Light>().enabled = true;
-      }
+      lightScript.LightOn();
+    } else {
+      lights[index].GetComponent<Light>().enabled = true;
     }
   }
 
-    // Add any GameManager-related initialization or cleanup here
+  // Add any GameManager-related initialization or cleanup here
 }

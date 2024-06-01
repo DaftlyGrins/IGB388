@@ -13,10 +13,12 @@ public class SpaceLight : MonoBehaviour
   public void LightOn()
   {
     GetComponent<MeshRenderer>().material = lightOnMaterial;
+    GetComponentInChildren<Light>().enabled = true;
   }
 
   public void LightOff()
   {
     GetComponent<MeshRenderer>().material = lightOffMaterial;
+    GetComponentInChildren<Light>().enabled = false;
   }
 }
