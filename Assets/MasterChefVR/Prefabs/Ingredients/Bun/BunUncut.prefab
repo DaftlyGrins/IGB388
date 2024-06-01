@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2043515897127358068}
   - component: {fileID: -4688654717659146289}
   - component: {fileID: -283516237287228471}
+  - component: {fileID: -1624402779823573601}
   m_Layer: 0
   m_Name: BunUncut
   m_TagString: Food
@@ -244,3 +245,17 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &-1624402779823573601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5989347041550994340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cc66780296ec54e922cd89c6bdf48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slices: []
+  cutMesh: []

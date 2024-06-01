@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7576618680535952325}
   - component: {fileID: 7576618680535952324}
   - component: {fileID: 1478347498359306823}
+  - component: {fileID: -5272677080688117221}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -233,6 +234,22 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
+--- !u!114 &-5272677080688117221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342247683431732894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 0}
+  Lever: {fileID: 0}
+  timer: {fileID: 0}
+  inMainRoom: 0
 --- !u!1 &7576618680080071443
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +765,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8322608175718568990, guid: 6d799649585efa146b0931842fd60ba1, type: 3}
   m_PrefabInstance: {fileID: 4181874254368984132}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &587759258252088779
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3929715648255207334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.022540629
+  m_Center: {x: 0.01, y: 0, z: 0}
 --- !u!114 &9079364453927171380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,19 +802,6 @@ MonoBehaviour:
   - {fileID: 3929563530054086598}
   - {fileID: 488561346834737293}
   bufferTime: 1
---- !u!135 &587759258252088779
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3929715648255207334}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.022540629
-  m_Center: {x: 0.01, y: 0, z: 0}
 --- !u!4 &4432589898746080175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d799649585efa146b0931842fd60ba1, type: 3}
@@ -795,6 +812,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8873972942987230178, guid: 6d799649585efa146b0931842fd60ba1, type: 3}
   m_PrefabInstance: {fileID: 4181874254368984132}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &2260772034360466789
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4526206573102647386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.022540629
+  m_Center: {x: -0.000000029802322, y: 0, z: 0}
 --- !u!114 &3929563530054086598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,24 +849,24 @@ MonoBehaviour:
   - {fileID: 9079364453927171380}
   - {fileID: 488561346834737293}
   bufferTime: 1
---- !u!135 &2260772034360466789
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4526206573102647386}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.022540629
-  m_Center: {x: -0.000000029802322, y: 0, z: 0}
 --- !u!1 &6252323328000698172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7840123232716680056, guid: 6d799649585efa146b0931842fd60ba1, type: 3}
   m_PrefabInstance: {fileID: 4181874254368984132}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &2580321375920608097
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6252323328000698172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.022540629
+  m_Center: {x: -0.01, y: 0, z: -0.00000011920929}
 --- !u!114 &488561346834737293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,16 +891,3 @@ MonoBehaviour:
   - {fileID: 9079364453927171380}
   - {fileID: 3929563530054086598}
   bufferTime: 1
---- !u!135 &2580321375920608097
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6252323328000698172}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.022540629
-  m_Center: {x: -0.01, y: 0, z: -0.00000011920929}
