@@ -6,6 +6,8 @@ public class RoundStart : MonoBehaviour
   public bool startRoundDebug = false;
   public GameObject presentationLight;
   public GameObject kitchenLight;
+  public GameObject airlockControl;
+
   void Start()
   {
     CustomGrabbable customGrabbable = GetComponent<CustomGrabbable>();
@@ -30,5 +32,7 @@ public class RoundStart : MonoBehaviour
     clock.GetComponent<Clock>().StartRotation();
     presentationLight.GetComponent<Light>().spotAngle = 30;
     kitchenLight.GetComponent<SpaceLight>().LightOn();
+    airlockControl.GetComponent<AirlockControl>().EnableAirlock();
+    GetComponent<CustomGrabbable>().IsDistanceGrabbable = true;
   }
 }

@@ -40,6 +40,7 @@ public class GravityReset : MonoBehaviour
     
     void Update()
     {
+      return;
         if(tillCountdownExpires > 10)
         {
             timer.text = "0:" + (int)tillCountdownExpires;

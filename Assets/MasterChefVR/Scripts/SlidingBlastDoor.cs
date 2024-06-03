@@ -1,24 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class SlidingBlastDoor : MonoBehaviour
 {
-    private Animation anim;
-    // Start is called before the first frame update
-    void Start()
-    {
-        anim = this.GetComponent<Animation>();
-    }
+  public float speed = 1.0f;
+  public AudioSource[] audioSources;
+  public GameObject display;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  private float targetY = -2.49f;
+  private Vector3 targetPosition;
+  private bool isOpen = false;
+  private bool isConfirming = false;
 
-    public void buttonPushed()
-    {
-        anim.Play("BlastDoorMoving");
-    }
+  void Start()
+  {
+    targetPosition = new Vector3(transform.position.x, targetY, transform.position.z);
+  }
+
+  void Update()
+  {
+    if (!isOpen) return;
+
+    transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+  }
+
+  public void Open()
+  {
+    isConfirming = true;
+    audioSources[0].Play();
+    display.SetActive(true);
+  }
+
+  void OnTriggerEnter(Collider other)
+  {
+    if (!other.CompareTag("Player") || !isConfirming) return;
+
+    audioSources[1].Play();
+    isOpen = true;
+    isConfirming = false;
+    display.GetComponent<Collider>().enabled = false;
+  }
 }
