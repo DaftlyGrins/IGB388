@@ -12,7 +12,6 @@ public class GravityReset : MonoBehaviour
     private float tillCountdownExpires;
     private bool isGravityEnabled;
     private int numOfChildren;
-    public GameObject Button;
     public GameObject Lever;
     public TMP_Text timer;
     public bool inMainRoom;
@@ -56,10 +55,10 @@ public class GravityReset : MonoBehaviour
             {
                 cForce.force = new Vector3(0, -10f, 0);
             }
-            else if (this.transform.position.y > 6 && this.transform.position.z > 5)
-            {
-                cForce.force = new Vector3(0, -10f, 0);
-            }
+        }
+        if (this.transform.position.y > 6)
+        {
+            cForce.force = new Vector3(0, -10f, 0);
         }
         if (isGravityEnabled == true)
         {
@@ -82,7 +81,6 @@ public class GravityReset : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     public void GravityOn()
     {
             if (isGravityEnabled == false)

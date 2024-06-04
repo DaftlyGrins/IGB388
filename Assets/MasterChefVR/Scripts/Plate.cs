@@ -29,6 +29,21 @@ public class Plate : MonoBehaviour
         
     }
 
+    public void RemoveItemFromPlate(GameObject item)
+    {
+        for (int i = 0; i > ingredients.Count; i++)
+        {
+            if (item == ingredients[i])
+            {
+                ingredients.RemoveAt(i);
+                item.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                item.gameObject.GetComponent<Rigidbody>().detectCollisions = true;
+                item.transform.parent = null;
+                newItemLocation.localPosition = new Vector3(0.0f, item.GetComponent<BoxCollider>().size.y * newItemLocation.localPosition.y - item.transform.localScale.y, 0.0f);
+            }
+        }
+    }
+
     public void gradingPlate()
     {
         if(ingredients[0].tag == "TopBun")
