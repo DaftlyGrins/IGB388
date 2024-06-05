@@ -37,6 +37,9 @@ public class PlatableItem : MonoBehaviour
 
     public void GrabbedFromPlateorBasket()
     {
+        plate.gameObject.transform.parent.GetComponent<Plate>().RemoveItemFromPlate(this.gameObject);
+        this.transform.localRotation = Quaternion.identity;
+
         if (inBasket || isNearPlate)
         {
             this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
@@ -49,6 +52,7 @@ public class PlatableItem : MonoBehaviour
     {
         if (isNearPlate)
         {
+
             plate.gameObject.transform.parent.GetComponent<Plate>().AddItemToPlate(this.gameObject);
         }
     }

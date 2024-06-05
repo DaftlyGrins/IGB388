@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 
 public class SlidingBlastDoor : MonoBehaviour
@@ -21,13 +22,21 @@ public class SlidingBlastDoor : MonoBehaviour
   {
     if (!isOpen) return;
 
-    transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+    GetComponentInParent<Transform>().position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+    if (transform.position.y == targetY) isOpen = false;
   }
 
   public void Open()
   {
-    isConfirming = true;
     audioSources[0].Play();
+    StartCoroutine(WaitToOpen());
+  }
+
+  IEnumerator WaitToOpen()
+  {
+    yield return new WaitForSeconds(5.0f);
+    
+    isConfirming = true;
     display.SetActive(true);
   }
 
