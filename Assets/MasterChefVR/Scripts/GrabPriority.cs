@@ -10,8 +10,8 @@ public class GrabPriority : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LeftGrabber = GameObject.FindGameObjectWithTag("LeftGrabber");
-        RightGrabber = GameObject.FindGameObjectWithTag("RightGrabber");
+        //LeftGrabber = GameObject.FindGameObjectWithTag("LeftGrabber");
+        //RightGrabber = GameObject.FindGameObjectWithTag("RightGrabber");
     }
 
     // Update is called once per frame

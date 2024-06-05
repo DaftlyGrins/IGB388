@@ -19,8 +19,8 @@ public class GravityReset : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         numOfChildren = this.transform.childCount;
-        int i = 0;
         rb = GetComponent<Rigidbody>();
         isGravityEnabled = false;
         cForce = GetComponent<ConstantForce>();
@@ -39,7 +39,6 @@ public class GravityReset : MonoBehaviour
     
     void Update()
     {
-      return;
         if(tillCountdownExpires > 10)
         {
             timer.text = "0:" + (int)tillCountdownExpires;
@@ -56,10 +55,12 @@ public class GravityReset : MonoBehaviour
                 cForce.force = new Vector3(0, -10f, 0);
             }
         }
-        if (this.transform.position.y > 6)
+        
+        if (this.transform.position.y > 9)
         {
             cForce.force = new Vector3(0, -10f, 0);
         }
+
         if (isGravityEnabled == true)
         {
             Debug.Log(tillCountdownExpires);
@@ -88,8 +89,8 @@ public class GravityReset : MonoBehaviour
                 tillCountdownExpires = 20;
                 tillCountdownExpires = tillCountdownExpires + Time.deltaTime;
             }
-            rb.useGravity = true;
-            cForce.force = new Vector3(0, 0, 0);
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<ConstantForce>().force = new Vector3(0, 0, 0);
             isGravityEnabled = true;
     }
     
@@ -97,8 +98,8 @@ public class GravityReset : MonoBehaviour
     {
         if(inMainRoom == true)
         {
-            rb.useGravity = false;
-            cForce.force = forceDirection;
+            GetComponent<Rigidbody>().useGravity = false;
+            GetComponent<ConstantForce>().force = forceDirection;
         }
         isGravityEnabled = false;
     }
