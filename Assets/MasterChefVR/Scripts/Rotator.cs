@@ -21,7 +21,7 @@ public class Rotator : MonoBehaviour
         yRotate = Random.Range(-45, 45);
         zRotate = Random.Range(-45, 45);
         rotation = new Vector3(xRotate, yRotate, zRotate);
-        rotationAround = new Vector3(1.0f, 1.0f, 1.0f);
+        rotationAround = new Vector3(0.0f, yRotate, 0.0f);
     }
 
     // Update is called once per frame
