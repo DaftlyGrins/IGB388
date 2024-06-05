@@ -29,8 +29,10 @@ public class Toaster : MonoBehaviour
   // Handles putting the buns in the toaster
   void OnTriggerEnter(Collider other)
   {
-    string objectName = other.GetComponent<MeshRenderer>().name;
-    Debug.Log(objectName);
+    MeshRenderer mr = other.GetComponent<MeshRenderer>();
+    if (mr == null) {return;}
+    string objectName = mr.name;
+    
 
     if ((objectName != "BunBottom" && objectName != "BunTop") || bothPoppersOccupied)
       return;
