@@ -239,7 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceBuffer: 0
   timeBuffer: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 4648874140892769462}
 --- !u!1001 &5495930550649339194
 PrefabInstance:
   m_ObjectHideFlags: 0
