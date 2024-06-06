@@ -257,8 +257,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99cc66780296ec54e922cd89c6bdf48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slices: []
-  cutMesh: []
+  slices:
+  - {fileID: 266676294347505730, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
+  - {fileID: 1958460025281508916, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
+  cutMesh:
+  - {fileID: -2064251613555647938, guid: 364424708b323a64f8ffd550fc29b3a9, type: 3}
 --- !u!114 &1122039287822773923
 MonoBehaviour:
   m_ObjectHideFlags: 0

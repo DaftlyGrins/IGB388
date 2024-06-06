@@ -25,13 +25,24 @@ public class Respawner : MonoBehaviour
     }
 
     void Update(){
-        if (neverGrabbed && grabbable.isGrabbed){
-            neverGrabbed = false;
-            Invoke("ApplyTimeBuffer", timeBuffer);
+        if (neverGrabbed && grabbable.isGrabbed)
+        {
+            if (this.gameObject.tag != "food")
+            {
+                neverGrabbed = false;
+                Invoke("ApplyTimeBuffer", timeBuffer);
+            }
         }
 
         if (wantToSpawn){
             TryRespawn();
+        }
+
+        if (this.transform.position.y <= -1 && neverGrabbed)
+        {
+            neverGrabbed = false;
+            TryRespawn();
+            Delete(this.gameObject);
         }
     }
 
