@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
   private static GameManager _instance;
   public GameObject wellGiantLevel = null;
+  public GameObject player;
   public GameObject[] lights;
   public GameObject logo;
   public GameObject dialogueManager;
