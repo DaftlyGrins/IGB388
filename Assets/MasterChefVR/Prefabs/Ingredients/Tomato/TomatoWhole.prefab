@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 9085958588781323483}
   - component: {fileID: 1564370919266883583}
   - component: {fileID: 7044100062841140191}
-  - component: {fileID: 2506640985110269772}
   m_Layer: 0
   m_Name: TomatoBase
   m_TagString: Untagged
@@ -138,7 +137,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 2430838033933942551}
   IsDistanceGrabbable: 1
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
@@ -264,21 +264,6 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
---- !u!114 &2506640985110269772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2743268865454218168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 516861d98411d344d8cc31627ae99974, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  LeftGrabber: {fileID: 0}
-  RightGrabber: {fileID: 0}
 --- !u!1 &5205670616296954970
 GameObject:
   m_ObjectHideFlags: 0
