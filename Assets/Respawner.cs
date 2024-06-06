@@ -42,7 +42,6 @@ public class Respawner : MonoBehaviour
         {
             neverGrabbed = false;
             TryRespawn();
-            Delete(this.gameObject);
         }
     }
 
