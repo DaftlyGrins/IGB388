@@ -44,6 +44,7 @@ public class Respawner : MonoBehaviour
         if (distance > distanceBuffer){
             GameObject clone = Instantiate(prefab, startingPosition, startingRotation);
             clone.transform.localScale = startingScale;
+            clone.GetComponent<Rigidbody>().isKinematic = false;
             wantToSpawn = false;
         }
     }
