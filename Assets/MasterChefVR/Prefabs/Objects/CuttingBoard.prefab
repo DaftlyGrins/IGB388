@@ -1511,8 +1511,6 @@ GameObject:
   - component: {fileID: 2755844311987366167}
   - component: {fileID: 4029201089727067897}
   - component: {fileID: 1420179591338425252}
-  - component: {fileID: 496868685106510265}
-  - component: {fileID: 2371896427194915768}
   m_Layer: 0
   m_Name: CuttingBoard
   m_TagString: Untagged
@@ -2603,51 +2601,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &496868685106510265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6586898468877614514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0395abccf359a8848a51de2c4e46eb39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints:
-  - {fileID: 4029201089727067897}
-  IsDistanceGrabbable: 1
-  grabbableObjectsIgnoreRaycasts: 1
-  OnGrabStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnGrabEnd:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2371896427194915768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6586898468877614514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dc0a2d4d4a735c47aff95934555760e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsGrabbedColor: {r: 0, g: 0, b: 0, a: 0}
-  InteractableNotCloseByColor: {r: 0, g: 0, b: 0, a: 0}
-  InteractableCloseByColor: {r: 1, g: 1, b: 1, a: 1}
-  InteractableReadyToPickup: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  OutlineMode: 1
-  OutlineWidth: 3
-  HighlightRange: 3
 --- !u!1 &6960791542458789163
 GameObject:
   m_ObjectHideFlags: 0
