@@ -35,6 +35,7 @@ public class GravityReset : MonoBehaviour
             rb.useGravity = false;
             cForce.force = new Vector3(0, 0, 0);
         }
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
     
     void Update()
@@ -84,14 +85,15 @@ public class GravityReset : MonoBehaviour
 
     public void GravityOn()
     {
-            if (isGravityEnabled == false)
-            {
-                tillCountdownExpires = 20;
-                tillCountdownExpires = tillCountdownExpires + Time.deltaTime;
-            }
-            GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<ConstantForce>().force = new Vector3(0, 0, 0);
-            isGravityEnabled = true;
+        permissionToMove();
+        if (isGravityEnabled == false)
+        {
+            tillCountdownExpires = 20;
+            tillCountdownExpires = tillCountdownExpires + Time.deltaTime;
+        }
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<ConstantForce>().force = new Vector3(0, 0, 0);
+        isGravityEnabled = true;
     }
     
     public void GravityOff()
@@ -102,5 +104,11 @@ public class GravityReset : MonoBehaviour
             GetComponent<ConstantForce>().force = forceDirection;
         }
         isGravityEnabled = false;
+    }
+
+    public void permissionToMove()
+    {
+        Debug.Log("Gangsta Spunchbob");
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
     }
 }

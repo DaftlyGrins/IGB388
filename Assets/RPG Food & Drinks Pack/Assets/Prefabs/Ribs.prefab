@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 5839760322058137239}
   - component: {fileID: -2181447128807893386}
   - component: {fileID: 2022159941059266382}
+  - component: {fileID: 3187855872747977127}
   m_Layer: 0
   m_Name: Ribs
   m_TagString: Untagged
@@ -493,7 +494,19 @@ MonoBehaviour:
   grabbableObjectsIgnoreRaycasts: 1
   OnGrabStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3187855872747977127}
+        m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
+        m_MethodName: permissionToMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnGrabEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -524,3 +537,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08293377, y: 0.01549473, z: 0.18164873}
   m_Center: {x: -0.00015084998, y: 0.000000004892444, z: -0.0017787372}
+--- !u!114 &3187855872747977127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519909849242270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lever: {fileID: 0}
+  timer: {fileID: 0}
+  inMainRoom: 0

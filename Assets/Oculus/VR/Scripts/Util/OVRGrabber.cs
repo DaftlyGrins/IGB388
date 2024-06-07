@@ -291,7 +291,7 @@ public class OVRGrabber : MonoBehaviour
             else
             {
                 Vector3 relPos = m_grabbedObj.transform.position - transform.position;
-                relPos = Quaternion.Inverse(transform.rotation) * relPos;
+                relPos = Quaternion.Inverse(transform.rotation).normalized * relPos;
                 m_grabbedObjectPosOff = relPos;
             }
 

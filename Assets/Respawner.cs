@@ -25,9 +25,9 @@ public class Respawner : MonoBehaviour
     }
 
     void Update(){
-        if (neverGrabbed && grabbable.isGrabbed)
+        if (neverGrabbed == true && grabbable.isGrabbed)
         {
-            if (this.gameObject.tag != "food")
+            if (this.gameObject.tag != "Food")
             {
                 neverGrabbed = false;
                 Invoke("ApplyTimeBuffer", timeBuffer);
