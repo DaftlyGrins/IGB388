@@ -32,7 +32,8 @@ public class Toaster : MonoBehaviour
   void OnTriggerEnter(Collider other)
   {
     MeshRenderer mr = other.GetComponent<MeshRenderer>();
-    if (mr == null) {return;}
+    if (mr == null) return;
+
     string objectName = mr.name;
 
     if (!objectName.Contains("Bun") || bothPoppersOccupied)
@@ -45,15 +46,13 @@ public class Toaster : MonoBehaviour
     GameObject targetPopper = leftPopperOccupied ? rightPopper : leftPopper;
     GameObject bun = Instantiate(bunType, bunType.transform.position, bunType.transform.rotation);
 
-    PlatableItem platableItemScript = bun.GetComponent<PlatableItem>();
+    PlatableItem platableItemScript = other.gameObject.GetComponent<PlatableItem>();
 
     if (platableItemScript.cooked && !platableItemScript.burnt) 
     {
-      bun.GetComponent<MeshRenderer>().material = burntMaterial;
       platableItemScript.burnt = true;
       platableItemScript.cooked = false;
     } else if (!platableItemScript.burnt && !platableItemScript.cooked) {
-      bun.GetComponent<MeshRenderer>().material = toastedMaterial;
       platableItemScript.cooked = true;
     }
 
@@ -90,6 +89,15 @@ public class Toaster : MonoBehaviour
       rb.isKinematic = false;
       rb.AddForce(Vector3.up * 400);
       bun.transform.SetParent(null);
+
+      PlatableItem platableItemScript = bun.GetComponent<PlatableItem>();
+
+      if (platableItemScript.cooked && !platableItemScript.burnt) 
+      {
+        bun.GetComponent<MeshRenderer>().material = burntMaterial;
+      } else if (!platableItemScript.cooked && !platableItemScript.burnt) {
+        bun.GetComponent<MeshRenderer>().material = toastedMaterial;
+      }
     }
 
     yield return new WaitForSeconds(.5f);
