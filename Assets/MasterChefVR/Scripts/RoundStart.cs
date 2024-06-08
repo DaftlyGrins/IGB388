@@ -7,6 +7,7 @@ public class RoundStart : MonoBehaviour
   public GameObject presentationLight;
   public GameObject kitchenLight;
   public GameObject airlockControl;
+  public GameObject recipe;
 
   void Start()
   {
@@ -34,5 +35,6 @@ public class RoundStart : MonoBehaviour
     kitchenLight.GetComponent<SpaceLight>().LightOn();
     airlockControl.GetComponent<AirlockControl>().EnableAirlock();
     GetComponent<CustomGrabbable>().IsDistanceGrabbable = true;
+    recipe.SetActive(true);
   }
 }
