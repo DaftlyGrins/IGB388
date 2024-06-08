@@ -180,10 +180,8 @@ GameObject:
   - component: {fileID: -5428054445228571381}
   - component: {fileID: 1077952102345676744}
   - component: {fileID: 5996364433332665995}
-  - component: {fileID: -7782465078372515852}
   - component: {fileID: -3112702594913291189}
-  - component: {fileID: 6560063290355738361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WineJug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,18 +317,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &-7782465078372515852
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237884354238378}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!64 &-3112702594913291189
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -345,19 +331,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300074, guid: 67e85fe895ef02d49857e5e78498bf5a, type: 3}
---- !u!65 &6560063290355738361
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237884354238378}
-  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.14153871, y: 0.23112005, z: 0.18184768}
-  m_Center: {x: -0.000030260535, y: -0.00042103595, z: -0.0032108387}
 --- !u!1 &1800745385870294
 GameObject:
   m_ObjectHideFlags: 0

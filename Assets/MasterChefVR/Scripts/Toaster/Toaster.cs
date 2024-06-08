@@ -16,6 +16,8 @@ public class Toaster : MonoBehaviour
   public float minToastDuration;
   public float heighOffset;
   public bool leftPopperOccupied = false;
+  public Material toastedMaterial;
+  public Material burntMaterial;
 
   private bool bothPoppersOccupied = false;
   private readonly List<GameObject> bunsToPop = new();
@@ -77,6 +79,18 @@ public class Toaster : MonoBehaviour
       rb.isKinematic = false;
       rb.AddForce(Vector3.up * 400);
       bun.transform.SetParent(null);
+      PlatableItem platableItemScript = bun.GetComponent<PlatableItem>();
+
+      if (platableItemScript.burnt) yield break;
+      if (platableItemScript.cooked) 
+      {
+        bun.GetComponent<MeshRenderer>().material = burntMaterial;
+        platableItemScript.burnt = true;
+        platableItemScript.cooked = false;
+      } else {
+        bun.GetComponent<MeshRenderer>().material = toastedMaterial;
+        platableItemScript.cooked = true;
+      }
     }
 
     yield return new WaitForSeconds(.5f);

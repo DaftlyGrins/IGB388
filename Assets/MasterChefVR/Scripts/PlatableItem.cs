@@ -9,6 +9,8 @@ public class PlatableItem : MonoBehaviour
     public Collider plate;
     public Collider basket;
     public bool inBasket = false;
+    public bool cooked = false;
+    public bool burnt = false;
 
     // Variables to restrict large movements when cut with knife
     [SerializeField] private float restrictVelTime = 0.1f;
