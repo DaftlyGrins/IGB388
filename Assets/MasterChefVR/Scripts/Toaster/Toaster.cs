@@ -6,7 +6,7 @@ public class Toaster : MonoBehaviour
 {
   public GameObject leftPopper;
   public GameObject rightPopper;
-  public GameObject leftbunBottom;
+  public GameObject leftBunBottom;
   public GameObject leftBunTop;
   public GameObject rightBunBottom;
   public GameObject rightBunTop;
@@ -34,17 +34,28 @@ public class Toaster : MonoBehaviour
     MeshRenderer mr = other.GetComponent<MeshRenderer>();
     if (mr == null) {return;}
     string objectName = mr.name;
-    
 
-    if ((objectName != "BunBottom" && objectName != "BunTop") || bothPoppersOccupied)
+    if (!objectName.Contains("Bun") || bothPoppersOccupied)
       return;
     
     Destroy(other.gameObject);
 
     // The forbidden nested ternary
-    GameObject bunType = objectName == "BunBottom" ? (leftPopperOccupied ? rightBunBottom : leftbunBottom) : (leftPopperOccupied ? rightBunTop : leftBunTop);
+    GameObject bunType = objectName.Contains("BunBottom") ? (leftPopperOccupied ? rightBunBottom : leftBunBottom) : (leftPopperOccupied ? rightBunTop : leftBunTop);
     GameObject targetPopper = leftPopperOccupied ? rightPopper : leftPopper;
     GameObject bun = Instantiate(bunType, bunType.transform.position, bunType.transform.rotation);
+
+    PlatableItem platableItemScript = bun.GetComponent<PlatableItem>();
+
+    if (platableItemScript.cooked && !platableItemScript.burnt) 
+    {
+      bun.GetComponent<MeshRenderer>().material = burntMaterial;
+      platableItemScript.burnt = true;
+      platableItemScript.cooked = false;
+    } else if (!platableItemScript.burnt && !platableItemScript.cooked) {
+      bun.GetComponent<MeshRenderer>().material = toastedMaterial;
+      platableItemScript.cooked = true;
+    }
 
     bun.SetActive(true);
     bun.transform.SetParent(targetPopper.transform);
@@ -79,18 +90,6 @@ public class Toaster : MonoBehaviour
       rb.isKinematic = false;
       rb.AddForce(Vector3.up * 400);
       bun.transform.SetParent(null);
-      PlatableItem platableItemScript = bun.GetComponent<PlatableItem>();
-
-      if (platableItemScript.burnt) yield break;
-      if (platableItemScript.cooked) 
-      {
-        bun.GetComponent<MeshRenderer>().material = burntMaterial;
-        platableItemScript.burnt = true;
-        platableItemScript.cooked = false;
-      } else {
-        bun.GetComponent<MeshRenderer>().material = toastedMaterial;
-        platableItemScript.cooked = true;
-      }
     }
 
     yield return new WaitForSeconds(.5f);
