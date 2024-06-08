@@ -15,7 +15,6 @@ public class CutFood : MonoBehaviour
   public void Cut()
   {
     Instantiate(slices[currentSliceCount], transform.position, transform.rotation);
-        slices[currentSliceCount].GetComponent<GravityReset>().permissionToMove();
     
     if (currentSliceCount < cutMesh.Length)
     {
