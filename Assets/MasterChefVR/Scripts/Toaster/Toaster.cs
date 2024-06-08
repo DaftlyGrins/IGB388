@@ -50,10 +50,15 @@ public class Toaster : MonoBehaviour
 
     if (platableItemScript.cooked && !platableItemScript.burnt) 
     {
-      platableItemScript.burnt = true;
-      platableItemScript.cooked = false;
+      bun.GetComponent<MeshRenderer>().material = toastedMaterial;
+      bun.GetComponent<PlatableItem>().burnt = true;
+      bun.GetComponent<PlatableItem>().cooked = false;
     } else if (!platableItemScript.burnt && !platableItemScript.cooked) {
-      platableItemScript.cooked = true;
+      bun.GetComponent<PlatableItem>().cooked = true;
+    } else {
+      bun.GetComponent<MeshRenderer>().material = burntMaterial;
+      bun.GetComponent<PlatableItem>().burnt = true;
+      bun.GetComponent<PlatableItem>().cooked = false;
     }
 
     bun.SetActive(true);
