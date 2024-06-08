@@ -154,6 +154,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6543343359518723188}
+        m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
+        m_MethodName: permissionToMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnGrabEnd:
     m_PersistentCalls:
       m_Calls:
@@ -231,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lever: {fileID: 0}
   timer: {fileID: 0}
-  inMainRoom: 0
+  inMainRoom: 1
 --- !u!75 &799557619943522834
 ConstantForce:
   m_ObjectHideFlags: 0

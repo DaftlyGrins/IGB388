@@ -17,9 +17,9 @@ public class GrabPriority : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Parent = this.transform.parent.gameObject;
         if(!Parent == null)
         {
+            Parent = this.transform.parent.gameObject;
             if (LeftGrabber.GetComponent<CustomGrabber>().FindClosestGrabbable() == this.transform.gameObject || RightGrabber.GetComponent<CustomGrabber>().FindClosestGrabbable() == this.transform.gameObject)
             {
                 if (Parent.GetComponent<CustomGrabbable>().IsDistanceGrabbable == true)

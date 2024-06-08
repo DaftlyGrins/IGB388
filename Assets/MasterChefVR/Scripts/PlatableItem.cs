@@ -37,9 +37,12 @@ public class PlatableItem : MonoBehaviour
 
     public void GrabbedFromPlateorBasket()
     {
-        if(this.gameObject.transform.parent.tag == "Plate")
+        if(this.gameObject.transform.parent.tag != null)
         {
-            plate.gameObject.transform.parent.GetComponent<Plate>().RemoveItemFromPlate(this.gameObject);
+            if(this.gameObject.transform.parent.tag == "Plate")
+            {
+                plate.gameObject.transform.parent.GetComponent<Plate>().RemoveItemFromPlate(this.gameObject);
+            }
         }
 
         if (inBasket || isNearPlate)

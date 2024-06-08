@@ -19,7 +19,8 @@ public class GravityReset : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Lever = GameObject.Find("DiegeticBooleanLever");
+        timer = GameObject.Find("LeverTime").GetComponent<TMP_Text>();
         numOfChildren = this.transform.childCount;
         rb = GetComponent<Rigidbody>();
         isGravityEnabled = false;
@@ -29,13 +30,13 @@ public class GravityReset : MonoBehaviour
         {
             rb.useGravity = true;
             cForce.force = new Vector3(0, 0, 0);
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         }
         else if (inMainRoom == true)
         {
             rb.useGravity = false;
             cForce.force = new Vector3(0, 0, 0);
         }
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
     
     void Update()
