@@ -3,8 +3,6 @@ using UnityEngine;
 public class CookFood : MonoBehaviour
 {
   public Material[] cookingStagesMaterials;
-  public float cookingInterval = 1000f;
-  public float cookingStrength = .001f;
 
   private float timeCooked;
   private bool canCook = false;
@@ -18,20 +16,20 @@ public class CookFood : MonoBehaviour
   {
     if (!canCook) return;
 
-    timeCooked += cookingStrength;
-    if (timeCooked >= 700f)
+    timeCooked += Time.deltaTime;
+    if (timeCooked >= 5f)
     {
       this.GetComponent<Renderer>().material = cookingStagesMaterials[0];
     }
-    if (timeCooked >= 1400f)
+    if (timeCooked >= 10f)
     {
       this.GetComponent<Renderer>().material = cookingStagesMaterials[1];
     }
-    if (timeCooked >= 2100f)
+    if (timeCooked >= 15f)
     {
       this.GetComponent<Renderer>().material = cookingStagesMaterials[2];
     }
-    if (timeCooked >= 2800f)
+    if (timeCooked >= 20f)
     {
       this.GetComponent<Renderer>().material = cookingStagesMaterials[3];
     }
