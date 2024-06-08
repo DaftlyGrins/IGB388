@@ -10,7 +10,7 @@ public class SlidingBlastDoor : MonoBehaviour
 
   private float targetY = -2.49f;
   private Vector3 targetPosition;
-  private bool isOpen = false;
+  [SerializeField] private bool isOpen = false;
   private bool isConfirming = false;
 
   void Start()
@@ -48,5 +48,6 @@ public class SlidingBlastDoor : MonoBehaviour
     isOpen = true;
     isConfirming = false;
     display.GetComponent<Collider>().enabled = false;
+    GetComponent<InitiateGravityInversion>().InitiateInversion();
   }
 }

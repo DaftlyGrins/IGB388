@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4137745942405077370}
   - component: {fileID: 2063363665757457389}
   - component: {fileID: 3962490263426925413}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BunBottom
   m_TagString: Food
   m_Icon: {fileID: 0}
@@ -137,6 +137,11 @@ MonoBehaviour:
   plate: {fileID: 0}
   basket: {fileID: 0}
   inBasket: 0
+  cooked: 0
+  burnt: 0
+  restrictVelTime: 0.1
+  restrictVelValue: 1
+  isVelRestricted: 1
 --- !u!114 &-8940560398347986486
 MonoBehaviour:
   m_ObjectHideFlags: 0

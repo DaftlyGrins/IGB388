@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3367798316092676201}
   - component: {fileID: 3367798316092676181}
   - component: {fileID: 3367798316092676202}
-  - component: {fileID: 3994717684965306230}
+  - component: {fileID: 5569488894112397458}
   m_Layer: 3
   m_Name: FishFillet
   m_TagString: Untagged
@@ -192,8 +192,8 @@ MonoBehaviour:
   OnGrabEnd:
     m_PersistentCalls:
       m_Calls: []
---- !u!64 &3994717684965306230
-MeshCollider:
+--- !u!65 &5569488894112397458
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -202,10 +202,9 @@ MeshCollider:
   m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.46566963, y: 0.09694588, z: 0.24316072}
+  m_Center: {x: 0.08886528, y: 0.0027144551, z: 0.006828338}
 --- !u!1 &7105257900941005677
 GameObject:
   m_ObjectHideFlags: 0
