@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftPopper: {fileID: 1333984343992717693}
   rightPopper: {fileID: 1698416420653865856}
-  leftBunBottom: {fileID: 0}
+  leftBunBottom: {fileID: 6965857812708704883}
   leftBunTop: {fileID: 8748722328422380737}
   rightBunBottom: {fileID: 1606443206708408239}
   rightBunTop: {fileID: 1532518497090559647}
@@ -122,8 +122,8 @@ MonoBehaviour:
   minToastDuration: 5
   heighOffset: 0
   leftPopperOccupied: 0
-  toastedMaterial: {fileID: 0}
-  burntMaterial: {fileID: 0}
+  toastedMaterial: {fileID: 2100000, guid: b9154a365f29082449e89fc59bb0d958, type: 2}
+  burntMaterial: {fileID: 2100000, guid: 2bcc3c3cc38644ccdabc8ee3c8241861, type: 2}
 --- !u!1 &252420462430830041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,6 +1724,11 @@ PrefabInstance:
     - {fileID: 4137745942405077370, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
     - {fileID: 2063363665757457389, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
+--- !u!1 &6965857812708704883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 266676294347505730, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
+  m_PrefabInstance: {fileID: 7140701761965654577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7773321167348275401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 646473262635260664, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
