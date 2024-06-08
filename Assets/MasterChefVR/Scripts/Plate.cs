@@ -50,7 +50,7 @@ public class Plate : MonoBehaviour
         grade = 0;
 
         // Adding score based on if player has at least one of a particular item
-        string[] meshNames = new string[6] {"BunBottom", "LettuceLeaf", "Steak", "CheeseSlice", "TomatoSlice", "BunTop"};
+        string[] meshNames = new string[6] {"BunBottom", "Steak", "LettuceLeaf", "CheeseSlice", "TomatoSlice", "BunTop"};
         
         foreach (string item in meshNames)
         {
@@ -87,9 +87,14 @@ public class Plate : MonoBehaviour
             if (ingredients[i] == null){
                 break;
             }
-            
+
             if (ingredients[i].name.Contains(meshNames[i])){
                 grade += 1;
+
+                // If it is three and in correct spot
+                if (ingredients[i].name.Contains("3")){
+                    grade += 1;
+                }
             }
         }
 
