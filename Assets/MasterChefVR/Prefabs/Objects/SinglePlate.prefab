@@ -64,6 +64,7 @@ MonoBehaviour:
   - {fileID: 0}
   newItemLocation: {fileID: 8432816789549205219}
   finalScore: 0
+  grade: 0
 --- !u!54 &8432816788184316835
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,7 +130,19 @@ MonoBehaviour:
         m_CallState: 2
   OnGrabEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8432816788184316832}
+        m_TargetAssemblyTypeName: Plate, Assembly-CSharp
+        m_MethodName: GradePlate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-8859599356388257247
 MonoBehaviour:
   m_ObjectHideFlags: 0

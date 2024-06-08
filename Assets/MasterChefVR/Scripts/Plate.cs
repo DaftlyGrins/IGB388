@@ -8,6 +8,7 @@ public class Plate : MonoBehaviour
     public List<GameObject> ingredients = new List<GameObject>();
     public Transform newItemLocation;
     public int finalScore;
+    public int grade;
 
     public void AddItemToPlate(GameObject item)
     {
@@ -42,6 +43,60 @@ public class Plate : MonoBehaviour
                 item.transform.parent = null;
             }
         }
+    }
+
+    public void GradePlate()
+    {
+        grade = 0;
+
+        // Adding score based on if player has at least one of a particular item
+        string[] meshNames = new string[6] {"BunBottom", "LettuceLeaf", "Steak", "CheeseSlice", "TomatoSlice", "BunTop"};
+        
+        foreach (string item in meshNames)
+        {
+            for (int i = 0; i <= ingredients.Count; i++){
+                if (ingredients[i] == null){
+                    break;
+                }
+
+                if (ingredients[i].GetComponent<MeshFilter>().mesh.name == null){ // Can only happen if it is meat
+                    if (item == "Steak"){ // Check that the item we are checking for is meat
+                        grade += 1;
+                        break;
+                    }
+                    else {
+                        continue;
+                    }
+                }
+                else {
+                    string nameToCheck = ingredients[i].GetComponent<MeshFilter>().mesh.name;
+                    if (nameToCheck.Substring(0, nameToCheck.Length - 9) == item || nameToCheck.Substring(0, nameToCheck.Length - 10) == item) // Checking for all variants using substring
+                    {
+                        grade +=1;
+                        break;
+                    }
+                    else{
+                        continue;
+                    }
+                }
+            }
+        }
+
+        // Add score if item is in correct location
+        for (int i = 0; i <= ingredients.Count; i++){
+            if (ingredients[i] == null){
+                break;
+            }
+            
+            if (ingredients[i].name.Contains(meshNames[i])){
+                grade += 1;
+            }
+        }
+
+
+
+        // Print Score
+        Debug.Log(grade);
     }
 
     public void gradingPlate()
