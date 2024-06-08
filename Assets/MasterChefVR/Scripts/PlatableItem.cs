@@ -39,7 +39,6 @@ public class PlatableItem : MonoBehaviour
     {
         if(this.gameObject.transform.parent != null)
         {
-            Debug.Log("Has Parent: " + this.gameObject.transform.parent.tag);
             if(this.gameObject.transform.parent.tag == "Plate")
             {
                 plate.gameObject.transform.parent.GetComponent<Plate>().RemoveItemFromPlate(this.gameObject);
@@ -48,7 +47,6 @@ public class PlatableItem : MonoBehaviour
 
         if (inBasket || isNearPlate)
         {
-            Debug.Log("In Basket: "+ inBasket.ToString() + " On Plate: " + isNearPlate.ToString());
             this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             this.gameObject.GetComponent<Rigidbody>().detectCollisions = true;
             this.transform.parent = null;
