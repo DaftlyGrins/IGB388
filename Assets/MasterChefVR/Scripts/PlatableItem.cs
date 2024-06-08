@@ -10,6 +10,25 @@ public class PlatableItem : MonoBehaviour
     public Collider basket;
     public bool inBasket = false;
 
+    // Variables to restrict large movements when cut with knife
+    [SerializeField] private float restrictVelTime = 0.1f;
+    [SerializeField] private float restrictVelValue = 1f;
+    [SerializeField] private bool isVelRestricted = true;
+    private Rigidbody rb;
+
+    void Start(){
+        rb = GetComponent<Rigidbody>();
+        Invoke("UnrestrictVelocity", restrictVelTime);
+    }
+
+    void FixedUpdate(){
+        if (isVelRestricted){rb.velocity = rb.velocity.normalized * restrictVelValue;};
+    }
+
+    void UnrestrictVelocity(){
+        isVelRestricted = false;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Plate")

@@ -15,6 +15,11 @@ public class CutFood : MonoBehaviour
   public void Cut()
   {
     Instantiate(slices[currentSliceCount], transform.position, transform.rotation);
+
+    if (slices.Length == 2){ 
+      Instantiate(slices[1], transform.position, transform.rotation);
+      Destroy(this.gameObject);
+    }
     
     if (currentSliceCount < cutMesh.Length)
     {

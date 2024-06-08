@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 9157928294522410774}
   - component: {fileID: 2515149892151814567}
   - component: {fileID: 4383537298104729754}
-  - component: {fileID: 8758255276653014380}
   - component: {fileID: 4956090030726479283}
   m_Layer: 0
   m_Name: Knife
@@ -237,21 +236,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7233159054065966114, guid: 13841973cbc673644a46a8bec5d0cbaf, type: 3}
---- !u!114 &8758255276653014380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4648874140892769462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4125d22d97406f345b8376c24137691d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanceBuffer: 0
-  timeBuffer: 0
-  prefab: {fileID: 0}
 --- !u!114 &4956090030726479283
 MonoBehaviour:
   m_ObjectHideFlags: 0
