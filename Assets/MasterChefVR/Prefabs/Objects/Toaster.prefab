@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftPopper: {fileID: 1333984343992717693}
   rightPopper: {fileID: 1698416420653865856}
-  leftbunBottom: {fileID: 6965857812708704883}
+  leftBunBottom: {fileID: 0}
   leftBunTop: {fileID: 8748722328422380737}
   rightBunBottom: {fileID: 1606443206708408239}
   rightBunTop: {fileID: 1532518497090559647}
@@ -121,6 +121,9 @@ MonoBehaviour:
   maxToastDuration: 10
   minToastDuration: 5
   heighOffset: 0
+  leftPopperOccupied: 0
+  toastedMaterial: {fileID: 0}
+  burntMaterial: {fileID: 0}
 --- !u!1 &252420462430830041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1315,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.09
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8680485559580120184
 MonoBehaviour:
@@ -1697,11 +1700,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
---- !u!1 &6965857812708704883 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 266676294347505730, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
-  m_PrefabInstance: {fileID: 7140701761965654577}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7773321167348275401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 646473262635260664, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
