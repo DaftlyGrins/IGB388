@@ -36,7 +36,7 @@ public class Toaster : MonoBehaviour
 
     string objectName = mr.name;
 
-    if (!objectName.Contains("Bun") || bothPoppersOccupied)
+    if (!objectName.Contains("Bun") || objectName.Contains("BunUncut") || bothPoppersOccupied)
       return;
     
     Destroy(other.gameObject);
