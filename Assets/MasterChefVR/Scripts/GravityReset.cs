@@ -109,7 +109,6 @@ public class GravityReset : MonoBehaviour
 
     public void permissionToMove()
     {
-        Debug.Log("Gangsta Spunchbob");
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
     }
 }
