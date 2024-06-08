@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2096435574350944475}
   m_Layer: 3
   m_Name: SinglePlate
-  m_TagString: Untagged
+  m_TagString: Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,13 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1994fcf9b1b79aa45a0e62bd975f9628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredients:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  ingredients: []
   newItemLocation: {fileID: 8432816789549205219}
   finalScore: 0
   grade: 0

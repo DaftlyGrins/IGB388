@@ -18,7 +18,7 @@ public class Basket : MonoBehaviour
                 item.GetComponent<Rigidbody>().detectCollisions = false;
                 item.transform.SetParent(this.gameObject.transform, true);
                 item.transform.localRotation = Quaternion.identity;
-                item.transform.localPosition = new Vector3(0.0f, newItemLocation.localPosition.y + item.GetComponent<BoxCollider>().center.y * item.transform.localScale.y, 0.0f);
+                item.transform.localPosition = new Vector3(0.0f, newItemLocation.localPosition.y + (item.GetComponent<BoxCollider>().size.y/2 - item.GetComponent<BoxCollider>().center.y) * item.transform.localScale.y, 0.0f);
                 newItemLocation.localPosition = new Vector3(0.0f, item.GetComponent<BoxCollider>().size.y * item.transform.localScale.y + newItemLocation.localPosition.y, 0.0f);
                 return;
             }
