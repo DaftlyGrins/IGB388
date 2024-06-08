@@ -11,12 +11,9 @@ GameObject:
   - component: {fileID: 624776752457136990}
   - component: {fileID: 4540891420393616635}
   - component: {fileID: 1792586556582576177}
-  - component: {fileID: 9099245854977568012}
   - component: {fileID: 8914169350457083054}
-  - component: {fileID: 8914169350457083055}
   - component: {fileID: 8914169350457083050}
   - component: {fileID: 8914169350457083053}
-  - component: {fileID: 8914169350457083052}
   - component: {fileID: 7576118179498267059}
   m_Layer: 0
   m_Name: Mushroom
@@ -90,19 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9099245854977568012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279354611227255268}
-  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.12505701, y: 0.15681013, z: 0.13149253}
-  m_Center: {x: -0.00021988153, y: 0.077465236, z: -0.0006777644}
 --- !u!54 &8914169350457083054
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119,18 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &8914169350457083055
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279354611227255268}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &8914169350457083050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +125,7 @@ MonoBehaviour:
   OnGrabStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8914169350457083052}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
         m_MethodName: permissionToMove
         m_Mode: 1
@@ -187,21 +159,6 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
---- !u!114 &8914169350457083052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279354611227255268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lever: {fileID: 0}
-  timer: {fileID: 0}
-  inMainRoom: 0
 --- !u!64 &7576118179498267059
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -11,12 +11,9 @@ GameObject:
   - component: {fileID: 6768696624145393624}
   - component: {fileID: 7656372404337076349}
   - component: {fileID: 5594615788872768695}
-  - component: {fileID: 2604838085987499810}
   - component: {fileID: 8206666466726607674}
-  - component: {fileID: 8206666466726607685}
   - component: {fileID: 8206666466726607686}
   - component: {fileID: 8206666466726607687}
-  - component: {fileID: 8206666466726607684}
   - component: {fileID: 8664674698674471629}
   m_Layer: 0
   m_Name: CoffeeCup
@@ -90,19 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2604838085987499810
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6243375684335582562}
-  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.12081248, y: 0.152305, z: 0.12081248}
-  m_Center: {x: 0, y: 0.07999416, z: 0}
 --- !u!54 &8206666466726607674
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119,18 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &8206666466726607685
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6243375684335582562}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &8206666466726607686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +144,7 @@ MonoBehaviour:
   OnGrabStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8206666466726607684}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
         m_MethodName: permissionToMove
         m_Mode: 1
@@ -187,21 +159,6 @@ MonoBehaviour:
   OnGrabEnd:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8206666466726607684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6243375684335582562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lever: {fileID: 0}
-  timer: {fileID: 0}
-  inMainRoom: 0
 --- !u!64 &8664674698674471629
 MeshCollider:
   m_ObjectHideFlags: 0

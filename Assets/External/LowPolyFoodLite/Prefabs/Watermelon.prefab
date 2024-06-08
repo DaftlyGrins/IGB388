@@ -11,12 +11,9 @@ GameObject:
   - component: {fileID: 5519704939534268717}
   - component: {fileID: 8878343022998697608}
   - component: {fileID: 6688622498402484802}
-  - component: {fileID: 5821086348794049204}
   - component: {fileID: 514450120639115990}
-  - component: {fileID: 514450120639115991}
   - component: {fileID: 514450120639115994}
   - component: {fileID: 514450120639115993}
-  - component: {fileID: 514450120639115992}
   - component: {fileID: 3074877387588696530}
   m_Layer: 0
   m_Name: Watermelon
@@ -90,19 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5821086348794049204
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5175267955941368727}
-  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.29415518, y: 0.3630672, z: 0.3092926}
-  m_Center: {x: 0.000002734363, y: -0.010130875, z: 0.0000018104911}
 --- !u!54 &514450120639115990
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119,18 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &514450120639115991
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5175267955941368727}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &514450120639115994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +125,7 @@ MonoBehaviour:
   OnGrabStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 514450120639115992}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
         m_MethodName: permissionToMove
         m_Mode: 1
@@ -187,21 +159,6 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
---- !u!114 &514450120639115992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5175267955941368727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lever: {fileID: 0}
-  timer: {fileID: 0}
-  inMainRoom: 0
 --- !u!64 &3074877387588696530
 MeshCollider:
   m_ObjectHideFlags: 0

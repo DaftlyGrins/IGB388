@@ -95,13 +95,10 @@ GameObject:
   - component: {fileID: 33309086658736392}
   - component: {fileID: 23765937082381552}
   - component: {fileID: 3586257685073380605}
-  - component: {fileID: 6227407032465915834}
   - component: {fileID: 7173548700347398139}
   - component: {fileID: 5704276399183370788}
   - component: {fileID: 3063457370709349597}
-  - component: {fileID: 2407800041601680907}
-  - component: {fileID: 4845999723739503757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cake4/4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,18 +186,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &6227407032465915834
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573780271531154}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &7173548700347398139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +227,7 @@ MonoBehaviour:
   OnGrabStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4845999723739503757}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
         m_MethodName: permissionToMove
         m_Mode: 1
@@ -271,34 +256,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: af9152524b0e38643a868670673f08bf, type: 3}
---- !u!65 &2407800041601680907
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573780271531154}
-  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.16786188, y: 0.076515935, z: 0.16586608}
-  m_Center: {x: -0.001271181, y: -0.0023995824, z: -0.0019044438}
---- !u!114 &4845999723739503757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1573780271531154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lever: {fileID: 0}
-  timer: {fileID: 0}
-  inMainRoom: 0
 --- !u!1 &1656574416485276
 GameObject:
   m_ObjectHideFlags: 0

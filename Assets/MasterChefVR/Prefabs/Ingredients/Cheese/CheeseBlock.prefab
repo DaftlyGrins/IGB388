@@ -11,14 +11,11 @@ GameObject:
   - component: {fileID: 5703904534626878720}
   - component: {fileID: 8685065855855479461}
   - component: {fileID: 6873471770917289583}
-  - component: {fileID: 8648458550541878343}
   - component: {fileID: 2779972905933229997}
   - component: {fileID: 568398605390913131}
   - component: {fileID: 5713367783122884686}
   - component: {fileID: 8814047012414233067}
   - component: {fileID: -3857492820418823227}
-  - component: {fileID: 3229467163937275956}
-  - component: {fileID: 1625667282198623734}
   m_Layer: 0
   m_Name: CheeseBlock
   m_TagString: Food
@@ -91,19 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8648458550541878343
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4927930132902748090}
-  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.20276943, y: 0.07895052, z: 0.11720291}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2779972905933229997
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -235,30 +219,8 @@ MonoBehaviour:
   plate: {fileID: 0}
   basket: {fileID: 0}
   inBasket: 0
---- !u!75 &3229467163937275956
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4927930132902748090}
-  m_Enabled: 0
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
---- !u!114 &1625667282198623734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4927930132902748090}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lever: {fileID: 0}
-  timer: {fileID: 0}
-  inMainRoom: 0
+  cooked: 0
+  burnt: 0
+  restrictVelTime: 0.1
+  restrictVelValue: 1
+  isVelRestricted: 1

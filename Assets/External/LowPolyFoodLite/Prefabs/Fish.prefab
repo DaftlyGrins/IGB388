@@ -11,12 +11,9 @@ GameObject:
   - component: {fileID: 4497155794289983868}
   - component: {fileID: 704462371790360281}
   - component: {fileID: 3324280509091117587}
-  - component: {fileID: 320497042052016335}
   - component: {fileID: 7053323039982734533}
-  - component: {fileID: 7053323039982734534}
   - component: {fileID: 7053323039982734529}
   - component: {fileID: 7053323039982734528}
-  - component: {fileID: 7053323039982734535}
   - component: {fileID: 6483852090927314648}
   m_Layer: 0
   m_Name: Fish
@@ -90,19 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &320497042052016335
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3828846876288801734}
-  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44548523, y: 0.18781027, z: 0.078036}
-  m_Center: {x: -0.051573925, y: -0.0019280389, z: 0}
 --- !u!54 &7053323039982734533
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119,18 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &7053323039982734534
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3828846876288801734}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &7053323039982734529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +144,7 @@ MonoBehaviour:
   OnGrabStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7053323039982734535}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
         m_MethodName: permissionToMove
         m_Mode: 1
@@ -187,21 +159,6 @@ MonoBehaviour:
   OnGrabEnd:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7053323039982734535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3828846876288801734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lever: {fileID: 0}
-  timer: {fileID: 0}
-  inMainRoom: 0
 --- !u!64 &6483852090927314648
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -1433,11 +1433,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5375978360205108321, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
+      propertyPath: OnGrabStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7253704206061348738, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 799557619943522834, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
+    - {fileID: 6543343359518723188, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
 --- !u!1 &1532518497090559647 stripped
 GameObject:
@@ -1459,6 +1465,10 @@ PrefabInstance:
     - target: {fileID: -8940560398347986486, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8940560398347986486, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
+      propertyPath: OnGrabStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: -7453151165413845894, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
       propertyPath: m_Enabled
@@ -1524,7 +1534,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4137745942405077370, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
+    - {fileID: 2063363665757457389, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
 --- !u!1 &1606443206708408239 stripped
 GameObject:
@@ -1607,11 +1619,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5375978360205108321, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
+      propertyPath: OnGrabStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7253704206061348738, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6543343359518723188, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
+    - {fileID: 799557619943522834, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df1dcd76b138aa7499d1759ff89e107b, type: 3}
 --- !u!4 &8224246054679522939 stripped
 Transform:
@@ -1633,6 +1651,10 @@ PrefabInstance:
     - target: {fileID: -8940560398347986486, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8940560398347986486, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
+      propertyPath: OnGrabStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: -7453151165413845894, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
       propertyPath: m_Enabled
@@ -1698,7 +1720,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4137745942405077370, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
+    - {fileID: 2063363665757457389, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2017c92995802e044928b95bd1ecf204, type: 3}
 --- !u!4 &7773321167348275401 stripped
 Transform:

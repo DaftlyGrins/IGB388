@@ -132,8 +132,6 @@ GameObject:
   - component: {fileID: 3977426455761752909}
   - component: {fileID: 2957685380100435077}
   - component: {fileID: 2493005102023764677}
-  - component: {fileID: 1168246446589556883}
-  - component: {fileID: 1970417137639726994}
   m_Layer: 0
   m_Name: LettuceBase
   m_TagString: Untagged
@@ -271,7 +269,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1970417137639726994}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
         m_MethodName: permissionToMove
         m_Mode: 1
@@ -364,30 +362,8 @@ MonoBehaviour:
   plate: {fileID: 0}
   basket: {fileID: 0}
   inBasket: 0
---- !u!75 &1168246446589556883
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5140797093906773990}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
---- !u!114 &1970417137639726994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5140797093906773990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lever: {fileID: 0}
-  timer: {fileID: 0}
-  inMainRoom: 0
+  cooked: 0
+  burnt: 0
+  restrictVelTime: 0.1
+  restrictVelValue: 1
+  isVelRestricted: 1

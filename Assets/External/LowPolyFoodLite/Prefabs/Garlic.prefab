@@ -11,12 +11,9 @@ GameObject:
   - component: {fileID: 6364419489520334885}
   - component: {fileID: 8069657077781477248}
   - component: {fileID: 5195422319005221706}
-  - component: {fileID: 5690835605495728809}
   - component: {fileID: 3188546964201197066}
-  - component: {fileID: 3188546964201197067}
   - component: {fileID: 3188546964201197174}
   - component: {fileID: 3188546964201197065}
-  - component: {fileID: 3188546964201197064}
   - component: {fileID: 1347801560336604860}
   m_Layer: 0
   m_Name: Garlic
@@ -90,19 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5690835605495728809
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5987858285101769375}
-  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.09074277, y: 0.2127786, z: 0.09541248}
-  m_Center: {x: -0.00051905215, y: 0.05274951, z: -0.0005626362}
 --- !u!54 &3188546964201197066
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119,18 +103,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &3188546964201197067
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5987858285101769375}
-  m_Enabled: 1
-  m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 0, y: 0, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &3188546964201197174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +125,7 @@ MonoBehaviour:
   OnGrabStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3188546964201197064}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GravityReset, Assembly-CSharp
         m_MethodName: permissionToMove
         m_Mode: 1
@@ -187,21 +159,6 @@ MonoBehaviour:
   OutlineMode: 1
   OutlineWidth: 3
   HighlightRange: 3
---- !u!114 &3188546964201197064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5987858285101769375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515ee750cd6ee0e419eb303d0ba66e98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lever: {fileID: 0}
-  timer: {fileID: 0}
-  inMainRoom: 0
 --- !u!64 &1347801560336604860
 MeshCollider:
   m_ObjectHideFlags: 0
