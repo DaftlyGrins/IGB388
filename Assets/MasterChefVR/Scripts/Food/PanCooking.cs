@@ -5,7 +5,7 @@ public class PanCooking : MonoBehaviour
 {
   public bool canCook = false;
 
-  private List<GameObject> currentlyInPan;
+  private List<GameObject> currentlyInPan = new List<GameObject>();
 
   void OnTriggerEnter(Collider other) {
     if (other == null || other.gameObject == null) return;
@@ -13,16 +13,19 @@ public class PanCooking : MonoBehaviour
     if (other.gameObject.CompareTag("CookingArea"))
     {
       canCook = true;
-      foreach (GameObject food in currentlyInPan)
-      {
-        food.GetComponent<CookFood>().Cook(true);
+      if (currentlyInPan.Count >= 0) {
+        foreach (GameObject food in currentlyInPan)
+        {
+          Debug.Log(food);
+          food.GetComponent<CookFood>().Cook(true);
+        }
       }
     }
 
     if (other.gameObject.CompareTag("Food"))
     {
       // TODO: Resolve null reference here
-      // currentlyInPan.Add(other.gameObject);
+      currentlyInPan.Add(other.gameObject);
 
       if (canCook)
       {
@@ -36,10 +39,13 @@ public class PanCooking : MonoBehaviour
 
     if (other.gameObject.CompareTag("CookingArea")) {
       canCook = false;
-
-      foreach (GameObject food in currentlyInPan) {
-        food.GetComponent<CookFood>().Cook(false);
+      if (currentlyInPan.Count >= 0) {
+        foreach (GameObject food in currentlyInPan) {
+          Debug.Log(food);
+          food.GetComponent<CookFood>().Cook(false);
+        }
       }
+      
     }
 
     if (other.gameObject.CompareTag("Food"))

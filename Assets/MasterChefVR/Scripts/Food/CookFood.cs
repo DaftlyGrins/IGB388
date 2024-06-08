@@ -4,7 +4,7 @@ public class CookFood : MonoBehaviour
 {
   public Material[] cookingStagesMaterials;
 
-  private float timeCooked;
+  public float timeCooked; // I am using this to evaluate score if you change how the cooking works score will need to be updated in Plate script
   private bool canCook = false;
 
   void Start()

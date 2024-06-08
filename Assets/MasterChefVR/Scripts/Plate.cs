@@ -8,7 +8,7 @@ public class Plate : MonoBehaviour
     public List<GameObject> ingredients = new List<GameObject>();
     public Transform newItemLocation;
     public int finalScore;
-    public int grade;
+    public float grade;
 
     public void AddItemToPlate(GameObject item)
     {
@@ -47,7 +47,7 @@ public class Plate : MonoBehaviour
 
     public void GradePlate()
     {
-        grade = 0;
+        grade = 0.0f;
 
         // Adding score based on if player has at least one of a particular item
         string[] meshNames = new string[6] {"BunBottom", "Steak", "LettuceLeaf", "CheeseSlice", "TomatoSlice", "BunTop"};
@@ -61,7 +61,7 @@ public class Plate : MonoBehaviour
 
                 if (ingredients[i].GetComponent<MeshFilter>().mesh.name == null){ // Can only happen if it is meat
                     if (item == "Steak"){ // Check that the item we are checking for is meat
-                        grade += 1;
+                        grade += 1f;
                         break;
                     }
                     else {
@@ -72,7 +72,7 @@ public class Plate : MonoBehaviour
                     string nameToCheck = ingredients[i].GetComponent<MeshFilter>().mesh.name;
                     if (nameToCheck.Substring(0, nameToCheck.Length - 9) == item || nameToCheck.Substring(0, nameToCheck.Length - 10) == item) // Checking for all variants using substring
                     {
-                        grade +=1;
+                        grade += 1f;
                         break;
                     }
                     else{
@@ -89,15 +89,37 @@ public class Plate : MonoBehaviour
             }
 
             if (ingredients[i].name.Contains(meshNames[i])){
-                grade += 1;
+                grade += 1f;
 
                 // If it is three and in correct spot
                 if (ingredients[i].name.Contains("3")){
-                    grade += 1;
+                    grade += 1f;
                 }
             }
         }
 
+        // Check if Buns are toasted, must be in correct location
+        if (ingredients[0] != null){
+            PlatableItem burgerBun = ingredients[0].GetComponent<PlatableItem>();
+            if (burgerBun != null && burgerBun.cooked){
+                grade += 3f;
+            }
+        }
+
+        if (ingredients[5] != null){
+            PlatableItem burgerBun = ingredients[0].GetComponent<PlatableItem>();
+            if (burgerBun != null && burgerBun.cooked){
+                grade += 3f;
+            }
+        }
+
+        // Check if Steak is cooked, must be in right postition
+        if (ingredients[1] != null){
+            CookFood steak = ingredients[1].GetComponentInChildren<CookFood>();
+            if (steak != null){
+                grade += 15.0f - Mathf.Abs(15.0f - steak.timeCooked);
+            }
+        }
 
 
         // Print Score
