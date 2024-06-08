@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 201662044216538332}
   - component: {fileID: -8901829759809843076}
   - component: {fileID: -5987168724308129562}
-  m_Layer: 0
+  - component: {fileID: 5270582069276720678}
+  m_Layer: 3
   m_Name: Pear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,3 +159,17 @@ MonoBehaviour:
   OnGrabEnd:
     m_PersistentCalls:
       m_Calls: []
+--- !u!64 &5270582069276720678
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993196853935147428}
+  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 798035055718525027, guid: ebec41d2536eb3c4eafa75e0c95f6d31, type: 3}

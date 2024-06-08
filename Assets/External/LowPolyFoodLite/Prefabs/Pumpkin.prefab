@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2320376270567984380}
   - component: {fileID: 2320376270567984381}
   - component: {fileID: 3494059086025176877}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pumpkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5071555915851589694}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4

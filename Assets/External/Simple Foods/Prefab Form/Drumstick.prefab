@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 6647347803025233347}
   - component: {fileID: 6647347803025233344}
   - component: {fileID: 1661373287215295400}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Drumstick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2834595618098478615}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4

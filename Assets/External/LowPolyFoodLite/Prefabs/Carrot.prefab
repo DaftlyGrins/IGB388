@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5279256715510516068}
   - component: {fileID: 5279256715510516071}
   - component: {fileID: 7940947872851152145}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,6 +170,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4970989848755135003, guid: 539003eed0bf20a4faf58b92584a662b, type: 3}

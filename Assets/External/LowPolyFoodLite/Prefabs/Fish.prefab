@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7053323039982734529}
   - component: {fileID: 7053323039982734528}
   - component: {fileID: 6483852090927314648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3828846876288801734}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4

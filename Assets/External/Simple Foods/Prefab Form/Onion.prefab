@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4010007120838364625}
   - component: {fileID: 4010007120838364630}
   - component: {fileID: 1800717606376019354}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Onion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5316587841953117281}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 3082a4641bd73364bbf1236ab318a81a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
