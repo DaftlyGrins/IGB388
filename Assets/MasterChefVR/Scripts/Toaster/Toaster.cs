@@ -99,9 +99,9 @@ public class Toaster : MonoBehaviour
 
       if (platableItemScript.cooked && !platableItemScript.burnt) 
       {
-        bun.GetComponent<MeshRenderer>().material = burntMaterial;
-      } else if (!platableItemScript.cooked && !platableItemScript.burnt) {
         bun.GetComponent<MeshRenderer>().material = toastedMaterial;
+      } else if (platableItemScript.burnt) {
+        bun.GetComponent<MeshRenderer>().material = burntMaterial;
       }
     }
 
