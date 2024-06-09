@@ -19,6 +19,10 @@ public class GravityWell : MonoBehaviour
     Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
     if (rb == null || enforceOnlyOnTags.Count <= 0) return;
 
-    rb.useGravity = gravityState;
+    if (gravityState == false) {
+      rb.useGravity = Constants.gravityEnabled;
+    } else {
+      rb.useGravity = true;
+    }
   }
 }
