@@ -13,7 +13,8 @@ public class Plate : MonoBehaviour
 
     public void AddItemToPlate(GameObject item)
     {
-        if (ingredients.Count == 6) return; 
+        if (ingredients.Count == 6) return;
+        if (!GameManager.Instance.clock.isRotating) return; // If not current allowed to cook cause the timer is off dont allow plating 
 
         ingredients.Add(item);
         item.GetComponent<Rigidbody>().isKinematic = true;
@@ -27,6 +28,7 @@ public class Plate : MonoBehaviour
 
     public void RemoveItemFromPlate(GameObject item)
     {
+        if (!GameManager.Instance.clock.isRotating) return; // If not current allowed to cook cause the timer is off dont allow plating 
         if (ingredients.Contains(item)) {
             newItemLocation.localPosition = new Vector3(0.0f, newItemLocation.localPosition.y - item.GetComponent<BoxCollider>().size.y, 0.0f);
             item.transform.localRotation = Quaternion.identity;

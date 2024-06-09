@@ -10,8 +10,8 @@ public class Respawner : MonoBehaviour
     private bool neverGrabbed;
     private CustomGrabbable grabbable;
     private bool wantToSpawn;
-    public float distanceBuffer;
-    public float timeBuffer;
+    public float distanceBuffer = 1f;
+    public float timeBuffer = 1f;
     public GameObject prefab;
     
 
@@ -34,15 +34,15 @@ public class Respawner : MonoBehaviour
             }
         }
 
-        if (wantToSpawn){
-            TryRespawn();
-        }
-
-        if (this.transform.position.y <= -1 && neverGrabbed)
+        if (Vector3.Distance(startingPosition, this.transform.position) <= distanceBuffer && neverGrabbed)
         {
             neverGrabbed = false;
-            TryRespawn();
+            wantToSpawn = true;
         }
+
+        if (wantToSpawn){
+            TryRespawn();
+        }        
     }
 
     void ApplyTimeBuffer(){

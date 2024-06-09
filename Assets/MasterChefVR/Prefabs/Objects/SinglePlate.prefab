@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4125d22d97406f345b8376c24137691d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceBuffer: 0
-  timeBuffer: 0
+  distanceBuffer: 1
+  timeBuffer: 1
   prefab: {fileID: 8432816788184316863}
 --- !u!1 &8432816789167602267
 GameObject:

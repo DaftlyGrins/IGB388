@@ -5,7 +5,7 @@ public class Clock : MonoBehaviour
     public float rotationDuration; // in seconds
 
     private float startTime;
-    private bool isRotating = false;
+    public bool isRotating = false;
 
     void Update()
     {

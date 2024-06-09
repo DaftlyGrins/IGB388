@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
   public GameObject logo;
   public GameObject dialogueManager;
   public GameObject mysteryBox;
+  public Clock clock;
 
   public static GameManager Instance
   {

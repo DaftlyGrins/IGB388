@@ -4,7 +4,6 @@ public class InitiateGravityInversion : MonoBehaviour
 {
     public GameObject[] skipInitiate;
     public float force = .02f;
-    public bool up;
     public void InitiateInversion()
     {
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
@@ -37,14 +36,7 @@ public class InitiateGravityInversion : MonoBehaviour
     {
         Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
         if (!rb || rb.gameObject.layer != LayerMask.NameToLayer("GravityAffected")) return;
-
-        if (up)
-        {
-            rb.velocity = Vector3.zero;
-            rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
-        } else{
-            rb.velocity = Vector3.zero;
-            rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), -1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
-        }
+        
+        rb.velocity = new Vector3(rb.velocity.x, -(rb.velocity.y + force), rb.velocity.z);         
     }
 }
