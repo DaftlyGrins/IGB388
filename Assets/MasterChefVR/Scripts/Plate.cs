@@ -111,7 +111,7 @@ public class Plate : MonoBehaviour
         if (ingredients[1] != null){
             CookFood steak = ingredients[1].GetComponentInChildren<CookFood>();
             if (steak != null){
-                grade += 15.0f - Mathf.Abs(15.0f - steak.timeCooked);
+                grade += 10.0f - Mathf.Abs(10.0f - steak.timeCooked);
             }
         }
 

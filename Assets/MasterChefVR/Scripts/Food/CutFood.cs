@@ -14,10 +14,27 @@ public class CutFood : MonoBehaviour
 
   public void Cut()
   {
-    Instantiate(slices[currentSliceCount], transform.position, transform.rotation);
+    GameObject slice = Instantiate(slices[currentSliceCount], transform.position, transform.rotation);
+
+    if (slice.GetComponent<Rigidbody>() != null)
+    {
+      slice.GetComponent<Rigidbody>().useGravity  = Constants.gravityEnabled;
+    } else if (slice.GetComponentInChildren<Rigidbody>() != null)
+    {
+      slice.GetComponent<Rigidbody>().useGravity  = Constants.gravityEnabled;
+    }
 
     if (slices.Length == 2){ 
-      Instantiate(slices[1], transform.position, transform.rotation);
+      GameObject slice2 = Instantiate(slices[1], transform.position, transform.rotation);
+
+      if (slice2.GetComponent<Rigidbody>() != null)
+      {
+        slice2.GetComponent<Rigidbody>().useGravity  = Constants.gravityEnabled;
+      } else if (slice2.GetComponentInChildren<Rigidbody>() != null)
+      {
+        slice2.GetComponent<Rigidbody>().useGravity  = Constants.gravityEnabled;
+      }
+
       Destroy(this.gameObject);
     }
     

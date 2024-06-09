@@ -29,10 +29,6 @@ public class CookFood : MonoBehaviour
     {
       this.GetComponent<Renderer>().material = cookingStagesMaterials[2];
     }
-    if (timeCooked >= 20f)
-    {
-      this.GetComponent<Renderer>().material = cookingStagesMaterials[3];
-    }
   }
   
   public void Cook(bool shouldCook)

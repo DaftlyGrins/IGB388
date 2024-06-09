@@ -5,8 +5,8 @@ public class Knife : MonoBehaviour
 {
   [HideInInspector] public CustomGrabbable grabbable;
   [HideInInspector] public Rigidbody rigid;
-  // private float speedToBreak = 1.0f;
   public Transform hitPoint;
+  public ParticleSystem particleEffect;
   private bool canCut = true;
 
   void Start()
@@ -37,6 +37,28 @@ public class Knife : MonoBehaviour
 
     food.Cut();
     canCut = false;
+
+    GetComponent<AudioSource>().Play();
+
+    var particleMain = particleEffect.main;
+
+    string name = other.gameObject.name;
+
+    if (name.Contains("Tomato")) {
+      particleMain.startColor = Color.red;
+    } else if (name.Contains("Lettuce"))
+    {
+      particleMain.startColor = Color.green;
+    } else if (name.Contains("Cheese"))
+    {
+      particleMain.startColor = Color.yellow;
+    } else if (name.Contains("Bun"))
+    {
+      particleMain.startColor = Color.white;
+    }
+    
+    Instantiate(particleEffect, hitPoint.position, Quaternion.identity);
+    Destroy(particleEffect.gameObject, particleEffect.main.duration);
 
     // TODO: Remove when this is configured correctly
     StartCoroutine(WaitAndCutFood());

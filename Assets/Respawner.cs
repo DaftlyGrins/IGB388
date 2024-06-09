@@ -53,6 +53,18 @@ public class Respawner : MonoBehaviour
         float distance = Vector3.Distance(this.gameObject.transform.position, startingPosition);
         if (distance > distanceBuffer){
             GameObject clone = Instantiate(prefab, startingPosition, startingRotation);
+
+            if (clone.GetComponent<Rigidbody>() != null)
+            {
+                clone.GetComponent<Rigidbody>().useGravity  = Constants.gravityEnabled;
+            } else if (clone.GetComponentInChildren<Rigidbody>() != null)
+            {
+                clone.GetComponent<Rigidbody>().useGravity  = Constants.gravityEnabled;
+            }
+
+            clone.transform.localScale = startingScale;
+            clone.GetComponent<Rigidbody>().isKinematic = false;
+            wantToSpawn = false;
             clone.transform.localScale = startingScale;
             clone.GetComponent<Rigidbody>().isKinematic = false;
             wantToSpawn = false;

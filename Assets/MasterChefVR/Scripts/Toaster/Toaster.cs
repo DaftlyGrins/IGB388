@@ -46,6 +46,14 @@ public class Toaster : MonoBehaviour
     GameObject targetPopper = leftPopperOccupied ? rightPopper : leftPopper;
     GameObject bun = Instantiate(bunType, bunType.transform.position, bunType.transform.rotation);
 
+    if (bun.GetComponent<Rigidbody>() != null)
+    {
+      bun.GetComponent<Rigidbody>().useGravity  = Constants.gravityEnabled;
+    } else if (bun.GetComponentInChildren<Rigidbody>() != null)
+    {
+      bun.GetComponent<Rigidbody>().useGravity  = Constants.gravityEnabled;
+    }
+
     PlatableItem platableItemScript = other.gameObject.GetComponent<PlatableItem>();
 
     if (platableItemScript.cooked && !platableItemScript.burnt) 
