@@ -23,6 +23,7 @@ public class Clock : MonoBehaviour
             if (elapsedTime >= rotationDuration)
             {
                 isRotating = false;
+                GameManager.Instance.dialogueManager.GetComponent<Dialogue>().PlayClip(GameManager.Instance.judges[2].gameObject, 0);
             }
         }
     }

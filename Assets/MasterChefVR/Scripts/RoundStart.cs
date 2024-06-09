@@ -8,6 +8,7 @@ public class RoundStart : MonoBehaviour
   public GameObject kitchenLight;
   public GameObject airlockControl;
   public GameObject recipe;
+  public bool started = false;
 
   void Start()
   {
@@ -15,6 +16,7 @@ public class RoundStart : MonoBehaviour
 
     // Add a listener to the OnGrabStart event
     customGrabbable.OnGrabStart.AddListener(() => {
+      if (started) return;
       StartRound();
     }); 
   }
@@ -30,11 +32,13 @@ public class RoundStart : MonoBehaviour
 
   private void StartRound()
   {
+    GameManager.Instance.dialogueManager.GetComponent<Dialogue>().PlayClip(GameManager.Instance.judges[1].gameObject, 0); // Play the start voiceline
     clock.GetComponent<Clock>().StartRotation();
     presentationLight.GetComponent<Light>().spotAngle = 30;
     kitchenLight.GetComponent<SpaceLight>().LightOn();
     airlockControl.GetComponent<AirlockControl>().EnableAirlock();
     GetComponent<CustomGrabbable>().IsDistanceGrabbable = true;
     recipe.SetActive(true);
+    started = true;
   }
 }

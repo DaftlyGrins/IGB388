@@ -45,6 +45,7 @@ public class SlidingBlastDoor : MonoBehaviour
     if (!other.CompareTag("Player") || !isConfirming) return;
 
     audioSources[1].Play();
+    GameManager.Instance.dialogueManager.GetComponent<Dialogue>().PlayClip(GameManager.Instance.judges[0].gameObject, 0); // Play the gravity inversion hint
     isOpen = true;
     isConfirming = false;
     display.GetComponent<Collider>().enabled = false;

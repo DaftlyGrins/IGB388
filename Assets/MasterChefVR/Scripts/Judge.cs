@@ -17,16 +17,30 @@ public class Judge : MonoBehaviour
     private Rigidbody rb;
     private Animator anim;
 
+    [Header("Dialogue Information")]
+    private AudioSource audioSource;
+    private Dialogue dialogueManager;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        dialogueManager = GameManager.Instance.dialogueManager.GetComponent<Dialogue>();
         Invoke("DelayWalkoutTime", delayWalkoutTime);
+    }
+
+    void Update(){
+        // Play talking animation when audio clip is playing
+        if (audioSource.isPlaying) anim.SetBool("Talking", true);
+        else anim.SetBool("Talking", false);
     }
 
     void FixedUpdate()
     {
         if (movingToMainPos){MoveJudge();}
+        transform.LookAt(GameManager.Instance.player.transform);
+        transform.rotation = Quaternion.Euler(0.0f, transform.eulerAngles.y, 0.0f);
     }
 
     void MoveJudge()

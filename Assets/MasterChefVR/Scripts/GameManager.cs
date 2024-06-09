@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
   public GameObject dialogueManager;
   public GameObject mysteryBox;
   public Clock clock;
+  public Judge[] judges; 
 
   public static GameManager Instance
   {
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
     logo.GetComponent<SpaceLight>().LightOn();
     logo.GetComponentInChildren<Light>().enabled = true;
 
-    yield return new WaitForSeconds(16);
+    yield return new WaitForSeconds(18);
 
     LightOn(0);
     mysteryBox.GetComponent<CustomGrabbable>().enabled = true;
@@ -81,6 +82,11 @@ public class GameManager : MonoBehaviour
     } else {
       lights[index].GetComponent<Light>().enabled = true;
     }
+  }
+
+  public Judge ReturnRandomJudge(){
+    System.Random random = new System.Random();
+    return judges[random.Next(judges.Length)];
   }
 
   // Add any GameManager-related initialization or cleanup here
