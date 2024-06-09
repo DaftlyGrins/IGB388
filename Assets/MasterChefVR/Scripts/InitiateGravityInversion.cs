@@ -15,9 +15,10 @@ public class InitiateGravityInversion : MonoBehaviour
             if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected") && rb.transform.IsChildOf(GameObject.Find("Objects").transform)
                 && rb.gameObject.name != "Basket" && rb.gameObject.name != "Recipe")
             {
-                rb.useGravity = !rb.useGravity;
                 rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
             }
+
+            rb.useGravity = !rb.useGravity;
         }
     }
 
