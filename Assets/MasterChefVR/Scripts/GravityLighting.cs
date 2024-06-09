@@ -78,6 +78,7 @@ public class GravityLighting : MonoBehaviour
         }
 
         gravityResetSwitch.GetComponent<DiegeticRotator>().Unlock();
+        gravityResetSwitch.GetComponent<InitiateGravityInversion>().Invert();
     }
 
     private void Pulse()

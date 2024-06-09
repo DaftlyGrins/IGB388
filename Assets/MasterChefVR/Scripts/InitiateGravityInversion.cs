@@ -23,24 +23,38 @@ public class InitiateGravityInversion : MonoBehaviour
 
     public void Invert()
     {
+        Constants.gravityEnabled = !Constants.gravityEnabled;
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
 
-        GetComponent<DiegeticRotator>().Lock();
-        lightManager.GetComponent<GravityLighting>().Kill();
-        GetComponent<AudioSource>().Play();
-        
-        foreach(Rigidbody rb in allRigidbodies)
+        if (Constants.gravityEnabled)
         {
-            if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected"))
+            GetComponent<DiegeticRotator>().Lock();
+            lightManager.GetComponent<GravityLighting>().Kill();
+            GetComponent<AudioSource>().Play();
+        
+            foreach(Rigidbody rb in allRigidbodies)
             {
-                rb.useGravity = !rb.useGravity;
-                if (rb.useGravity) rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
+                if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected"))
+                {
+                    rb.useGravity = !rb.useGravity;
+                }
+            }
+        } else 
+        {
+            foreach(Rigidbody rb in allRigidbodies)
+            {
+                if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected"))
+                {
+                    rb.useGravity = !rb.useGravity;
+                    if (!rb.useGravity) rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
+                }
             }
         }
     }
 
     public void OnTriggerEnter(Collider other)
     {
+        if (Constants.gravityEnabled) return;
         Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
         if (!rb || rb.gameObject.layer != LayerMask.NameToLayer("GravityAffected")) return;
         
