@@ -23,8 +23,16 @@ public class Knife : MonoBehaviour
     if (!canCut) return;
     if (!grabbable.isGrabbed) return;
 
+<<<<<<< Updated upstream
     // TODO: Check that the cut is in the correct direction
     // if (Vector3.Dot(rigid.velocity.normalized, -hitPoint.transform.up) < 0.5f) return;
+=======
+    // Check that the cut is in the correct direction
+    /*if (food.hasCutAngle)
+    {
+        if (Mathf.Abs(Vector3.Dot(rigid.velocity.normalized, food.cutAngle)) > 0.5f) return;
+    }*/
+>>>>>>> Stashed changes
 
     // TODO: Check that the cut is at the right speed
     // if (rigid.velocity.magnitude < speedToBreak) return;
