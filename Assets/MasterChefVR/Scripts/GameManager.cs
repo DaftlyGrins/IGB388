@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
   private static GameManager _instance;
   public GameObject wellGiantLevel = null;
   public GameObject player;
+  public Transform startingTransform;
   public GameObject[] lights;
   public GameObject logo;
   public GameObject dialogueManager;
@@ -57,6 +58,11 @@ public class GameManager : MonoBehaviour
     }
 
     StartLighting();
+  }
+
+  void Start() 
+  {
+    player.transform.position = startingTransform.position;
   }
 
   private void StartLighting()
