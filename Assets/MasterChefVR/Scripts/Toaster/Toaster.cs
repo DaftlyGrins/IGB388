@@ -101,7 +101,8 @@ public class Toaster : MonoBehaviour
       Rigidbody rb = bun.GetComponent<Rigidbody>();
       rb.isKinematic = false;
       rb.useGravity  = Constants.gravityEnabled;
-      rb.AddForce(Vector3.up * 400);
+      Vector3 launchDirection = Quaternion.Euler(Random.Range(-10f, 10f), 0f, 0f) * Vector3.up;
+      rb.AddForce(launchDirection * 400);
       bun.transform.SetParent(null);
 
       PlatableItem platableItemScript = bun.GetComponent<PlatableItem>();
@@ -114,20 +115,17 @@ public class Toaster : MonoBehaviour
       }
     }
 
-    yield return new WaitForSeconds(.5f);
+    yield return new WaitForSeconds(.7f);
 
     foreach (GameObject bun in bunsToPop)
     {
       bun.GetComponent<Collider>().enabled = true;
       bun.GetComponent<CustomGrabbable>().enabled = true;
       bun.GetComponent<GrabOutlineController>().enabled = true;
+      toasterBody.GetComponent<ToasterSlider>().hasReset = true;
+      bunsToPop.Clear();
+      leftPopperOccupied = false;
+      bothPoppersOccupied = false;
     }
-
-    yield return new WaitForSeconds(1);
-
-    toasterBody.GetComponent<ToasterSlider>().hasReset = true;
-    bunsToPop.Clear();
-    leftPopperOccupied = false;
-    bothPoppersOccupied = false;
   }
 }
