@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PanCooking : MonoBehaviour
 {
-  public bool canCook = false;
+  public bool canCook = true;
 
   private List<GameObject> currentlyInPan = new List<GameObject>();
 
