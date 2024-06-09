@@ -6,8 +6,11 @@ public class CutFood : MonoBehaviour
   public Mesh[] cutMesh;
   private int maxSlices;
   private int currentSliceCount = 0;
+  public bool hasCutAngle;
+    [Tooltip("Will only cut PERPENDICULAR to this vector (+- 30 degrees")]
+    public Vector3 cutAngle;
 
-  void Start()
+    void Start()
   {
     maxSlices = slices.Length;
   }
