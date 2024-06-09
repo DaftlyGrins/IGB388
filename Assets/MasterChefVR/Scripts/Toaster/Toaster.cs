@@ -115,13 +115,19 @@ public class Toaster : MonoBehaviour
       }
     }
 
-    yield return new WaitForSeconds(.7f);
+    yield return new WaitForSeconds(.3f);
 
     foreach (GameObject bun in bunsToPop)
     {
       bun.GetComponent<Collider>().enabled = true;
       bun.GetComponent<CustomGrabbable>().enabled = true;
       bun.GetComponent<GrabOutlineController>().enabled = true;
+    }
+
+    yield return new WaitForSeconds(.3f);
+    
+    foreach (GameObject bun in bunsToPop)
+    {
       toasterBody.GetComponent<ToasterSlider>().hasReset = true;
       bunsToPop.Clear();
       leftPopperOccupied = false;

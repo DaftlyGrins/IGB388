@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class InitiateGravityInversion : MonoBehaviour
 {
-    public GameObject[] skipInitiate;
     public GameObject lightManager;
     public float force = .02f;
+    public GameObject teleportPoint;
+    public GameObject objects;
     public void InitiateInversion()
     {
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
@@ -18,6 +19,28 @@ public class InitiateGravityInversion : MonoBehaviour
 
                 rb.useGravity = !rb.useGravity;
             }
+        }
+
+        StartCoroutine(WaitToTeleport());
+    }
+
+    IEnumerator WaitToTeleport()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        teleportPoint.SetActive(true);
+        CustomGrabbable[] customGrabbables = objects.GetComponentsInChildren<CustomGrabbable>();
+
+        foreach (CustomGrabbable grabbable in customGrabbables)
+        {
+            grabbable.enabled = true;
+        }
+
+        GrabOutlineController[] grabOutlineControllers = objects.GetComponentsInChildren<GrabOutlineController>();
+
+        foreach (GrabOutlineController grabOutlineController in grabOutlineControllers)
+        {
+            grabOutlineController.enabled = true;
         }
     }
 
