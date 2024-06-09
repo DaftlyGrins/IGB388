@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using Unity.VisualScripting;
-using UnityEditor.Searcher;
 
 public class Plate : MonoBehaviour
 {
