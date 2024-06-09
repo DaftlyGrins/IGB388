@@ -8,6 +8,7 @@ public class RoundStart : MonoBehaviour
   public GameObject kitchenLight;
   public GameObject airlockControl;
   public GameObject recipe;
+  public GameObject dirLight;
   public bool started = false;
 
   void Start()
@@ -39,6 +40,7 @@ public class RoundStart : MonoBehaviour
     airlockControl.GetComponent<AirlockControl>().EnableAirlock();
     GetComponent<CustomGrabbable>().IsDistanceGrabbable = true;
     recipe.SetActive(true);
+    dirLight.SetActive(true);
     started = true;
   }
 }
