@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
   public GameObject mysteryBox;
   public Clock clock;
   public Judge[] judges; 
+  public Transform judgePlatingPosition;
 
   public static GameManager Instance
   {

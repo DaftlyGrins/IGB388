@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using Unity.VisualScripting;
+using UnityEditor.Searcher;
 
 public class Plate : MonoBehaviour
 {
     public List<GameObject> ingredients = new List<GameObject>{};
     public Transform newItemLocation;
     public int finalScore;
-    public float grade;
+    public float grade = 0.0f;
+    private bool atJudgesTable = false;
 
     public void AddItemToPlate(GameObject item)
     {
@@ -127,42 +130,49 @@ public class Plate : MonoBehaviour
 
     public void gradingPlate()
     {
-        if(ingredients[0].tag == "TopBun")
+        return;
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.name == "JudgeTableCollider")
         {
-            finalScore += 1;
-        }
-        if (ingredients[1].tag == "LettuceLeaf")
-        {
-            finalScore += 2;
-        }
-        if (ingredients[2].tag == "Steak")
-        {
-            finalScore += 2;
-        }
-        if (ingredients[3].tag == "CheeseSlice")
-        {
-            finalScore += 2;
-        }
-        if (ingredients[4].tag == "TomatoSlice")
-        {
-            finalScore += 2;
-        }
-        if (ingredients[5].tag == "BottomBun")
-        {
-            finalScore += 1;
-        }
-        if(finalScore > 0)
-        {
-            SceneManager.LoadScene("GameOver");
-        }
-        else
-        {
-            finalScore = 0;
+            atJudgesTable = true;
         }
     }
 
-    public void loweringScore()
-    {
-        finalScore -= 1;
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.name == "JudgeTableCollider")
+        {
+            atJudgesTable = false;
+        }
+    }
+
+    public void StartJudgingPlate(){
+        if (!atJudgesTable) return;
+        GradePlate();
+        // Calculate plate score
+        if (GameManager.Instance.clock.isRotating){
+            grade += 5;
+        }
+
+        // Set the transform of the plate
+        this.transform.position = GameManager.Instance.judgePlatingPosition.position;
+        this.transform.rotation = GameManager.Instance.judgePlatingPosition.rotation;
+        this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        this.gameObject.GetComponent<CustomGrabbable>().enabled = false;
+        CustomGrabbable[] itemsOnPlate = this.gameObject.GetComponentsInChildren<CustomGrabbable>();
+        foreach (CustomGrabbable items in itemsOnPlate)
+        {
+            items.enabled = false;
+        }
+
+        // Move the sample out of the way
+        GameManager.Instance.mysteryBox.transform.parent.gameObject.SetActive(false);
+
+        // Fade away and start judging sequence (lock player tp)
+        // TODO: Put Fade Logic Here
+
+
+        
     }
 }
