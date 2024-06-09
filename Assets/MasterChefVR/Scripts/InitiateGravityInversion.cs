@@ -36,7 +36,7 @@ public class InitiateGravityInversion : MonoBehaviour
             {
                 if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected"))
                 {
-                    rb.useGravity = !rb.useGravity;
+                    rb.useGravity = Constants.gravityEnabled;
                 }
             }
         } else 
@@ -45,7 +45,7 @@ public class InitiateGravityInversion : MonoBehaviour
             {
                 if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected"))
                 {
-                    rb.useGravity = !rb.useGravity;
+                    rb.useGravity = Constants.gravityEnabled;
                     if (!rb.useGravity) rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
                 }
             }
