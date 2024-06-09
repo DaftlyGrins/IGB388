@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Data.Common;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +15,10 @@ public class GameManager : MonoBehaviour
   public Clock clock;
   public Judge[] judges; 
   public Transform judgePlatingPosition;
+  public float[] judgingLevels = new float[] {5f, 10f, 15f, 20f};
+  private int currentJudgeIndex = 0;
+  private string plateRating = "";
+  public GameObject cameraOVR;
 
   public static GameManager Instance
   {
@@ -88,6 +94,61 @@ public class GameManager : MonoBehaviour
   public Judge ReturnRandomJudge(){
     System.Random random = new System.Random();
     return judges[random.Next(judges.Length)];
+  }
+
+  public void Judging(float plateGrade){
+    plateRating = "";
+
+    if (plateGrade > judgingLevels[3])
+    {
+      plateRating = "Best";
+    }
+    else if (plateGrade > judgingLevels[2])
+    {
+      plateRating = "Good";
+    }
+    else if (plateGrade > judgingLevels[1])
+    {
+      plateRating = "Average";
+    }
+    else {
+      plateRating = "Bad";
+    }
+
+    GiveReview(plateRating, currentJudgeIndex);
+    Invoke("NextJudge", 7.0f);
+    Invoke("NextJudge", 14.0f);
+    Invoke("RestartScene", 35.0f);
+  }
+
+  private void NextJudge()
+  {
+    GiveReview(plateRating, currentJudgeIndex);
+  }
+
+  private void GiveReview(string plateRating, int judgeIndex){
+    if (plateRating == "Best")
+    {
+      dialogueManager.GetComponent<Dialogue>().PlayClip(judges[judgeIndex].gameObject, 4);
+    }
+    else if (plateRating == "Good")
+    {
+      dialogueManager.GetComponent<Dialogue>().PlayClip(judges[judgeIndex].gameObject, 3);
+    }
+    else if (plateRating == "Average")
+    {
+      dialogueManager.GetComponent<Dialogue>().PlayClip(judges[judgeIndex].gameObject, 2);
+    }
+    else if (plateRating == "Bad")
+    {
+      dialogueManager.GetComponent<Dialogue>().PlayClip(judges[judgeIndex].gameObject, 1);
+    }
+    currentJudgeIndex += 1;
+    if (currentJudgeIndex > 2) currentJudgeIndex = 0;
+  }
+
+  private void RestartScene(){
+    SceneManager.LoadScene(0);
   }
 
   // Add any GameManager-related initialization or cleanup here

@@ -13,6 +13,7 @@ public class Plate : MonoBehaviour
     public int finalScore;
     public float grade = 0.0f;
     private bool atJudgesTable = false;
+    public GameObject cameraOVR;
 
     public void AddItemToPlate(GameObject item)
     {
@@ -169,10 +170,30 @@ public class Plate : MonoBehaviour
         // Move the sample out of the way
         GameManager.Instance.mysteryBox.transform.parent.gameObject.SetActive(false);
 
-        // Fade away and start judging sequence (lock player tp)
-        // TODO: Put Fade Logic Here
+        // Fade away and start judging sequence (lock player tp) (may not need to lock tp)
+        // TODO: Put Fade Logic Here (fade out and fade in over 5)
+        OVRScreenFade screen =  GameManager.Instance.cameraOVR.GetComponent<OVRScreenFade>();
+        screen.FadeOut();
 
+        // Disable clock
+        GameManager.Instance.clock.StopRotation();
 
-        
+        // Remove the burger after 2.5s
+        Invoke("RemoveBurger", 2f);
+        // Start Judge Logic after 5s
+        Invoke("TimeToJudge", 4f);
+    }
+
+    private void RemoveBurger()
+    {
+        OVRScreenFade screen =  GameManager.Instance.cameraOVR.GetComponent<OVRScreenFade>();
+        screen.FadeIn(); 
+        foreach (GameObject item in ingredients){
+            Destroy(item);
+        }
+    }
+
+    private void TimeToJudge(){
+        GameManager.Instance.Judging(grade);
     }
 }

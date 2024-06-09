@@ -28,6 +28,14 @@ public class Clock : MonoBehaviour
         }
     }
 
+    public void StopRotation()
+    {
+        if (isRotating){
+            GameManager.Instance.dialogueManager.GetComponent<Dialogue>().PlayClip(GameManager.Instance.judges[2].gameObject, 0);
+        }
+        isRotating = false;
+    }
+
     public void StartRotation()
     {
         // Start the rotation
