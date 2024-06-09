@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class InitiateGravityInversion : MonoBehaviour
 {
     public GameObject[] skipInitiate;
+    public GameObject lightManager;
     public float force = .02f;
     public void InitiateInversion()
     {
@@ -22,12 +24,17 @@ public class InitiateGravityInversion : MonoBehaviour
     public void Invert()
     {
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
+
+        GetComponent<DiegeticRotator>().Lock();
+        lightManager.GetComponent<GravityLighting>().Kill();
+        GetComponent<AudioSource>().Play();
         
         foreach(Rigidbody rb in allRigidbodies)
         {
             if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected"))
             {
                 rb.useGravity = !rb.useGravity;
+                if (rb.useGravity) rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
             }
         }
     }
