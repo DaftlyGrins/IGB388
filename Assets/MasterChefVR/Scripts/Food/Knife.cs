@@ -45,7 +45,7 @@ public class Knife : MonoBehaviour
   // TODO: Remove when this is configured correctly
   IEnumerator WaitAndCutFood()
   {
-    yield return new WaitForSeconds(1.0f);
+    yield return new WaitForSeconds(0.5f);
 
     canCut = true;
   }
