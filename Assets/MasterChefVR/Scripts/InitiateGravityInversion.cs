@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InitiateGravityInversion : MonoBehaviour
@@ -7,6 +8,8 @@ public class InitiateGravityInversion : MonoBehaviour
     public float force = .02f;
     public GameObject teleportPoint;
     public GameObject objects;
+    public GameObject cookingWell;
+    public GameObject benchWell;
     public void InitiateInversion()
     {
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
@@ -17,7 +20,7 @@ public class InitiateGravityInversion : MonoBehaviour
             {
                 if (rb.gameObject.name != "Basket" && rb.gameObject.name != "Recipe") rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
 
-                rb.useGravity = !rb.useGravity;
+                if (rb.gameObject.name != "Recipe") rb.useGravity = !rb.useGravity;
             }
         }
 
@@ -57,7 +60,7 @@ public class InitiateGravityInversion : MonoBehaviour
         
             foreach(Rigidbody rb in allRigidbodies)
             {
-                if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected"))
+                if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected") && !cookingWell.GetComponent<GravityWell>().objectsInWell.Contains(rb.gameObject) && !benchWell.GetComponent<GravityWell>().objectsInWell.Contains(rb.gameObject))
                 {
                     rb.useGravity = Constants.gravityEnabled;
                 }
@@ -66,7 +69,7 @@ public class InitiateGravityInversion : MonoBehaviour
         {
             foreach(Rigidbody rb in allRigidbodies)
             {
-                if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected"))
+                if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected") && !cookingWell.GetComponent<GravityWell>().objectsInWell.Contains(rb.gameObject) && !benchWell.GetComponent<GravityWell>().objectsInWell.Contains(rb.gameObject))
                 {
                     rb.useGravity = Constants.gravityEnabled;
                     if (!rb.useGravity) rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);

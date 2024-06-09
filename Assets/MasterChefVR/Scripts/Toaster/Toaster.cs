@@ -126,12 +126,9 @@ public class Toaster : MonoBehaviour
 
     yield return new WaitForSeconds(.3f);
     
-    foreach (GameObject bun in bunsToPop)
-    {
-      toasterBody.GetComponent<ToasterSlider>().hasReset = true;
-      bunsToPop.Clear();
-      leftPopperOccupied = false;
-      bothPoppersOccupied = false;
-    }
+    toasterBody.GetComponent<ToasterSlider>().hasReset = true;
+    bunsToPop.Clear();
+    leftPopperOccupied = false;
+    bothPoppersOccupied = false;
   }
 }

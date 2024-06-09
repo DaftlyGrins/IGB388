@@ -55,7 +55,7 @@ public class GravityLighting : MonoBehaviour
 
     IEnumerator WaitToReenable()
     {
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(8.0f);
 
         foreach (GameObject light in lights)
         {
