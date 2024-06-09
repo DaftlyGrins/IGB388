@@ -12,13 +12,12 @@ public class InitiateGravityInversion : MonoBehaviour
         
         foreach(Rigidbody rb in allRigidbodies)
         {
-            if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected") && rb.transform.IsChildOf(GameObject.Find("Objects").transform)
-                && rb.gameObject.name != "Basket" && rb.gameObject.name != "Recipe")
+            if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected") && rb.transform.IsChildOf(GameObject.Find("Objects").transform))
             {
-                rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
-            }
+                if (rb.gameObject.name != "Basket" && rb.gameObject.name != "Recipe") rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
 
-            rb.useGravity = !rb.useGravity;
+                rb.useGravity = !rb.useGravity;
+            }
         }
     }
 
