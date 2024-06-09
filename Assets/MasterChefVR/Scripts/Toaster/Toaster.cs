@@ -100,6 +100,7 @@ public class Toaster : MonoBehaviour
     {
       Rigidbody rb = bun.GetComponent<Rigidbody>();
       rb.isKinematic = false;
+      rb.useGravity  = Constants.gravityEnabled;
       rb.AddForce(Vector3.up * 400);
       bun.transform.SetParent(null);
 

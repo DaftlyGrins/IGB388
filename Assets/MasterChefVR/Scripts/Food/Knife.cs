@@ -58,7 +58,6 @@ public class Knife : MonoBehaviour
     }
     
     Instantiate(particleEffect, hitPoint.position, Quaternion.identity);
-    Destroy(particleEffect.gameObject, particleEffect.main.duration);
 
     // TODO: Remove when this is configured correctly
     StartCoroutine(WaitAndCutFood());
