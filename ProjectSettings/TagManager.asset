@@ -22,6 +22,7 @@ TagManager:
   - Pot
   - Logo
   - Pan
+  - Knife
   layers:
   - Default
   - TransparentFX

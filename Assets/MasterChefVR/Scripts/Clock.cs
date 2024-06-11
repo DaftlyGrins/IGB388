@@ -3,9 +3,13 @@ using UnityEngine;
 public class Clock : MonoBehaviour
 {
     public float rotationDuration; // in seconds
+    public GameObject gravityHazard;
 
     private float startTime;
     public bool isRotating = false;
+
+    private bool firstHazard;
+    private bool secondHazard;
 
     void Update()
     {
@@ -15,6 +19,18 @@ public class Clock : MonoBehaviour
             float elapsedTime = Time.time - startTime;
             float t = Mathf.Clamp01(elapsedTime / rotationDuration);
             float angle = Mathf.Lerp(0, 360, t);
+
+            if (angle >= 140 && !firstHazard)
+            {
+                gravityHazard.GetComponent<InitiateGravityInversion>().Hazard();
+                firstHazard = true;
+            }
+
+            if (angle >= 200 && !secondHazard)
+            {
+                gravityHazard.GetComponent<InitiateGravityInversion>().Hazard();
+                secondHazard = true;
+            }
 
             // Apply rotation
             transform.rotation = Quaternion.Euler(0, -90.0f, angle);

@@ -65,7 +65,6 @@ public class GravityReset : MonoBehaviour
 
         if (isGravityEnabled == true)
         {
-            Debug.Log(tillCountdownExpires);
             tillCountdownExpires -= Time.deltaTime;
             if(tillCountdownExpires <= 0)
             {

@@ -16,7 +16,6 @@ public class PanCooking : MonoBehaviour
       if (currentlyInPan.Count >= 0) {
         foreach (GameObject food in currentlyInPan)
         {
-          Debug.Log(food);
           food.GetComponent<CookFood>().Cook(true);
         }
       }
@@ -41,7 +40,6 @@ public class PanCooking : MonoBehaviour
       canCook = false;
       if (currentlyInPan.Count >= 0) {
         foreach (GameObject food in currentlyInPan) {
-          Debug.Log(food);
           food.GetComponent<CookFood>().Cook(false);
         }
       }

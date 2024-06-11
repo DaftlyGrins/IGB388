@@ -10,6 +10,7 @@ public class GravityLighting : MonoBehaviour
     public GameObject gravityResetSwitch;
     public GameObject[] energyCyl;
     public GameObject cylLight;
+    public GameObject hazard;
 
     private Color initialPylonColor;
 
@@ -28,7 +29,7 @@ public class GravityLighting : MonoBehaviour
         start = false;
     }
 
-    public void Kill()
+    public void Kill(bool wasHazard = false)
     {
         foreach (GameObject light in lights)
         {
@@ -50,10 +51,10 @@ public class GravityLighting : MonoBehaviour
             cylLight.GetComponent<Light>().color = Color.red;
         }
 
-        StartCoroutine(WaitToReenable());
+        StartCoroutine(WaitToReenable(wasHazard));
     }
 
-    IEnumerator WaitToReenable()
+    IEnumerator WaitToReenable(bool wasHazard = false)
     {
         yield return new WaitForSeconds(8.0f);
 
@@ -78,11 +79,12 @@ public class GravityLighting : MonoBehaviour
         }
 
         gravityResetSwitch.GetComponent<DiegeticRotator>().Unlock();
-        gravityResetSwitch.GetComponent<InitiateGravityInversion>().Invert();
-    }
 
-    private void Pulse()
-    {
-
+        if (wasHazard)
+        {
+            hazard.GetComponent<InitiateGravityInversion>().HazardCleanup();
+        } else{
+            gravityResetSwitch.GetComponent<InitiateGravityInversion>().Invert();
+        }
     }
 }
