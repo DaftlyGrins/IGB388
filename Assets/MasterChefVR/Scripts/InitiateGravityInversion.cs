@@ -1,5 +1,4 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
 
 public class InitiateGravityInversion : MonoBehaviour
@@ -17,12 +16,12 @@ public class InitiateGravityInversion : MonoBehaviour
         
         foreach(Rigidbody rb in allRigidbodies)
         {
-            if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected") && rb.transform.IsChildOf(GameObject.Find("Objects").transform))
-            {
-                if (rb.gameObject.name != "Basket" && rb.gameObject.name != "Recipe") rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
+          if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected") && rb.transform.IsChildOf(GameObject.Find("Objects").transform))
+          {
+              if (rb.gameObject.name != "Basket" && rb.gameObject.name != "Recipe") rb.AddForce(new Vector3(Random.Range(-1.0f, 1.0f), 1, Random.Range(-1.0f, 1.0f)) * force, ForceMode.Impulse);
 
                 if (rb.gameObject.name != "Recipe") rb.useGravity = !rb.useGravity;
-            }
+                          }
         }
 
         resetText.GetComponent<GravResetText>().Enable();
@@ -116,7 +115,6 @@ public class InitiateGravityInversion : MonoBehaviour
 
     public void Hazard()
     {
-        Debug.Log("Hazard");
         AudioSource[] audio = GetComponents<AudioSource>();
 
         audio[0].Play();
