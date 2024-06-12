@@ -10,6 +10,7 @@ public class InitiateGravityInversion : MonoBehaviour
     public GameObject objects;
     public GameObject cookingWell;
     public GameObject benchWell;
+    public GameObject resetText;
     public void InitiateInversion()
     {
         Rigidbody[] allRigidbodies = FindObjectsOfType<Rigidbody>();
@@ -24,7 +25,15 @@ public class InitiateGravityInversion : MonoBehaviour
             }
         }
 
+        resetText.GetComponent<GravResetText>().Enable();
+
         StartCoroutine(WaitToTeleport());
+    }
+
+    void Awake()
+    {
+      DiegeticRotator rotator = GetComponent<DiegeticRotator>();
+      if (rotator != null) rotator.Lock();
     }
 
     IEnumerator WaitToTeleport()
@@ -60,6 +69,8 @@ public class InitiateGravityInversion : MonoBehaviour
 
             audio[0].Play();
             audio[1].Play();
+
+            resetText.GetComponent<GravResetText>().Disable();
         
             foreach(Rigidbody rb in allRigidbodies)
             {
@@ -70,6 +81,8 @@ public class InitiateGravityInversion : MonoBehaviour
             }
         } else 
         {
+            resetText.GetComponent<GravResetText>().Enable();
+
             foreach(Rigidbody rb in allRigidbodies)
             {
                 if (rb.gameObject.layer == LayerMask.NameToLayer("GravityAffected") && !cookingWell.GetComponent<GravityWell>().objectsInWell.Contains(rb.gameObject) && !benchWell.GetComponent<GravityWell>().objectsInWell.Contains(rb.gameObject))
@@ -100,7 +113,6 @@ public class InitiateGravityInversion : MonoBehaviour
     }
 
     public GameObject lever;
-    private Color startingColor;
 
     public void Hazard()
     {
@@ -110,10 +122,7 @@ public class InitiateGravityInversion : MonoBehaviour
         audio[0].Play();
         audio[1].Play();
 
-        TextMeshProUGUI text = lever.GetComponentInChildren<TextMeshProUGUI>();
-        startingColor = text.color;
-        text.text = "Disabled";
-        text.color = Color.red;
+        resetText.GetComponent<GravResetText>().Disable();
 
         lever.GetComponent<DiegeticRotator>().Lock();
 
@@ -209,9 +218,7 @@ public class InitiateGravityInversion : MonoBehaviour
 
         audio[3].Play();
 
-        TextMeshProUGUI text = lever.GetComponentInChildren<TextMeshProUGUI>();
-        text.text = "Gravity";
-        text.color = startingColor;
+        resetText.GetComponent<GravResetText>().Enable();
 
         GameObject[] pans = GameObject.FindGameObjectsWithTag("Pan");
         GameObject[] knives = GameObject.FindGameObjectsWithTag("Knife");

@@ -49,8 +49,10 @@ public class Timer : MonoBehaviour
     {
         timerSeconds = 0;
         timerMinutes = 0;
+        if (countingDown) buzzer.Play(0);
+
         countingDown = false;
-        buzzer.Play(0);
+
         if (grabbable.grabbedBy == CustomGrabber.leftHandGrabber)
         {
             SimpleHapticVibrationManager.VibrateController(0.3f, 1.0f, OVRInput.Controller.LTouch);

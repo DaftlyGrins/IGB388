@@ -7,6 +7,7 @@ public class SlidingBlastDoor : MonoBehaviour
   public float speed = 1.0f;
   public AudioSource[] audioSources;
   public GameObject display;
+  public GameObject gravControl;
 
   private float targetY = -2.49f;
   private Vector3 targetPosition;
@@ -50,5 +51,6 @@ public class SlidingBlastDoor : MonoBehaviour
     isConfirming = false;
     display.GetComponent<Collider>().enabled = false;
     GetComponent<InitiateGravityInversion>().InitiateInversion();
+    gravControl.GetComponent<DiegeticRotator>().Unlock();
   }
 }

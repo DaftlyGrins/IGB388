@@ -16,7 +16,11 @@ public class PanCooking : MonoBehaviour
       if (currentlyInPan.Count >= 0) {
         foreach (GameObject food in currentlyInPan)
         {
-          food.GetComponent<CookFood>().Cook(true);
+          CookFood script = food.GetComponent<CookFood>();
+          if (script != null)
+          {
+            script.Cook(true);
+          }
         }
       }
     }
@@ -28,7 +32,11 @@ public class PanCooking : MonoBehaviour
 
       if (canCook)
       {
-        other.gameObject.GetComponent<CookFood>().Cook(true);
+        CookFood script = other.gameObject.GetComponent<CookFood>();
+        if (script != null)
+        {
+          script.Cook(true);
+        }
       }
     }
   }
@@ -40,15 +48,23 @@ public class PanCooking : MonoBehaviour
       canCook = false;
       if (currentlyInPan.Count >= 0) {
         foreach (GameObject food in currentlyInPan) {
-          food.GetComponent<CookFood>().Cook(false);
+          CookFood script = food.GetComponent<CookFood>();
+          if (script != null)
+          {
+            script.Cook(false);
+          }
         }
       }
-      
     }
 
     if (other.gameObject.CompareTag("Food"))
     {
-      other.gameObject.GetComponent<CookFood>().Cook(false);
+      CookFood script = other.gameObject.GetComponent<CookFood>();
+      if (script != null)
+      {
+        script.Cook(false);
+      }
+      
       currentlyInPan.Remove(other.gameObject);
     }
   }
